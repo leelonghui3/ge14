@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script src="//d3js.org/d3.v4.js"></script>
+  <script type="text/javascript" src="js/uikit.min.js"></script>
+  <script type="text/javascript" src="js/uikit-icons.min.js"></script>
+  <script type="text/javascript" src="js/d3-queue.min.js"></script>
+  <script type="text/javascript" src="js/topojson.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/uikit.min.css" />
+
+  <style type="text/css">
+    .central-960 {
+      min-width: 960px;
+    }
+
+    path {
+      fill: lightgrey;
+      stroke: #fff;
+    }
+
+    svg {
+      background: #efefef;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="uk-container uk-width-large-1-2 uk-container-center uk-margin-top">
+    <h2>Title</h2>
+    <div id="map" class="uk-margin-top">
+      <!-- D3 chart drawing area -->
+    </div>
+  </div>
+  <script>
+    var margin = {top: 50, left: 50, right: 50, bottom: 50},
+        width = 900 - margin.top - margin.bottom,
+        height = 600 - margin.left - margin.right;
+
+    var svg = d3.select('#map')
+                .append('svg')
+                .attr('width', width + margin.top + margin.bottom)
+                .attr('height', height + margin.left + margin.right)
+                .append('g')
+                .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+    d3.queue()
+      .defer(d3.json, 'map/Malaysia_Parliamentary_Boundaries_2018.json')
+      .await(ready);
+
+      var projection = d3.geoMercator()
+                        .translate([width/2,height/2])
+
+      var path = d3.geoPath()
+      .projection(projection);
+
+    function ready(error, map) {
+
+      console.log(map);
+
+      setProjection(map, 'Malaysia_Parliamentary_Boundaries_2018');
+
+      var const_map = topojson.feature(map, map.objects.Malaysia_Parliamentary_Boundaries_2018).features;
+
+      console.log(const_map);
+
+      svg.selectAll('.constituency')
+        .data(const_map)
+        .enter().append('path')
+        .attr('class', 'constituency')
+        .attr('d', path);
+
+    }
+
+    function setProjection(map, code) {
+        // Make map larger and move it where we want http://martinjc.github.io/UK-GeoJSON/
+        projection.scale(1).translate([0, 0]);
+        var b = path.bounds(topojson.feature(map, map.objects[code]));
+        var s = .95 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height);
+        var t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
+        projection.scale(s).translate(t);
+    }
+
+  </script>
+</body>
+
+</html>
