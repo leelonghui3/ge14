@@ -30,22 +30,27 @@
       text-align: center;
     }
 
+    /* BN's seats colour */
     .bn {
       fill: blue;
     }
 
+    /* PH's seats colour */
     .ph {
       fill: red;
     }
 
+    /* PAS' seats colour */
     .pas {
       fill: green;
     }
 
+    /* Independent candidates' seats colour */
     .ind {
       fill: yellow;
     }
 
+    /* Solidariti's seat colour */
     .solidariti {
       fill: purple;
     }
@@ -159,7 +164,6 @@
     }
 
     function setProjection(map, code) {
-      // Make map larger and move it where we want http://martinjc.github.io/UK-GeoJSON/
       projection.scale(1).translate([0, 0]);
       var b = path.bounds(topojson.feature(map, map.objects[code]));
       var s = .95 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height);
