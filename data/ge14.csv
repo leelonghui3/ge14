@@ -1,0 +1,688 @@
+State,KodPAR,const_name,coallition,candidate_name,party,winlose,won_party,won_coallition,majority,votes,voted_voters,votes_pct,total_voters,turnout_rate,malay,chinese,indian,others,muslim_bumi,nonmuslim_bumi,sabah_bumi,early,postal
+Perlis,001,Padang Besar,BN,Zahidi Zainul Abidin,BN,win,BN,BN,1438,15032,36500,41.18,46096,79.18,87,9,1,4,0,0,0,2466,10
+Perlis,001,Padang Besar,PH,Izizam Ibrahim,PKR,lose,BN,BN,1438,13594,36500,37.24,46096,79.18,87,9,1,4,0,0,0,2466,10
+Perlis,001,Padang Besar,GS,Mokhtar Senik,PAS,lose,BN,BN,1438,7874,36500,21.57,46096,79.18,87,9,1,4,0,0,0,2466,10
+Perlis,002,Kangar,PH,Noor Amin Ahmad,PKR,win,PKR,PH,5603,20909,44680,46.8,55938,79.87,82,15,2,1,0,0,0,1166,11
+Perlis,002,Kangar,BN,Ramli Shariff,BN,lose,PKR,PH,5603,15306,44680,34.26,55938,79.87,82,15,2,1,0,0,0,1166,11
+Perlis,002,Kangar,GS,Mohamad Zahid Ibrahim,PAS,lose,PKR,PH,5603,8465,44680,18.95,55938,79.87,82,15,2,1,0,0,0,1166,11
+Perlis,003,Arau,BN,Shahidan Kassim,BN,win,BN,BN,4856,16547,39600,41.79,48187,82.18,88,8,2,3,0,0,0,488,4
+Perlis,003,Arau,PH,Abd Rahman Daud,PKR,lose,BN,BN,4856,11691,39600,29.52,48187,82.18,88,8,2,3,0,0,0,488,4
+Perlis,003,Arau,GS,Hashim Jasin,PAS,lose,BN,BN,4856,11362,39600,28.69,48187,82.18,88,8,2,3,0,0,0,488,4
+Kedah,004,Langkawi,PH,Mahathir Mohammad,PKR,win,PKR,PH,8893,18954,34527,54.9,42697,80.87,91,7,2,1,0,0,0,1588,3
+Kedah,004,Langkawi,BN,Nawawi Ahmad,BN,lose,PKR,PH,8893,10061,34527,29.14,42697,80.87,91,7,2,1,0,0,0,1588,3
+Kedah,004,Langkawi,GS,Zubir Ahmad,PAS,lose,PKR,PH,8893,5512,34527,15.96,42697,80.87,91,7,2,1,0,0,0,1588,3
+Kedah,005,Jerlun,PH,Mukhriz Mahathir,PKR,win,PKR,PH,5866,18695,43937,42.55,54132,81.17,91,7,0,2,0,0,0,55,4
+Kedah,005,Jerlun,GS,Abd Ghani Ahmad,PAS,lose,PKR,PH,5866,12829,43937,29.2,54132,81.17,91,7,0,2,0,0,0,55,4
+Kedah,005,Jerlun,BN,Othman Aziz,BN,lose,PKR,PH,5866,12413,43937,28.25,54132,81.17,91,7,0,2,0,0,0,55,4
+Kedah,006,Kubang Pasu,PH,Amiruddin Hamzah,PKR,win,PKR,PH,13009,29984,60334,49.7,73881,81.66,87,9,4,2,0,0,0,2650,18
+Kedah,006,Kubang Pasu,BN,Mohd Johari Baharum,BN,lose,PKR,PH,13009,16975,60334,28.14,73881,81.66,87,9,4,2,0,0,0,2650,18
+Kedah,006,Kubang Pasu,GS,Norhafiza Fadzil,PAS,lose,PKR,PH,13009,13375,60334,22.17,73881,81.66,87,9,4,2,0,0,0,2650,18
+Kedah,007,Padang Terap,BN,Mahdzir Khalid,BN,win,BN,BN,1099,16384,38923,42.09,46644,83.45,92,1,0,6,0,0,0,248,5
+Kedah,007,Padang Terap,GS,Mohamad Azam Abd Majid @ Abd Aziz,PAS,lose,BN,BN,1099,15285,38923,39.27,46644,83.45,92,1,0,6,0,0,0,248,5
+Kedah,007,Padang Terap,PH,Mohd Khairizal Khazali,PKR,lose,BN,BN,1099,7254,38923,18.64,46644,83.45,92,1,0,6,0,0,0,248,5
+Kedah,008,Pokok Sena,PH,Mahfuz Omar,PKR,win,PKR,PH,5558,28959,70750,40.93,86892,81.42,82,16,2,1,0,0,0,3283,21
+Kedah,008,Pokok Sena,GS,Muhamad Radhi Mat Din,PAS,lose,PKR,PH,5558,23401,70750,33.08,86892,81.42,82,16,2,1,0,0,0,3283,21
+Kedah,008,Pokok Sena,BN,Said Ali Said Rastan,BN,lose,PKR,PH,5558,18390,70750,25.99,86892,81.42,82,16,2,1,0,0,0,3283,21
+Kedah,009,Alor Setar,PH,Chan Ming Kai,PKR,win,PKR,PH,15200,32475,63931,50.8,80272,79.64,64,32,4,0,0,0,0,696,26
+Kedah,009,Alor Setar,GS,Muhammad Aminur Shafiq Mohamad Abduh,PAS,lose,PKR,PH,15200,17275,63931,27.02,80272,79.64,64,32,4,0,0,0,0,696,26
+Kedah,009,Alor Setar,BN,Yoo Wei How,BN,lose,PKR,PH,15200,14181,63931,22.18,80272,79.64,64,32,4,0,0,0,0,696,26
+Kedah,010,Kuala Kedah,PH,Azman Ismail,PKR,win,PKR,PH,13481,36624,79167,46.26,97753,80.99,78,20,1,0,0,0,0,69,14
+Kedah,010,Kuala Kedah,GS,Muhammad Riduan Othman,PAS,lose,PKR,PH,13481,23143,79167,29.23,97753,80.99,78,20,1,0,0,0,0,69,14
+Kedah,010,Kuala Kedah,BN,Abdullah Hasnan Kamaruddin,BN,lose,PKR,PH,13481,19400,79167,24.51,97753,80.99,78,20,1,0,0,0,0,69,14
+Kedah,011,Pendang,GS,Awang Hashim,PAS,win,PAS,PAS,5808,26536,62246,42.63,74867,83.14,89,5,1,6,0,0,0,197,4
+Kedah,011,Pendang,BN,Othman Abdul,BN,lose,PAS,PAS,5808,20728,62246,33.3,74867,83.14,89,5,1,6,0,0,0,197,4
+Kedah,011,Pendang,PH,Wan Saifulruddin Wan Jan,PKR,lose,PAS,PAS,5808,14901,62246,23.94,74867,83.14,89,5,1,6,0,0,0,197,4
+Kedah,011,Pendang,Others,Abdul Malik Manaf,IND,lose,PAS,PAS,5808,81,62246,0.13,74867,83.14,89,5,1,6,0,0,0,197,4
+Kedah,012,Jerai,GS,Sabri Azit,PAS,win,PAS,PAS,539,22312,65736,33.94,79976,82.19,80,14,6,0,0,0,0,295,11
+Kedah,012,Jerai,BN,Jamil Khir Baharom,BN,lose,PAS,PAS,539,21773,65736,33.12,79976,82.19,80,14,6,0,0,0,0,295,11
+Kedah,012,Jerai,PH,Akramsyah Muammar Ubaidah Sanusi Junid,PKR,lose,PAS,PAS,539,21651,65736,32.94,79976,82.19,80,14,6,0,0,0,0,295,11
+Kedah,013,Sik,GS,Ahmad Tarmizi Sulaiman,PAS,win,PAS,PAS,5218,20088,41928,47.91,50385,83.22,93,2,0,5,0,0,0,190,2
+Kedah,013,Sik,BN,Mansor Abd Rahman,BN,lose,PAS,PAS,5218,14870,41928,35.47,50385,83.22,93,2,0,5,0,0,0,190,2
+Kedah,013,Sik,PH,Azli Uda,PKR,lose,PAS,PAS,5218,6970,41928,16.62,50385,83.22,93,2,0,5,0,0,0,190,2
+Kedah,014,Merbok,PH,Nor Azrina Surip,PKR,win,PKR,PH,10072,30902,71350,43.31,87782,81.28,69,15,15,1,0,0,0,5670,24
+Kedah,014,Merbok,BN,Tajul Urus Mat Zain,BN,lose,PKR,PH,10072,20830,71350,29.19,87782,81.28,69,15,15,1,0,0,0,5670,24
+Kedah,014,Merbok,GS,Ahmad Fauzi Ramli,PAS,lose,PKR,PH,10072,19618,71350,27.5,87782,81.28,69,15,15,1,0,0,0,5670,24
+Kedah,015,Sungai Petani,PH,Johari Abdul,PKR,win,PKR,PH,21569,45532,92534,49.21,112577,82.2,61,27,12,1,0,0,0,157,22
+Kedah,015,Sungai Petani,BN,Shahanim Mohamad Yusoff,BN,lose,PKR,PH,21569,23963,92534,25.9,112577,82.2,61,27,12,1,0,0,0,157,22
+Kedah,015,Sungai Petani,GS,Shahril Long,PAS,lose,PKR,PH,21569,22760,92534,24.6,112577,82.2,61,27,12,1,0,0,0,157,22
+Kedah,015,Sungai Petani,PRM,Sritharan Pichathu,PRM,lose,PKR,PH,21569,279,92534,0.3,112577,82.2,61,27,12,1,0,0,0,157,22
+Kedah,016,Baling,BN,Abdul Azeez Abdul Rahim,BN,win,BN,BN,1074,38557,90512,42.6,107213,84.42,89,4,5,2,0,0,0,363,7
+Kedah,016,Baling,GS,Hassan Saad,PAS,lose,BN,BN,1074,37483,90512,41.41,107213,84.42,89,4,5,2,0,0,0,363,7
+Kedah,016,Baling,PH,Mohd Taufik Yaacob,PKR,lose,BN,BN,1074,14472,90512,15.99,107213,84.42,89,4,5,2,0,0,0,363,7
+Kedah,017,Padang Serai,PH,Karupaiya Mutusami,PKR,win,PKR,PH,8813,31724,70084,45.27,84834,82.61,59,20,21,0,0,0,0,92,19
+Kedah,017,Padang Serai,GS,Muhamad Sobri Osman,PAS,lose,PKR,PH,8813,22911,70084,32.69,84834,82.61,59,20,21,0,0,0,0,92,19
+Kedah,017,Padang Serai,BN,Leong Yong Kong,BN,lose,PKR,PH,8813,15449,70084,22.04,84834,82.61,59,20,21,0,0,0,0,92,19
+Kedah,018,Kulim-Bandar Baharu,PH,Saifuddin Nasution Ismail,PKR,win,PKR,PH,4860,23159,54343,42.62,66587,81.61,69,18,13,0,0,0,0,1759,10
+Kedah,018,Kulim-Bandar Baharu,BN,Abd Aziz Sheikh Fadzir,BN,lose,PKR,PH,4860,18299,54343,33.67,66587,81.61,69,18,13,0,0,0,0,1759,10
+Kedah,018,Kulim-Bandar Baharu,GS,Abdul Raman Abdul Razak,PAS,lose,PKR,PH,4860,12885,54343,23.71,66587,81.61,69,18,13,0,0,0,0,1759,10
+Kelantan,019,Tumpat,GS,Che Abdullah Mat Nawi,PAS,win,PAS,PAS,17500,47041,86585,54.33,110924,78.06,93,3,0,4,0,0,0,421,17
+Kelantan,019,Tumpat,BN,Wan Johani Wan Hussin,BN,lose,PAS,PAS,17500,29541,86585,34.12,110924,78.06,93,3,0,4,0,0,0,421,17
+Kelantan,019,Tumpat,PH,Nordin Salleh,PKR,lose,PAS,PAS,17500,10003,86585,11.55,110924,78.06,93,3,0,4,0,0,0,421,17
+Kelantan,020,Pengkalan Chepa,GS,Ahmad Marzuk Shaary,PAS,win,PAS,PAS,13232,32592,59387,54.88,75384,78.78,98,2,0,0,0,0,0,3121,23
+Kelantan,020,Pengkalan Chepa,BN,Zaluzi Sulaiman,BN,lose,PAS,PAS,13232,19360,59387,32.6,75384,78.78,98,2,0,0,0,0,0,3121,23
+Kelantan,020,Pengkalan Chepa,PH,Mohamad Ibrahim,PKR,lose,PAS,PAS,13232,7435,59387,12.52,75384,78.78,98,2,0,0,0,0,0,3121,23
+Kelantan,021,Kota Bharu,GS,Takiyuddin Hassan,PAS,win,PAS,PAS,5869,28291,66969,42.24,88708,75.49,85,14,1,1,0,0,0,666,32
+Kelantan,021,Kota Bharu,PH,Husam Musa,PKR,lose,PAS,PAS,5869,22422,66969,33.48,88708,75.49,85,14,1,1,0,0,0,666,32
+Kelantan,021,Kota Bharu,BN,Fikhran Hamshi Mohamad Fatmi,BN,lose,PAS,PAS,5869,16256,66969,24.27,88708,75.49,85,14,1,1,0,0,0,666,32
+Kelantan,022,Pasir Mas,GS,Ahmad Fadhli Shaari,PAS,win,PAS,PAS,13075,28080,53551,52.44,71222,75.19,98,2,0,0,0,0,0,445,6
+Kelantan,022,Pasir Mas,BN,Nor Azmawi Ab Rahman @ Bawi,BN,lose,PAS,PAS,13075,15005,53551,28.02,71222,75.19,98,2,0,0,0,0,0,445,6
+Kelantan,022,Pasir Mas,Others,Ibrahim Ali,IND,lose,PAS,PAS,13075,5373,53551,10.03,71222,75.19,98,2,0,0,0,0,0,445,6
+Kelantan,022,Pasir Mas,PH,Che Ujang Che Daud,PKR,lose,PAS,PAS,13075,5093,53551,9.51,71222,75.19,98,2,0,0,0,0,0,445,6
+Kelantan,023,Rantau Panjang,GS,Siti Zailah Mohd Yusoff,PAS,win,PAS,PAS,6150,24581,48373,50.82,66115,73.16,97,2,0,1,0,0,0,111,12
+Kelantan,023,Rantau Panjang,BN,Abdullah Mat Yassim,BN,lose,PAS,PAS,6150,18431,48373,38.1,66115,73.16,97,2,0,1,0,0,0,111,12
+Kelantan,023,Rantau Panjang,PH,Wan Shah Jihan Wan Din,PKR,lose,PAS,PAS,6150,5361,48373,11.08,66115,73.16,97,2,0,1,0,0,0,111,12
+Kelantan,024,Kubang Kerian,GS,Tuan Ibrahim Tuan Man,PAS,win,PAS,PAS,19369,35620,63428,56.16,82018,77.33,98,2,0,0,0,0,0,90,20
+Kelantan,024,Kubang Kerian,BN,Mohamad Abdul Ghani,BN,lose,PAS,PAS,19369,16251,63428,25.62,82018,77.33,98,2,0,0,0,0,0,90,20
+Kelantan,024,Kubang Kerian,PH,Abdul Halim Yusof,PKR,lose,PAS,PAS,19369,11557,63428,18.22,82018,77.33,98,2,0,0,0,0,0,90,20
+Kelantan,025,Bachok,GS,Nik Mohamad Abduh Nik Abdul Aziz,PAS,win,PAS,PAS,3292,36188,73964,48.93,92606,79.87,99,1,0,0,0,0,0,261,9
+Kelantan,025,Bachok,BN,Awang Adek Hussin,BN,lose,PAS,PAS,3292,32896,73964,44.48,92606,79.87,99,1,0,0,0,0,0,261,9
+Kelantan,025,Bachok,PH,Mohd Zulkifli Zakaria,PKR,lose,PAS,PAS,3292,4880,73964,6.6,92606,79.87,99,1,0,0,0,0,0,261,9
+Kelantan,026,Ketereh,BN,Annuar Musa,BN,win,BN,BN,4626,25467,53107,47.95,65238,81.41,97,2,0,1,0,0,0,4044,7
+Kelantan,026,Ketereh,GS,Wan Ismail Wan Jusoh,PAS,lose,BN,BN,4626,20841,53107,39.24,65238,81.41,97,2,0,1,0,0,0,4044,7
+Kelantan,026,Ketereh,PH,Mohd Radzi Md Jidin,PKR,lose,BN,BN,4626,6799,53107,12.8,65238,81.41,97,2,0,1,0,0,0,4044,7
+Kelantan,027,Tanah Merah,BN,Ikmal Hisham Abdul Aziz,BN,win,BN,BN,2929,28152,58122,48.44,73172,79.43,95,4,1,1,0,0,0,240,7
+Kelantan,027,Tanah Merah,GS,Johari Mat,PAS,lose,BN,BN,2929,25223,58122,43.4,73172,79.43,95,4,1,1,0,0,0,240,7
+Kelantan,027,Tanah Merah,PH,Mohamad Fauzi Zakaria,PKR,lose,BN,BN,2929,4747,58122,8.17,73172,79.43,95,4,1,1,0,0,0,240,7
+Kelantan,028,Pasir Puteh,GS,Nik Muhd Zawawi Salleh,PAS,win,PAS,PAS,1360,32307,68150,47.41,85411,79.79,98,1,0,1,0,0,0,302,5
+Kelantan,028,Pasir Puteh,BN,Asyraf Wajdi Dusuki,BN,lose,PAS,PAS,1360,30947,68150,45.41,85411,79.79,98,1,0,1,0,0,0,302,5
+Kelantan,028,Pasir Puteh,PH,Kamarudin Md Nor,PKR,lose,PAS,PAS,1360,4896,68150,7.18,85411,79.79,98,1,0,1,0,0,0,302,5
+Kelantan,029,Machang,BN,Ahmad Jazlan Yaakub,BN,win,BN,BN,2824,26076,55023,47.39,68387,80.46,97,3,0,0,0,0,0,300,5
+Kelantan,029,Machang,GS,Zulkifli Mamat,PAS,lose,BN,BN,2824,23252,55023,42.26,68387,80.46,97,3,0,0,0,0,0,300,5
+Kelantan,029,Machang,PH,Sazmi Miah,PKR,lose,BN,BN,2824,5695,55023,10.35,68387,80.46,97,3,0,0,0,0,0,300,5
+Kelantan,030,Jeli,BN,Mustapa Mohamed ,BN,win,BN,BN,6647,21665,38761,55.89,47470,81.65,98,0,0,1,0,0,0,2950,0
+Kelantan,030,Jeli,GS,Mohamad Hamid,PAS,lose,BN,BN,6647,15018,38761,38.75,47470,81.65,98,0,0,1,0,0,0,2950,0
+Kelantan,030,Jeli,PH,Azran Deraman,PKR,lose,BN,BN,6647,2078,38761,5.36,47470,81.65,98,0,0,1,0,0,0,2950,0
+Kelantan,031,Kuala Krai,GS,Abdul Latiff Abdul Rahman,PAS,win,PAS,PAS,7992,28903,54987,52.56,70348,78.16,95,4,1,0,0,0,0,263,1
+Kelantan,031,Kuala Krai,BN,Ramzi Ab Rahman,BN,lose,PAS,PAS,7992,20911,54987,38.03,70348,78.16,95,4,1,0,0,0,0,263,1
+Kelantan,031,Kuala Krai,PH,Mohd Yazid Abdullah,PKR,lose,PAS,PAS,7992,5173,54987,9.41,70348,78.16,95,4,1,0,0,0,0,263,1
+Kelantan,032,Gua Musang,BN,Tengku Razaleigh Mohd Hamzah,BN,win,BN,BN,3913,19426,39936,48.64,52524,76.03,83,6,1,11,0,0,0,243,4
+Kelantan,032,Gua Musang,GS,Abdullah Hussein,PAS,lose,BN,BN,3913,15513,39936,38.84,52524,76.03,83,6,1,11,0,0,0,243,4
+Kelantan,032,Gua Musang,PH,Mohd Nor Hussin,PKR,lose,BN,BN,3913,4997,39936,12.51,52524,76.03,83,6,1,11,0,0,0,243,4
+Terengganu,033,Besut,BN,Idris Jusoh,BN,win,BN,BN,4599,34335,70935,48.4,86627,81.89,98,1,0,0,0,0,0,1753,9
+Terengganu,033,Besut,GS,Riduan Mohamad Nor,PAS,lose,BN,BN,4599,29736,70935,41.92,86627,81.89,98,1,0,0,0,0,0,1753,9
+Terengganu,033,Besut,PH,Wan Nazari Wan Jusoh,PKR,lose,BN,BN,4599,6864,70935,9.68,86627,81.89,98,1,0,0,0,0,0,1753,9
+Terengganu,034,Setiu,GS,Shaharizukirnain Abd Kadir,PAS,win,PAS,PAS,2802,35020,71978,48.65,86247,83.46,100,0,0,0,0,0,0,334,6
+Terengganu,034,Setiu,BN,Mohd Jidin Shafee,BN,lose,PAS,PAS,2802,32218,71978,44.76,86247,83.46,100,0,0,0,0,0,0,334,6
+Terengganu,034,Setiu,PH,Mohd Faudzi Musa,PKR,lose,PAS,PAS,2802,4740,71978,6.59,86247,83.46,100,0,0,0,0,0,0,334,6
+Terengganu,035,Kuala Nerus,GS,Mohd Khairuddin Aman Razali,PAS,win,PAS,PAS,8447,37974,72105,52.66,83663,86.19,99,1,0,0,0,0,0,1756,14
+Terengganu,035,Kuala Nerus,BN,Tengku Asmadi Tengku Mohamad,BN,lose,PAS,PAS,8447,29527,72105,40.95,83663,86.19,99,1,0,0,0,0,0,1756,14
+Terengganu,035,Kuala Nerus,PH,Abdullah Mohamed,PKR,lose,PAS,PAS,8447,4604,72105,6.39,83663,86.19,99,1,0,0,0,0,0,1756,14
+Terengganu,036,Kuala Terengganu,GS,Ahmad Amzad Mohamed @ Hashim,PAS,win,PAS,PAS,14773,42988,86583,49.65,103611,83.57,90,9,1,0,0,0,0,1510,29
+Terengganu,036,Kuala Terengganu,BN,Wan Nawawi Wan Ismail,BN,lose,PAS,PAS,14773,28215,86583,32.59,103611,83.57,90,9,1,0,0,0,0,1510,29
+Terengganu,036,Kuala Terengganu,PH,Raja Kamarul Bahrin Shah,PKR,lose,PAS,PAS,14773,15380,86583,17.76,103611,83.57,90,9,1,0,0,0,0,1510,29
+Terengganu,037,Marang,GS,Abdul Hadi Awang,PAS,win,PAS,PAS,21954,53749,90682,59.27,104898,86.45,98,2,0,0,0,0,0,827,19
+Terengganu,037,Marang,BN,Mohamad Nor Endot,BN,lose,PAS,PAS,21954,31795,90682,35.06,104898,86.45,98,2,0,0,0,0,0,827,19
+Terengganu,037,Marang,PH,Zarawi Sulong,PKR,lose,PAS,PAS,21954,5138,90682,5.67,104898,86.45,98,2,0,0,0,0,0,827,19
+Terengganu,038,Hulu Terengganu,BN,Rosol Wahid,BN,win,BN,BN,2868,30925,62346,49.6,73487,84.84,99,1,0,0,0,0,0,279,6
+Terengganu,038,Hulu Terengganu,GS,Muhydin Abdul Rashid,PAS,lose,BN,BN,2868,28057,62346,45,73487,84.84,99,1,0,0,0,0,0,279,6
+Terengganu,038,Hulu Terengganu,PH,Razali Idris,PKR,lose,BN,BN,2868,3364,62346,5.4,73487,84.84,99,1,0,0,0,0,0,279,6
+Terengganu,039,Dungun,GS,Wan Hassan Mohd Ramli,PAS,win,PAS,PAS,13119,40850,75414,54.17,90506,83.32,96,3,0,0,0,0,0,582,17
+Terengganu,039,Dungun,BN,Din Adam,BN,lose,PAS,PAS,13119,27731,75414,36.77,90506,83.32,96,3,0,0,0,0,0,582,17
+Terengganu,039,Dungun,PH,Abd Rahman Yusof,PKR,lose,PAS,PAS,13119,6833,75414,9.06,90506,83.32,96,3,0,0,0,0,0,582,17
+Terengganu,040,Kemaman,GS,Che Alias Hamid,PAS,win,PAS,PAS,2163,39878,90504,44.06,107593,84.12,94,5,1,1,0,0,0,442,11
+Terengganu,040,Kemaman,BN,Ahmad Shabery Cheek,BN,lose,PAS,PAS,2163,37715,90504,41.67,107593,84.12,94,5,1,1,0,0,0,442,11
+Terengganu,040,Kemaman,PH,Mohd Huzaifah Md Suhaimi,PKR,lose,PAS,PAS,2163,12911,90504,14.27,107593,84.12,94,5,1,1,0,0,0,442,11
+Pulau Pinang,041,Kepala Batas,BN,Reezal Merican Naina Merican,BN,win,BN,BN,4736,22459,52302,42.94,60523,86.42,79,17,4,0,0,0,0,779,2
+Pulau Pinang,041,Kepala Batas,PH,Zaidi Zakaria,PKR,lose,BN,BN,4736,17723,52302,33.89,60523,86.42,79,17,4,0,0,0,0,779,2
+Pulau Pinang,041,Kepala Batas,GS,Siti Mastura Muhamad,PAS,lose,BN,BN,4736,12120,52302,23.17,60523,86.42,79,17,4,0,0,0,0,779,2
+Pulau Pinang,042,Tasek Gelugor,BN,Shabudin Yahaya,BN,win,BN,BN,81,18547,51904,35.73,60850,85.3,78,15,7,0,0,0,0,2642,7
+Pulau Pinang,042,Tasek Gelugor,PH,Marzuki Yahya,PKR,lose,BN,BN,81,18466,51904,35.58,60850,85.3,78,15,7,0,0,0,0,2642,7
+Pulau Pinang,042,Tasek Gelugor,GS,Rizal Hafiz Ruslan,PAS,lose,BN,BN,81,14891,51904,28.69,60850,85.3,78,15,7,0,0,0,0,2642,7
+Pulau Pinang,043,Bagan,PH,Lim Guan Eng ,PKR,win,PKR,PH,43902,51653,60087,85.96,71583,83.94,13,71,15,0,0,0,0,184,6
+Pulau Pinang,043,Bagan,BN,Lee Beng Seng,BN,lose,PKR,PH,43902,7751,60087,12.9,71583,83.94,13,71,15,0,0,0,0,184,6
+Pulau Pinang,043,Bagan,GS,Huan Cheng Guan,PCM,lose,PKR,PH,43902,502,60087,0.84,71583,83.94,13,71,15,0,0,0,0,184,6
+Pulau Pinang,043,Bagan,Others,Koay Xing Boon,MU,lose,PKR,PH,43902,181,60087,0.3,71583,83.94,13,71,15,0,0,0,0,184,6
+Pulau Pinang,044,Permatang Pauh,PH,Nurul Izzah Anwar,PKR,win,PKR,PH,15668,35534,69828,50.89,81789,85.38,72,21,6,0,0,0,0,752,11
+Pulau Pinang,044,Permatang Pauh,BN,Mohd Zaidi Mohd Said,BN,lose,PKR,PH,15668,19866,69828,28.45,81789,85.38,72,21,6,0,0,0,0,752,11
+Pulau Pinang,044,Permatang Pauh,GS,Afnan Hamimi Taib Azamudden,PAS,lose,PKR,PH,15668,14428,69828,20.66,81789,85.38,72,21,6,0,0,0,0,752,11
+Pulau Pinang,045,Bukit Mertajam,PH,Sim Chee Keong,PKR,win,PKR,PH,52877,63784,74691,85.4,88998,83.92,19,70,10,0,0,0,0,75,12
+Pulau Pinang,045,Bukit Mertajam,BN,Gui Guat Lye,BN,lose,PKR,PH,52877,10907,74691,14.6,88998,83.92,19,70,10,0,0,0,0,75,12
+Pulau Pinang,046,Batu Kawan,PH,Kasthuriraani Patto,PKR,win,PKR,PH,33553,42683,54705,78.02,65394,83.65,21,56,23,0,0,0,0,223,2
+Pulau Pinang,046,Batu Kawan,BN,Jayanthi Devi Balaguru,BN,lose,PKR,PH,33553,9130,54705,16.69,65394,83.65,21,56,23,0,0,0,0,223,2
+Pulau Pinang,046,Batu Kawan,GS,Jay Kumar Balakrishna,PAS,lose,PKR,PH,33553,2636,54705,4.82,65394,83.65,21,56,23,0,0,0,0,223,2
+Pulau Pinang,046,Batu Kawan,PFP,Ooi Khar Giap,PFP,lose,PKR,PH,33553,256,54705,0.47,65394,83.65,21,56,23,0,0,0,0,223,2
+Pulau Pinang,047,Nibong Tebal,PH,Mansor Othman,PKR,win,PKR,PH,15817,35395,62179,56.92,73383,84.73,48,35,17,0,0,0,0,461,8
+Pulau Pinang,047,Nibong Tebal,BN,Shaik Hussein Mydin,BN,lose,PKR,PH,15817,19578,62179,31.49,73383,84.73,48,35,17,0,0,0,0,461,8
+Pulau Pinang,047,Nibong Tebal,GS,Mohd Helmi Harun,PAS,lose,PKR,PH,15817,6875,62179,11.06,73383,84.73,48,35,17,0,0,0,0,461,8
+Pulau Pinang,047,Nibong Tebal,Others,Tan Tee Beng,IND,lose,PKR,PH,15817,331,62179,0.53,73383,84.73,48,35,17,0,0,0,0,461,8
+Pulau Pinang,048,Bukit Bendera,PH,Wong Hon Wai,PKR,win,PKR,PH,40731,50049,59706,83.83,75069,79.53,15,73,11,1,0,0,0,1209,20
+Pulau Pinang,048,Bukit Bendera,BN,Andy Yong Kim Seng,BN,lose,PKR,PH,40731,9318,59706,15.61,75069,79.53,15,73,11,1,0,0,0,1209,20
+Pulau Pinang,048,Bukit Bendera,Others,Tan Gim Theam,MU,lose,PKR,PH,40731,339,59706,0.57,75069,79.53,15,73,11,1,0,0,0,1209,20
+Pulau Pinang,049,Tanjong,PH,Chow Kon Yeow,PKR,win,PKR,PH,29599,34663,39727,87.25,49586,80.12,6,84,9,0,0,0,0,876,3
+Pulau Pinang,049,Tanjong,BN,Ng Siew Lai,BN,lose,PKR,PH,29599,5064,39727,12.75,49586,80.12,6,84,9,0,0,0,0,876,3
+Pulau Pinang,050,Jelutong,PH,Sanisvara Nethaji Rayer Rajaji,PKR,win,PKR,PH,38171,50700,63666,79.63,76991,82.69,23,65,11,1,0,0,0,852,13
+Pulau Pinang,050,Jelutong,BN,Baljit Singh Jigiri Singh,BN,lose,PKR,PH,38171,12529,63666,19.68,76991,82.69,23,65,11,1,0,0,0,852,13
+Pulau Pinang,050,Jelutong,Others,Tan Sim Bee,MU,lose,PKR,PH,38171,437,63666,0.69,76991,82.69,23,65,11,1,0,0,0,852,13
+Pulau Pinang,051,Bukit Gelugor,PH,Ramkarpal Singh Karpal Singh,PKR,win,PKR,PH,55951,65622,75705,86.68,91595,82.65,15,74,11,1,0,0,0,152,30
+Pulau Pinang,051,Bukit Gelugor,BN,Low Joo Hiap,BN,lose,PKR,PH,55951,9671,75705,12.77,91595,82.65,15,74,11,1,0,0,0,152,30
+Pulau Pinang,051,Bukit Gelugor,Others,Lai Xue Ching,MU,lose,PKR,PH,55951,412,75705,0.54,91595,82.65,15,74,11,1,0,0,0,152,30
+Pulau Pinang,052,Bayan Baru,PH,Sim Tze Tzin,PKR,win,PKR,PH,37751,51555,74849,68.88,90780,82.45,40,49,11,1,0,0,0,2538,35
+Pulau Pinang,052,Bayan Baru,BN,Chuah Seng Guan,BN,lose,PKR,PH,37751,13804,74849,18.44,90780,82.45,40,49,11,1,0,0,0,2538,35
+Pulau Pinang,052,Bayan Baru,GS,Iszuree Ibrahim,PAS,lose,PKR,PH,37751,8757,74849,11.7,90780,82.45,40,49,11,1,0,0,0,2538,35
+Pulau Pinang,052,Bayan Baru,Others,Yim Boon Leong,MU,lose,PKR,PH,37751,733,74849,0.98,90780,82.45,40,49,11,1,0,0,0,2538,35
+Pulau Pinang,053,Balik Pulau,PH,Muhammad Bakhtiar Wan Chik,PKR,win,PKR,PH,6464,25471,49776,51.17,59086,84.24,65,30,4,1,0,0,0,870,8
+Pulau Pinang,053,Balik Pulau,BN,Hilmi Yahaya,BN,lose,PKR,PH,6464,19007,49776,38.19,59086,84.24,65,30,4,1,0,0,0,870,8
+Pulau Pinang,053,Balik Pulau,GS,Muhammad Imran Muhammad Sa'ad,PAS,lose,PKR,PH,6464,5298,49776,10.64,59086,84.24,65,30,4,1,0,0,0,870,8
+Perak,054,Gerik,BN,Hasbullah Osman,BN,win,BN,BN,5528,13243,27311,48.49,35903,76.07,69,14,3,13,0,0,0,3587,4
+Perak,054,Gerik,GS,Mohd Dahalan Ismail,PAS,lose,BN,BN,5528,7715,27311,28.25,35903,76.07,69,14,3,13,0,0,0,3587,4
+Perak,054,Gerik,PH,Ibrahim Mohd Hanafiah,PKR,lose,BN,BN,5528,6353,27311,23.26,35903,76.07,69,14,3,13,0,0,0,3587,4
+Perak,055,Lenggong,BN,Shamsul Anuar Nasarah ,BN,win,BN,BN,5773,12523,23205,53.97,29752,77.99,84,13,1,2,0,0,0,52,4
+Perak,055,Lenggong,GS,Muhammad Mujahid Mohammad Fadzil,PAS,lose,BN,BN,5773,6750,23205,29.09,29752,77.99,84,13,1,2,0,0,0,52,4
+Perak,055,Lenggong,PH,Amirul Fairuzzeen Jamaluddin,PKR,lose,BN,BN,5773,3932,23205,16.94,29752,77.99,84,13,1,2,0,0,0,52,4
+Perak,056,Larut,BN,Hamzah Zainudin,BN,win,BN,BN,4486,18184,39620,45.9,49453,80.12,90,4,6,0,0,0,0,237,7
+Perak,056,Larut,GS,Abu Husin Mohmmad,PAS,lose,BN,BN,4486,13698,39620,34.57,49453,80.12,90,4,6,0,0,0,0,237,7
+Perak,056,Larut,PH,Khairil Anuar Akhiruddin,PKR,lose,BN,BN,4486,7738,39620,19.53,49453,80.12,90,4,6,0,0,0,0,237,7
+Perak,057,Parit Buntar,PH,Mujahid Yusof Rawa,PKR,win,PKR,PH,3098,16753,42720,39.22,51860,82.38,69,26,5,0,0,0,0,99,10
+Perak,057,Parit Buntar,BN,Abdul Puhat Mat Nayan,BN,lose,PKR,PH,3098,13655,42720,31.96,51860,82.38,69,26,5,0,0,0,0,99,10
+Perak,057,Parit Buntar,GS,Ahmad Azhar Sharin,PAS,lose,PKR,PH,3098,12312,42720,28.82,51860,82.38,69,26,5,0,0,0,0,99,10
+Perak,058,Bagan Serai,BN,Noor Azmi Ghazali,BN,win,BN,BN,172,17220,47255,36.44,59293,79.7,78,13,9,0,0,0,0,349,5
+Perak,058,Bagan Serai,GS,Rohaya Bakar,PAS,lose,BN,BN,172,17048,47255,36.08,59293,79.7,78,13,9,0,0,0,0,349,5
+Perak,058,Bagan Serai,PH,Adam Asmuni,PKR,lose,BN,BN,172,12987,47255,27.48,59293,79.7,78,13,9,0,0,0,0,349,5
+Perak,059,Bukit Gantang,BN,Syed Abu Hussin Hafiz Syed Abu Fasal,BN,win,BN,BN,4089,22450,56863,39.48,69873,81.38,73,19,8,0,0,0,0,82,14
+Perak,059,Bukit Gantang,PH,Khadri Khalid,PKR,lose,BN,BN,4089,18361,56863,32.29,69873,81.38,73,19,8,0,0,0,0,82,14
+Perak,059,Bukit Gantang,GS,Idris Ahmad,PAS,lose,BN,BN,4089,16052,56863,28.23,69873,81.38,73,19,8,0,0,0,0,82,14
+Perak,060,Taiping,PH,Teh Kok Lim,PKR,win,PKR,PH,27384,42997,69743,61.65,90729,76.87,39,46,13,1,0,0,0,5079,24
+Perak,060,Taiping,BN,Tan Keng Liang,BN,lose,PKR,PH,27384,15613,69743,22.39,90729,76.87,39,46,13,1,0,0,0,5079,24
+Perak,060,Taiping,GS,Ibrahim Ismail,PAS,lose,PKR,PH,27384,11133,69743,15.96,90729,76.87,39,46,13,1,0,0,0,5079,24
+Perak,061,Padang Rengas,BN,Mohamed Nazri Abdul Aziz,BN,win,BN,BN,2548,10491,25281,41.5,30996,81.56,78,15,7,0,0,0,0,40,4
+Perak,061,Padang Rengas,PH,Ejazi Yahaya,PKR,lose,BN,BN,2548,7943,25281,31.42,30996,81.56,78,15,7,0,0,0,0,40,4
+Perak,061,Padang Rengas,GS,Mohamad Azalan Mohamad Radzi,PAS,lose,BN,BN,2548,6847,25281,27.08,30996,81.56,78,15,7,0,0,0,0,40,4
+Perak,062,Sungai Siput,PH,Kesavan Subramaniam,PKR,win,PKR,PH,5607,20817,42726,48.72,55002,77.68,35,36,21,8,0,0,0,264,4
+Perak,062,Sungai Siput,BN,Devamany Krishnasamy,BN,lose,PKR,PH,5607,15210,42726,35.6,55002,77.68,35,36,21,8,0,0,0,264,4
+Perak,062,Sungai Siput,GS,Ishak Ibrahim,PAS,lose,PKR,PH,5607,5194,42726,12.16,55002,77.68,35,36,21,8,0,0,0,264,4
+Perak,062,Sungai Siput,Others,Michael Jeyakumar Devaraj,PSM,lose,PKR,PH,5607,1505,42726,3.52,55002,77.68,35,36,21,8,0,0,0,264,4
+Perak,063,Tambun,PH,Ahmad Faizal Azumu,PKR,win,PKR,PH,5320,38661,86950,44.46,107763,80.69,67,20,11,2,0,0,0,4709,21
+Perak,063,Tambun,BN,Ahmad Husni Mohamad Hanadzlah,BN,lose,PKR,PH,5320,33341,86950,38.35,107763,80.69,67,20,11,2,0,0,0,4709,21
+Perak,063,Tambun,GS,Muhamad Zukifli Mohamad Zakaria,PAS,lose,PKR,PH,5320,14948,86950,17.19,107763,80.69,67,20,11,2,0,0,0,4709,21
+Perak,064,Ipoh Timor,PH,Wong Kah Woh,PKR,win,PKR,PH,42797,56519,70241,80.46,91486,76.78,21,72,6,1,0,0,0,2675,115
+Perak,064,Ipoh Timor,BN,Kathleen Wong Mei Yin,BN,lose,PKR,PH,42797,13722,70241,19.54,91486,76.78,21,72,6,1,0,0,0,2675,115
+Perak,065,Ipoh Barat,PH,M. Kulasekaran V. Murugeson,PKR,win,PKR,PH,45724,55613,65502,84.9,84874,77.18,12,63,24,1,0,0,0,590,62
+Perak,065,Ipoh Barat,BN,Cheng Wei Yee,BN,lose,PKR,PH,45724,9889,65502,15.1,84874,77.18,12,63,24,1,0,0,0,590,62
+Perak,066,Batu Gajah,PH,Sivakumar Varatharajy Naidu,PKR,win,PKR,PH,43868,52850,62787,84.17,81399,77.13,10,75,15,1,0,0,0,717,20
+Perak,066,Batu Gajah,BN,Leong Chee Wai,BN,lose,PKR,PH,43868,8982,62787,14.31,81399,77.13,10,75,15,1,0,0,0,717,20
+Perak,066,Batu Gajah,Others,Kunasekaran Krishnan,PSM,lose,PKR,PH,43868,955,62787,1.52,81399,77.13,10,75,15,1,0,0,0,717,20
+Perak,067,Kuala Kangsar,BN,Mastura Mohd Yazid,BN,win,BN,BN,731,12102,30056,40.26,36954,81.33,71,22,7,1,0,0,0,376,6
+Perak,067,Kuala Kangsar,PH,Ahmad Termizi Ramli,PKR,lose,BN,BN,731,11371,30056,37.83,36954,81.33,71,22,7,1,0,0,0,376,6
+Perak,067,Kuala Kangsar,GS,Khalil Idham Lim Abdullah,PAS,lose,BN,BN,731,6583,30056,21.9,36954,81.33,71,22,7,1,0,0,0,376,6
+Perak,068,Beruas,PH,Ngeh Koo Ham,PKR,win,PKR,PH,27954,41231,60267,68.41,79794,75.53,26,59,14,0,0,0,0,194,18
+Perak,068,Beruas,BN,Pang Chok King,BN,lose,PKR,PH,27954,13277,60267,22.03,79794,75.53,26,59,14,0,0,0,0,194,18
+Perak,068,Beruas,GS,Mohamad Nazeer M K M Hameed,PAS,lose,PKR,PH,27954,5759,60267,9.56,79794,75.53,26,59,14,0,0,0,0,194,18
+Perak,069,Parit,BN,Mohd Nizar Zakaria ,BN,win,BN,BN,6320,14035,28990,48.41,35910,80.73,93,2,3,2,0,0,0,481,5
+Perak,069,Parit,GS,Najihatussalehah Ahmad,PAS,lose,BN,BN,6320,7715,28990,26.61,35910,80.73,93,2,3,2,0,0,0,481,5
+Perak,069,Parit,PH,Ahmad Tarmizi Mohd Jam,PKR,lose,BN,BN,6320,7240,28990,24.97,35910,80.73,93,2,3,2,0,0,0,481,5
+Perak,070,Kampar,PH,Su Keong Siong,PKR,win,PKR,PH,11801,30216,52495,57.56,69436,75.6,33,55,9,2,0,0,0,402,16
+Perak,070,Kampar,BN,Lee Chee Leong,BN,lose,PKR,PH,11801,18415,52495,35.08,69436,75.6,33,55,9,2,0,0,0,402,16
+Perak,070,Kampar,GS,Yougan Mahalingam,PAS,lose,PKR,PH,11801,3864,52495,7.36,69436,75.6,33,55,9,2,0,0,0,402,16
+Perak,071,Gopeng,PH,Lee Boon Chye,PKR,win,PKR,PH,29778,48923,79233,61.75,99167,79.9,43,46,9,3,0,0,0,978,53
+Perak,071,Gopeng,BN,Heng Seai Kie,BN,lose,PKR,PH,29778,19145,79233,24.16,99167,79.9,43,46,9,3,0,0,0,978,53
+Perak,071,Gopeng,GS,Ismail Ariffin,PAS,lose,PKR,PH,29778,11165,79233,14.09,99167,79.9,43,46,9,3,0,0,0,978,53
+Perak,072,Tapah,BN,Saravanan Murugan,BN,win,BN,BN,614,16086,36174,44.47,47128,76.76,47,26,15,13,0,0,0,1939,15
+Perak,072,Tapah,PH,Mohamed Azni Mohamed Ali,PKR,lose,BN,BN,614,15472,36174,42.77,47128,76.76,47,26,15,13,0,0,0,1939,15
+Perak,072,Tapah,GS,Norazli Musa,PAS,lose,BN,BN,614,4616,36174,12.76,47128,76.76,47,26,15,13,0,0,0,1939,15
+Perak,073,Pasir Salak,BN,Tajuddin Abdul Rahman,BN,win,BN,BN,7712,20003,43445,46.04,54671,79.47,81,13,4,3,0,0,0,75,8
+Perak,073,Pasir Salak,PH,Salihuddin Radin Sumadi,PKR,lose,BN,BN,7712,12291,43445,28.29,54671,79.47,81,13,4,3,0,0,0,75,8
+Perak,073,Pasir Salak,GS,Zafarulazhan Zan,PAS,lose,BN,BN,7712,11151,43445,25.67,54671,79.47,81,13,4,3,0,0,0,75,8
+Perak,074,Lumut,PH,Mohd Hatta Md Ramli,PKR,win,PKR,PH,400,21955,53645,40.93,67157,79.88,72,15,11,1,0,0,0,11900,13
+Perak,074,Lumut,BN,Zambry Abd Kadir,BN,lose,PKR,PH,400,21555,53645,40.18,67157,79.88,72,15,11,1,0,0,0,11900,13
+Perak,074,Lumut,GS,Mohammed Zamri Ibrahim,PAS,lose,PKR,PH,400,10135,53645,18.89,67157,79.88,72,15,11,1,0,0,0,11900,13
+Perak,075,Bagan Datuk,BN,Ahmad Zahid Hamidi,BN,win,BN,BN,5073,18909,36806,51.37,47309,77.8,60,18,22,1,0,0,0,1681,4
+Perak,075,Bagan Datuk,PH,Pakhrurrazi Arshad,PKR,lose,BN,BN,5073,13836,36806,37.59,47309,77.8,60,18,22,1,0,0,0,1681,4
+Perak,075,Bagan Datuk,GS,Ata Abdul Muneim Hasan Adli,PAS,lose,BN,BN,5073,4061,36806,11.03,47309,77.8,60,18,22,1,0,0,0,1681,4
+Perak,076,Teluk Intan,PH,Nga Kor Ming,PKR,win,PKR,PH,11179,29170,53655,54.37,66487,80.7,41,40,19,1,0,0,0,371,15
+Perak,076,Teluk Intan,BN,Mah Siew Keong,BN,lose,PKR,PH,11179,17991,53655,33.53,66487,80.7,41,40,19,1,0,0,0,371,15
+Perak,076,Teluk Intan,GS,Ahmad Ramadzhan Ahmad Daud,PAS,lose,PKR,PH,11179,6494,53655,12.1,66487,80.7,41,40,19,1,0,0,0,371,15
+Perak,077,Tanjong Malim,PH,Chang Lih Kang,PKR,win,PKR,PH,5358,24672,54297,45.44,68468,79.3,56,26,13,6,0,0,0,530,25
+Perak,077,Tanjong Malim,BN,Mah Hang Soon,BN,lose,PKR,PH,5358,19314,54297,35.57,68468,79.3,56,26,13,6,0,0,0,530,25
+Perak,077,Tanjong Malim,GS,Mohd Tarmizi Ab Rahman,PAS,lose,PKR,PH,5358,10311,54297,18.99,68468,79.3,56,26,13,6,0,0,0,530,25
+Pahang,078,Cameron Highlands,BN,Sivaraj Chandran,BN,win,BN,BN,597,10307,24365,42.3,32048,76.03,34,30,15,22,0,0,0,255,13
+Pahang,078,Cameron Highlands,PH,Manogaran Marimuthu,PKR,lose,BN,BN,597,9710,24365,39.85,32048,76.03,34,30,15,22,0,0,0,255,13
+Pahang,078,Cameron Highlands,GS,Wan Mahadir Wan Mahmud,PAS,lose,BN,BN,597,3587,24365,14.72,32048,76.03,34,30,15,22,0,0,0,255,13
+Pahang,078,Cameron Highlands,Others,Suresh Kumar Balasubramaniam,PSM,lose,BN,BN,597,680,24365,2.79,32048,76.03,34,30,15,22,0,0,0,255,13
+Pahang,078,Cameron Highlands,Others,Mohd Tahir Kassim,BERJASA,lose,BN,BN,597,81,24365,0.33,32048,76.03,34,30,15,22,0,0,0,255,13
+Pahang,079,Lipis,BN,Abdul Rahman Mohamad,BN,win,BN,BN,6569,13995,28092,49.82,35294,79.59,78,16,5,1,0,0,0,1071,3
+Pahang,079,Lipis,PH,Badarudin Rahaman,PKR,lose,BN,BN,6569,7426,28092,26.43,35294,79.59,78,16,5,1,0,0,0,1071,3
+Pahang,079,Lipis,GS,Sobirin Duli,PAS,lose,BN,BN,6569,6671,28092,23.75,35294,79.59,78,16,5,1,0,0,0,1071,3
+Pahang,080,Raub,PH,Tengku Zulpuri Shah Raja Puji,PKR,win,PKR,PH,3159,20659,46025,44.89,57723,79.73,52,38,6,4,0,0,0,493,8
+Pahang,080,Raub,BN,Chew Mei Fun,BN,lose,PKR,PH,3159,17500,46025,38.02,57723,79.73,52,38,6,4,0,0,0,493,8
+Pahang,080,Raub,GS,Mohamed Nilam Abdul Manap,PAS,lose,PKR,PH,3159,7866,46025,17.09,57723,79.73,52,38,6,4,0,0,0,493,8
+Pahang,081,Jerantut,BN,Ahmad Nazlan Idris,BN,win,BN,BN,5908,22640,50249,45.06,63609,79,82,13,3,2,0,0,0,398,6
+Pahang,081,Jerantut,GS,Yohanis Ahmad,PAS,lose,BN,BN,5908,16732,50249,33.3,63609,79,82,13,3,2,0,0,0,398,6
+Pahang,081,Jerantut,PH,Wan Mohd Shaharir Wan Abd Jalil,PKR,lose,BN,BN,5908,10877,50249,21.65,63609,79,82,13,3,2,0,0,0,398,6
+Pahang,082,Indera Mahkota,PH,Saifuddin Abdullah,PKR,win,PKR,PH,10950,28578,63721,44.85,77208,82.53,67,27,6,1,0,0,0,3154,25
+Pahang,082,Indera Mahkota,BN,Johan Mat Sah,BN,lose,PKR,PH,10950,17628,63721,27.66,77208,82.53,67,27,6,1,0,0,0,3154,25
+Pahang,082,Indera Mahkota,GS,Nasrudin Hassan,PAS,lose,PKR,PH,10950,17515,63721,27.49,77208,82.53,67,27,6,1,0,0,0,3154,25
+Pahang,083,Kuantan,PH,Fuziah Salleh,PKR,win,PKR,PH,8111,22807,51170,44.57,62696,81.62,67,30,3,1,0,0,0,1881,15
+Pahang,083,Kuantan,GS,Sulaiman Md Derus,PAS,lose,PKR,PH,8111,14696,51170,28.72,62696,81.62,67,30,3,1,0,0,0,1881,15
+Pahang,083,Kuantan,BN,Wong Kean Hwee,BN,lose,PKR,PH,8111,13667,51170,26.71,62696,81.62,67,30,3,1,0,0,0,1881,15
+Pahang,084,Paya Besar,BN,Mohd Shahar Abdullah,BN,win,BN,BN,5742,19033,44100,43.16,55135,79.99,84,13,2,2,0,0,0,72,10
+Pahang,084,Paya Besar,GS,Mohamad Azhar Mohd Noor,PAS,lose,BN,BN,5742,13291,44100,30.14,55135,79.99,84,13,2,2,0,0,0,72,10
+Pahang,084,Paya Besar,PH,Mohd Ashraf Mustaqim Badrul Munir,PKR,lose,BN,BN,5742,11776,44100,26.7,55135,79.99,84,13,2,2,0,0,0,72,10
+Pahang,085,Pekan,BN,Mohd Najib Abd Razak,BN,win,BN,BN,24859,43854,70614,62.1,88899,79.43,88,2,1,9,0,0,0,6824,14
+Pahang,085,Pekan,GS,Ahiatudin Daud,PAS,lose,BN,BN,24859,18995,70614,26.9,88899,79.43,88,2,1,9,0,0,0,6824,14
+Pahang,085,Pekan,PH,Muhammad Zahid Md Arip,PKR,lose,BN,BN,24859,7662,70614,10.85,88899,79.43,88,2,1,9,0,0,0,6824,14
+Pahang,085,Pekan,Others,Abd Kadir Sainudin,IND,lose,BN,BN,24859,103,70614,0.15,88899,79.43,88,2,1,9,0,0,0,6824,14
+Pahang,086,Maran,BN,Ismail Abd Muttalib,BN,win,BN,BN,3763,16064,32725,49.09,41036,79.75,90,6,2,2,0,0,0,263,3
+Pahang,086,Maran,GS,Hasenan Haron,PAS,lose,BN,BN,3763,12301,32725,37.59,41036,79.75,90,6,2,2,0,0,0,263,3
+Pahang,086,Maran,PH,Ahmad Farid Ahmad Nordin,PKR,lose,BN,BN,3763,4360,32725,13.32,41036,79.75,90,6,2,2,0,0,0,263,3
+Pahang,087,Kuala Krau,BN,Ismail Mohamed Said,BN,win,BN,BN,2876,18058,38311,47.14,47264,81.06,90,3,2,5,0,0,0,45,3
+Pahang,087,Kuala Krau,GS,Kamal Ashaari,PAS,lose,BN,BN,2876,15182,38311,39.63,47264,81.06,90,3,2,5,0,0,0,45,3
+Pahang,087,Kuala Krau,PH,Mohamad Rafidee Hassim,PKR,lose,BN,BN,2876,5071,38311,13.24,47264,81.06,90,3,2,5,0,0,0,45,3
+Pahang,088,Temerloh,PH,Mohd Anuar Mohd Tahir,PKR,win,PKR,PH,1904,23998,61050,39.31,75081,81.31,67,23,8,3,0,0,0,2942,14
+Pahang,088,Temerloh,BN,Mohd Sharkar Shamsudin,BN,lose,PKR,PH,1904,22094,61050,36.19,75081,81.31,67,23,8,3,0,0,0,2942,14
+Pahang,088,Temerloh,GS,Md Jusoh Darus,PAS,lose,PKR,PH,1904,14734,61050,24.13,75081,81.31,67,23,8,3,0,0,0,2942,14
+Pahang,088,Temerloh,Others,Mohd Khaidir Ahmad,IND,lose,PKR,PH,1904,178,61050,0.29,75081,81.31,67,23,8,3,0,0,0,2942,14
+Pahang,088,Temerloh,Others,Muhamad Fakhrudin Abu Hanipah,IND,lose,PKR,PH,1904,46,61050,0.08,75081,81.31,67,23,8,3,0,0,0,2942,14
+Pahang,089,Bentong,PH,Wong Tack,PKR,win,PKR,PH,2032,25716,55106,46.67,67359,81.81,47,42,9,3,0,0,0,1660,17
+Pahang,089,Bentong,BN,Liow Tiong Lai,BN,lose,PKR,PH,2032,23684,55106,42.98,67359,81.81,47,42,9,3,0,0,0,1660,17
+Pahang,089,Bentong,GS,Balasubramaniam Nachiappan,PAS,lose,PKR,PH,2032,5706,55106,10.35,67359,81.81,47,42,9,3,0,0,0,1660,17
+Pahang,090,Bera,BN,Ismail Sabri Yaakob,BN,win,BN,BN,2311,20760,47305,43.89,58711,80.57,62,29,4,5,0,0,0,1615,8
+Pahang,090,Bera,PH,Zakaria Abdul Hamid,PKR,lose,BN,BN,2311,18449,47305,39,58711,80.57,62,29,4,5,0,0,0,1615,8
+Pahang,090,Bera,GS,Musaniff Ab Rahman,PAS,lose,BN,BN,2311,8096,47305,17.11,58711,80.57,62,29,4,5,0,0,0,1615,8
+Pahang,091,Rompin,BN,Hasan Arifin,BN,win,BN,BN,11395,26628,49737,53.54,61918,80.33,88,2,1,9,0,0,0,685,2
+Pahang,091,Rompin,GS,M Shahrul Nizam Abdul Haliff,PAS,lose,BN,BN,11395,15233,49737,30.63,61918,80.33,88,2,1,9,0,0,0,685,2
+Pahang,091,Rompin,PH,Sitarunisah Ab Kadir,PKR,lose,BN,BN,11395,7876,49737,15.84,61918,80.33,88,2,1,9,0,0,0,685,2
+Selangor,092,Sabak Bernam,BN,Mohd Fasiah Mohd Fakeh,BN,win,BN,BN,1674,12862,33350,38.57,40863,81.61,83,12,5,0,0,0,0,72,2
+Selangor,092,Sabak Bernam,PH,Warno Dogol,PKR,lose,BN,BN,1674,11188,33350,33.55,40863,81.61,83,12,5,0,0,0,0,72,2
+Selangor,092,Sabak Bernam,GS,Muhammad Labib Abd Jalil,PAS,lose,BN,BN,1674,9300,33350,27.89,40863,81.61,83,12,5,0,0,0,0,72,2
+Selangor,093,Sungai Besar,PH,Muslimin Yahaya,PKR,win,PKR,PH,714,17350,41206,42.11,48739,84.54,69,29,2,0,0,0,0,353,5
+Selangor,093,Sungai Besar,BN,Budiman Mohd Zohdi,BN,lose,PKR,PH,714,16636,41206,40.37,48739,84.54,69,29,2,0,0,0,0,353,5
+Selangor,093,Sungai Besar,GS,Mohamed Salled M Husin,PAS,lose,PKR,PH,714,7220,41206,17.52,48739,84.54,69,29,2,0,0,0,0,353,5
+Selangor,094,Hulu Selangor,PH,Leow Hsiad Hui,PKR,win,PKR,PH,13391,40783,85221,47.86,100990,84.39,61,21,16,2,0,0,0,1472,14
+Selangor,094,Hulu Selangor,BN,P. Kamalanathan P. Panchanathan,BN,lose,PKR,PH,13391,27392,85221,32.14,100990,84.39,61,21,16,2,0,0,0,1472,14
+Selangor,094,Hulu Selangor,GS,Wan Mat Sulaiman,PAS,lose,PKR,PH,13391,16620,85221,19.5,100990,84.39,61,21,16,2,0,0,0,1472,14
+Selangor,094,Hulu Selangor,Others,Kumar S. Paramasivam,IND,lose,PKR,PH,13391,426,85221,0.5,100990,84.39,61,21,16,2,0,0,0,1472,14
+Selangor,095,Tanjong Karang,BN,Noh Omar,BN,win,BN,BN,1970,17596,40498,43.45,47198,85.8,75,16,9,0,0,0,0,26,4
+Selangor,095,Tanjong Karang,PH,Zulkafperi Hanapi,PKR,lose,BN,BN,1970,15626,40498,38.58,47198,85.8,75,16,9,0,0,0,0,26,4
+Selangor,095,Tanjong Karang,GS,Nor Az Azlan Ahmad,PAS,lose,BN,BN,1970,7276,40498,17.97,47198,85.8,75,16,9,0,0,0,0,26,4
+Selangor,096,Kuala Selangor,PH,Dzulkefly Ahmad,PKR,win,PKR,PH,8498,29842,59721,49.97,69397,86.06,66,13,21,0,0,0,0,402,11
+Selangor,096,Kuala Selangor,BN,Irmohizam Ibrahim,BN,lose,PKR,PH,8498,21344,59721,35.74,69397,86.06,66,13,21,0,0,0,0,402,11
+Selangor,096,Kuala Selangor,GS,Mohd Fakaruddin Ismail,PAS,lose,PKR,PH,8498,8535,59721,14.29,69397,86.06,66,13,21,0,0,0,0,402,11
+Selangor,097,Selayang,PH,William Leong Jee Keen,PKR,win,PKR,PH,40657,60158,98002,61.38,116176,84.36,53,29,18,1,0,0,0,832,26
+Selangor,097,Selayang,BN,Kang Meng Fuat,BN,lose,PKR,PH,40657,19501,98002,19.9,116176,84.36,53,29,18,1,0,0,0,832,26
+Selangor,097,Selayang,GS,Hashim Abdul Karim,PAS,lose,PKR,PH,40657,18343,98002,18.72,116176,84.36,53,29,18,1,0,0,0,832,26
+Selangor,098,Gombak,PH,Mohamed Azmin Ali,PKR,win,PKR,PH,48721,75113,119042,63.1,141112,84.36,77,11,11,2,0,0,0,304,102
+Selangor,098,Gombak,BN,Abdul Rahim Pandak Kamarudin,BN,lose,PKR,PH,48721,26392,119042,22.17,141112,84.36,77,11,11,2,0,0,0,304,102
+Selangor,098,Gombak,GS,Khairil Nizam Khirudin,PAS,lose,PKR,PH,48721,17537,119042,14.73,141112,84.36,77,11,11,2,0,0,0,304,102
+Selangor,099,Ampang,PH,Zuraida Kamaruddin,PKR,win,PKR,PH,41956,54307,76550,70.94,91737,83.45,56,35,9,1,0,0,0,22,46
+Selangor,099,Ampang,BN,Leong Kim Soon,BN,lose,PKR,PH,41956,12351,76550,16.13,91737,83.45,56,35,9,1,0,0,0,22,46
+Selangor,099,Ampang,GS,Nurul Islam Mohamed Yusoff,PAS,lose,PKR,PH,41956,9598,76550,12.54,91737,83.45,56,35,9,1,0,0,0,22,46
+Selangor,099,Ampang,PRM,Tan Hua Meng,PRM,lose,PKR,PH,41956,294,76550,0.38,91737,83.45,56,35,9,1,0,0,0,22,46
+Selangor,100,Pandan,PH,Wan Azizah Wan Ismail,PKR,win,PKR,PH,52543,64733,85774,75.47,101319,84.66,46,46,7,1,0,0,0,825,42
+Selangor,100,Pandan,BN,Leong Kok Wee,BN,lose,PKR,PH,52543,12190,85774,14.21,101319,84.66,46,46,7,1,0,0,0,825,42
+Selangor,100,Pandan,GS,Mohamed Sukri Omar,PAS,lose,PKR,PH,52543,8336,85774,9.72,101319,84.66,46,46,7,1,0,0,0,825,42
+Selangor,100,Pandan,PRM,Lee Ying Ha,PRM,lose,PKR,PH,52543,442,85774,0.52,101319,84.66,46,46,7,1,0,0,0,825,42
+Selangor,100,Pandan,Others,Mohd Khairul Azam Abdul Aziz,IND,lose,PKR,PH,52543,73,85774,0.09,101319,84.66,46,46,7,1,0,0,0,825,42
+Selangor,101,Hulu Langat,PH,Hasanuddin Mohd Yunus,PKR,win,PKR,PH,25424,49004,88247,55.53,102363,86.21,66,22,10,2,0,0,0,3946,49
+Selangor,101,Hulu Langat,BN,Azman Ahmad,BN,lose,PKR,PH,25424,23580,88247,26.72,102363,86.21,66,22,10,2,0,0,0,3946,49
+Selangor,101,Hulu Langat,GS,Che Rosli Che Mat,PAS,lose,PKR,PH,25424,15663,88247,17.75,102363,86.21,66,22,10,2,0,0,0,3946,49
+Selangor,102,Bangi,PH,Ong Kian Ming,PKR,win,PKR,PH,68768,102557,156327,65.6,178790,87.44,49,39,11,1,0,0,0,1462,119
+Selangor,102,Bangi,GS,Mohd Shafie Ngah,PAS,lose,PKR,PH,68768,33789,156327,21.61,178790,87.44,49,39,11,1,0,0,0,1462,119
+Selangor,102,Bangi,BN,Liew Yuen Keong,BN,lose,PKR,PH,68768,19766,156327,12.64,178790,87.44,49,39,11,1,0,0,0,1462,119
+Selangor,102,Bangi,PRM,Wan Jinn Woei,PRM,lose,PKR,PH,68768,215,156327,0.14,178790,87.44,49,39,11,1,0,0,0,1462,119
+Selangor,103,Puchong,PH,Gobind Singh Deo,PKR,win,PKR,PH,47635,60429,83478,72.39,96437,86.56,37,52,10,1,0,0,0,430,30
+Selangor,103,Puchong,BN,Ang Chin Tat,BN,lose,PKR,PH,47635,12794,83478,15.33,96437,86.56,37,52,10,1,0,0,0,430,30
+Selangor,103,Puchong,GS,Mohamad Rosharizan Mohd Rozlan,PAS,lose,PKR,PH,47635,10255,83478,12.28,96437,86.56,37,52,10,1,0,0,0,430,30
+Selangor,104,Subang,PH,Wong Chen,PKR,win,PKR,PH,92353,104430,125705,83.08,146422,85.85,27,57,15,2,0,0,0,1593,118
+Selangor,104,Subang,BN,Tan Seong Lim,BN,lose,PKR,PH,92353,12077,125705,9.61,146422,85.85,27,57,15,2,0,0,0,1593,118
+Selangor,104,Subang,GS,Mohd Shahrir Mohd Adnan,PAS,lose,PKR,PH,92353,9025,125705,7.18,146422,85.85,27,57,15,2,0,0,0,1593,118
+Selangor,104,Subang,Others,Toh Sin Wah,IND,lose,PKR,PH,92353,173,125705,0.14,146422,85.85,27,57,15,2,0,0,0,1593,118
+Selangor,105,Petaling Jaya ,PH,Maria Chin Abdullah,PKR,win,PKR,PH,57137,78984,115279,68.52,140920,81.8,47,32,19,2,0,0,0,3410,52
+Selangor,105,Petaling Jaya ,BN,Chew Hian Tat,BN,lose,PKR,PH,57137,21847,115279,18.95,140920,81.8,47,32,19,2,0,0,0,3410,52
+Selangor,105,Petaling Jaya ,GS,Noraini Hussin,PAS,lose,PKR,PH,57137,14448,115279,12.53,140920,81.8,47,32,19,2,0,0,0,3410,52
+Selangor,106,Damansara,PH,Tony Pua,PKR,win,PKR,PH,106903,121283,136280,89,164322,82.93,20,69,9,1,0,0,0,500,79
+Selangor,106,Damansara,BN,Ho Kwonk Xheng,BN,lose,PKR,PH,106903,14380,136280,10.55,164322,82.93,20,69,9,1,0,0,0,500,79
+Selangor,106,Damansara,PRM,Wong Mun Kheong,PRM,lose,PKR,PH,106903,617,136280,0.45,164322,82.93,20,69,9,1,0,0,0,500,79
+Selangor,107,Sungai Buloh,PH,Sivarasa Rasiah,PKR,win,PKR,PH,26634,43631,77951,55.97,90707,85.94,66,22,11,2,0,0,0,3232,47
+Selangor,107,Sungai Buloh,GS,Nuridah Mohd Salleh,PAS,lose,PKR,PH,26634,16997,77951,21.8,90707,85.94,66,22,11,2,0,0,0,3232,47
+Selangor,107,Sungai Buloh,BN,Pakas Rao Applanaidoo,BN,lose,PKR,PH,26634,16681,77951,21.4,90707,85.94,66,22,11,2,0,0,0,3232,47
+Selangor,107,Sungai Buloh,Others,Zainurizzaman Mohram,PSM,lose,PKR,PH,26634,642,77951,0.82,90707,85.94,66,22,11,2,0,0,0,3232,47
+Selangor,108,Shah Alam,PH,Khalid Abd Samad,PKR,win,PKR,PH,33849,55949,93243,60,107316,86.89,76,11,13,1,0,0,0,2158,61
+Selangor,108,Shah Alam,BN,Azhari Shaari,BN,lose,PKR,PH,33849,22100,93243,23.7,107316,86.89,76,11,13,1,0,0,0,2158,61
+Selangor,108,Shah Alam,GS,Mohd Zuhdi Marsuki,PAS,lose,PKR,PH,33849,15194,93243,16.3,107316,86.89,76,11,13,1,0,0,0,2158,61
+Selangor,109,Kapar,PH,Abdullah Sani Abdul Hamid,PKR,win,PKR,PH,16306,47731,106093,44.99,124983,84.89,71,15,14,1,0,0,0,397,21
+Selangor,109,Kapar,GS,Abd Rani Osman,PAS,lose,PKR,PH,16306,31425,106093,29.62,124983,84.89,71,15,14,1,0,0,0,397,21
+Selangor,109,Kapar,BN,Mohana Muniandy Raman,BN,lose,PKR,PH,16306,26412,106093,24.9,124983,84.89,71,15,14,1,0,0,0,397,21
+Selangor,109,Kapar,PRM,Manikavasagam Sundaram,PRM,lose,PKR,PH,16306,525,106093,0.49,124983,84.89,71,15,14,1,0,0,0,397,21
+Selangor,110,Klang,PH,Charles Santiago,PKR,win,PKR,PH,78773,98279,127074,77.34,149348,85.09,27,55,17,1,0,0,0,1283,43
+Selangor,110,Klang,BN,Ching Eu Boon,BN,lose,PKR,PH,78773,19506,127074,15.35,149348,85.09,27,55,17,1,0,0,0,1283,43
+Selangor,110,Klang,GS,Khairul Shah Abdullah,PAS,lose,PKR,PH,78773,9169,127074,7.22,149348,85.09,27,55,17,1,0,0,0,1283,43
+Selangor,110,Klang,Others,Puvanenderan Ganasamoorthy,IND,lose,PKR,PH,78773,120,127074,0.09,149348,85.09,27,55,17,1,0,0,0,1283,43
+Selangor,111,Kota Raja,PH,Mohamad Sabu,PKR,win,PKR,PH,71142,90697,128126,70.79,149021,85.98,44,28,28,1,0,0,0,29,60
+Selangor,111,Kota Raja,GS,Mohamed Diah Baharun,PAS,lose,PKR,PH,71142,19555,128126,15.26,149021,85.98,44,28,28,1,0,0,0,29,60
+Selangor,111,Kota Raja,BN,V Gunalan Velu,BN,lose,PKR,PH,71142,17874,128126,13.95,149021,85.98,44,28,28,1,0,0,0,29,60
+Selangor,112,Kuala Langat,PH,Xavier Jayakumar Arulanandam,PKR,win,PKR,PH,17112,43239,88097,49.08,102406,86.03,57,24,16,2,0,0,0,1166,14
+Selangor,112,Kuala Langat,BN,Shahril Sufian Hamdan,BN,lose,PKR,PH,17112,26127,88097,29.66,102406,86.03,57,24,16,2,0,0,0,1166,14
+Selangor,112,Kuala Langat,GS,Yahya Baba,PAS,lose,PKR,PH,17112,18731,88097,21.26,102406,86.03,57,24,16,2,0,0,0,1166,14
+Selangor,113,Sepang,PH,Mohamed Hanipa Maidin,PKR,win,PKR,PH,18705,46740,90657,51.56,104508,86.75,63,20,14,3,0,0,0,1548,53
+Selangor,113,Sepang,BN,Marsum Paing,BN,lose,PKR,PH,18705,28035,90657,30.92,104508,86.75,63,20,14,3,0,0,0,1548,53
+Selangor,113,Sepang,GS,Sabirin Marsono,PAS,lose,PKR,PH,18705,15882,90657,17.52,104508,86.75,63,20,14,3,0,0,0,1548,53
+W.P. Kuala Lumpur,114,Kepong,PH,Lim Lip Eng,PKR,win,PKR,PH,51628,56516,61404,92.04,72696,84.47,5,89,6,1,0,0,0,284,20
+W.P. Kuala Lumpur,114,Kepong,BN,Ong Siang Liang,BN,lose,PKR,PH,51628,4888,61404,7.96,72696,84.47,5,89,6,1,0,0,0,284,20
+W.P. Kuala Lumpur,115,Batu,Others,Prabakaran Parameswaran,IND,win,IND,IND,24438,38125,62805,60.7,76328,82.28,43,38,17,2,0,0,0,3614,21
+W.P. Kuala Lumpur,115,Batu,BN,Dominic Lau Hoe Chai,BN,lose,IND,IND,24438,13687,62805,21.79,76328,82.28,43,38,17,2,0,0,0,3614,21
+W.P. Kuala Lumpur,115,Batu,GS,Azhar Yahya,PAS,lose,IND,IND,24438,10610,62805,16.89,76328,82.28,43,38,17,2,0,0,0,3614,21
+W.P. Kuala Lumpur,115,Batu,Others,VM Panjamothy Muthusamy,IND,lose,IND,IND,24438,383,62805,0.61,76328,82.28,43,38,17,2,0,0,0,3614,21
+W.P. Kuala Lumpur,116,Wangsa Maju,PH,Tan Yee Kew,PKR,win,PKR,PH,24238,42178,73608,57.3,88482,83.19,61,30,8,2,0,0,0,3599,47
+W.P. Kuala Lumpur,116,Wangsa Maju,BN,Yew Teong Look,BN,lose,PKR,PH,24238,17940,73608,24.37,88482,83.19,61,30,8,2,0,0,0,3599,47
+W.P. Kuala Lumpur,116,Wangsa Maju,GS,Razali Tumrin,PAS,lose,PKR,PH,24238,13490,73608,18.33,88482,83.19,61,30,8,2,0,0,0,3599,47
+W.P. Kuala Lumpur,117,Segambut,PH,Yeoh Tseow Suan,PKR,win,PKR,PH,45702,53124,64727,82.07,77956,83.03,28,59,12,2,0,0,0,21,83
+W.P. Kuala Lumpur,117,Segambut,BN,Loga Bala Mohan Jaganathan,BN,lose,PKR,PH,45702,7422,64727,11.47,77956,83.03,28,59,12,2,0,0,0,21,83
+W.P. Kuala Lumpur,117,Segambut,GS,Mohd Solleh Ab Razak,PAS,lose,PKR,PH,45702,4181,64727,6.46,77956,83.03,28,59,12,2,0,0,0,21,83
+W.P. Kuala Lumpur,118,Setiawangsa,PH,Nik Nazmi Nik Ahmad,PKR,win,PKR,PH,14372,34471,60852,56.65,72136,84.36,62,26,10,2,0,0,0,17398,52
+W.P. Kuala Lumpur,118,Setiawangsa,BN,Zulhasnan Rafique,BN,lose,PKR,PH,14372,20099,60852,33.03,72136,84.36,62,26,10,2,0,0,0,17398,52
+W.P. Kuala Lumpur,118,Setiawangsa,GS,Ubaid Abd Akla,PAS,lose,PKR,PH,14372,6282,60852,10.32,72136,84.36,62,26,10,2,0,0,0,17398,52
+W.P. Kuala Lumpur,119,Titiwangsa,PH,Rina Mohd Harun,PKR,win,PKR,PH,4139,23840,50386,47.31,61598,81.8,72,17,9,2,0,0,0,2695,35
+W.P. Kuala Lumpur,119,Titiwangsa,BN,Johari Abdul Ghani,BN,lose,PKR,PH,4139,19701,50386,39.1,61598,81.8,72,17,9,2,0,0,0,2695,35
+W.P. Kuala Lumpur,119,Titiwangsa,GS,Mohamad Noor Mohamad,PAS,lose,PKR,PH,4139,6845,50386,13.59,61598,81.8,72,17,9,2,0,0,0,2695,35
+W.P. Kuala Lumpur,120,Bukit Bintang,PH,Fong Kui Lun,PKR,win,PKR,PH,37260,44516,52408,84.94,69526,75.38,13,75,11,1,0,0,0,3769,20
+W.P. Kuala Lumpur,120,Bukit Bintang,BN,Tan Ean Ean,BN,lose,PKR,PH,37260,7256,52408,13.85,69526,75.38,13,75,11,1,0,0,0,3769,20
+W.P. Kuala Lumpur,120,Bukit Bintang,PFP,Khairul Husni Othman,PFP,lose,PKR,PH,37260,636,52408,1.21,69526,75.38,13,75,11,1,0,0,0,3769,20
+W.P. Kuala Lumpur,121,Lembah Pantai,PH,Ahmad Fahmi Mohamed Fadzil,PKR,win,PKR,PH,5598,33313,66305,50.24,80346,82.52,63,19,16,2,0,0,0,10250,35
+W.P. Kuala Lumpur,121,Lembah Pantai,BN,Raja Nong Chik Raja Zainal Abidin,BN,lose,PKR,PH,5598,27715,66305,41.8,80346,82.52,63,19,16,2,0,0,0,10250,35
+W.P. Kuala Lumpur,121,Lembah Pantai,GS,Fauzi Abu Bakar,PAS,lose,PKR,PH,5598,5277,66305,7.96,80346,82.52,63,19,16,2,0,0,0,10250,35
+W.P. Kuala Lumpur,122,Seputeh,PH,Teresa Kok Suh Sim,PKR,win,PKR,PH,56059,63094,70129,89.97,86256,81.3,9,82,8,1,0,0,0,79,53
+W.P. Kuala Lumpur,122,Seputeh,BN,Chan Quin Er,BN,lose,PKR,PH,56059,7035,70129,10.03,86256,81.3,9,82,8,1,0,0,0,79,53
+W.P. Kuala Lumpur,123,Cheras,PH,Tan Kok Wai,PKR,win,PKR,PH,49665,56671,63677,89,78819,80.79,10,83,7,1,0,0,0,457,24
+W.P. Kuala Lumpur,123,Cheras,BN,Heng Sinn Yee,BN,lose,PKR,PH,49665,7006,63677,11,78819,80.79,10,83,7,1,0,0,0,457,24
+W.P. Kuala Lumpur,124,Bandar Tun Razak,PH,Kamarudin Jaafar,PKR,win,PKR,PH,19930,41126,70206,58.58,83650,83.93,61,29,8,1,0,0,0,5469,38
+W.P. Kuala Lumpur,124,Bandar Tun Razak,BN,Adnan Seman @ Abdullah,BN,lose,PKR,PH,19930,21196,70206,30.19,83650,83.93,61,29,8,1,0,0,0,5469,38
+W.P. Kuala Lumpur,124,Bandar Tun Razak,GS,Rosni Adam,PAS,lose,PKR,PH,19930,7884,70206,11.23,83650,83.93,61,29,8,1,0,0,0,5469,38
+W.P. Putrajaya,125,Putrajaya,BN,Tengku Adnan Tengku Mansor,BN,win,BN,BN,3372,12148,24558,49.47,27306,89.94,95,1,3,1,0,0,0,823,75
+W.P. Putrajaya,125,Putrajaya,PH,Samsu Adabi Mamat,PKR,lose,BN,BN,3372,8776,24558,35.74,27306,89.94,95,1,3,1,0,0,0,823,75
+W.P. Putrajaya,125,Putrajaya,GS,Zainal Abidin Kidam,PAS,lose,BN,BN,3372,3634,24558,14.8,27306,89.94,95,1,3,1,0,0,0,823,75
+Negeri Sembilan,126,Jelebu,BN,Jalaluddin Alias,BN,win,BN,BN,2045,19062,38957,48.93,48522,80.29,65,24,6,5,0,0,0,1720,4
+Negeri Sembilan,126,Jelebu,PH,Mustafar Ab Kadir,PKR,lose,BN,BN,2045,17017,38957,43.68,48522,80.29,65,24,6,5,0,0,0,1720,4
+Negeri Sembilan,126,Jelebu,GS,Norman Ipin,PAS,lose,BN,BN,2045,2878,38957,7.39,48522,80.29,65,24,6,5,0,0,0,1720,4
+Negeri Sembilan,127,Jempol,BN,Mohd Salim Sharif @ Mohd Sharif,BN,win,BN,BN,1631,26819,57274,46.83,72122,79.41,64,23,12,1,0,0,0,420,6
+Negeri Sembilan,127,Jempol,PH,Kamarulzaman Kamdias,PKR,lose,BN,BN,1631,25188,57274,43.98,72122,79.41,64,23,12,1,0,0,0,420,6
+Negeri Sembilan,127,Jempol,GS,Mustaffa Daharun,PAS,lose,BN,BN,1631,5267,57274,9.2,72122,79.41,64,23,12,1,0,0,0,420,6
+Negeri Sembilan,128,Seremban,PH,Loke Siew Fook,PKR,win,PKR,PH,30694,55503,91818,60.45,110168,83.34,49,37,13,1,0,0,0,1888,50
+Negeri Sembilan,128,Seremban,BN,Chong Sin Woon,BN,lose,PKR,PH,30694,24809,91818,27.02,110168,83.34,49,37,13,1,0,0,0,1888,50
+Negeri Sembilan,128,Seremban,GS,Sharifuddin Ahmad,PAS,lose,PKR,PH,30694,11506,91818,12.53,110168,83.34,49,37,13,1,0,0,0,1888,50
+Negeri Sembilan,129,Kuala Pilah,PH,Eddin Syazlee Shith,PKR,win,PKR,PH,200,18045,40237,44.85,49801,80.8,77,16,5,2,0,0,0,355,12
+Negeri Sembilan,129,Kuala Pilah,BN,Hasan Malek,BN,lose,PKR,PH,200,17845,40237,44.35,49801,80.8,77,16,5,2,0,0,0,355,12
+Negeri Sembilan,129,Kuala Pilah,GS,Rafiei Mustapha,PAS,lose,PKR,PH,200,4347,40237,10.8,49801,80.8,77,16,5,2,0,0,0,355,12
+Negeri Sembilan,130,Rasah,PH,Cha Kee Chin ,PKR,win,PKR,PH,46867,61806,85307,72.45,102838,82.95,30,48,21,2,0,0,0,2547,43
+Negeri Sembilan,130,Rasah,BN,Ng Kian Nam ,BN,lose,PKR,PH,46867,14939,85307,17.51,102838,82.95,30,48,21,2,0,0,0,2547,43
+Negeri Sembilan,130,Rasah,GS,Mohd Khairil Anuar Mohd Wafa,PAS,lose,PKR,PH,46867,8260,85307,9.68,102838,82.95,30,48,21,2,0,0,0,2547,43
+Negeri Sembilan,130,Rasah,PAP,David Dass Aseerpatham,PAP,lose,PKR,PH,46867,302,85307,0.35,102838,82.95,30,48,21,2,0,0,0,2547,43
+Negeri Sembilan,131,Rembau,BN,Khairy Jamaludin Abu Bakar,BN,win,BN,BN,4364,36096,73856,48.87,88365,83.58,74,10,15,1,0,0,0,1153,43
+Negeri Sembilan,131,Rembau,PH,Roseli Abdul Gani,PKR,lose,BN,BN,4364,31732,73856,42.96,88365,83.58,74,10,15,1,0,0,0,1153,43
+Negeri Sembilan,131,Rembau,GS,Mustafa Dolah,PAS,lose,BN,BN,4364,6028,73856,8.16,88365,83.58,74,10,15,1,0,0,0,1153,43
+Negeri Sembilan,132,Port Dickson,PH,Danyal Balagopal Abdullah,PKR,win,PKR,PH,17710,36225,61334,59.06,75212,81.55,43,33,22,2,0,0,0,7084,13
+Negeri Sembilan,132,Port Dickson,BN,Mogan Velayatham,BN,lose,PKR,PH,17710,18515,61334,30.19,75212,81.55,43,33,22,2,0,0,0,7084,13
+Negeri Sembilan,132,Port Dickson,GS,Mahfuz Roslan,PAS,lose,PKR,PH,17710,6594,61334,10.75,75212,81.55,43,33,22,2,0,0,0,7084,13
+Negeri Sembilan,133,Tampin,PH,Hasan Bahrom,PKR,win,PKR,PH,1002,22435,48466,46.29,60765,79.76,63,24,12,2,0,0,0,5340,7
+Negeri Sembilan,133,Tampin,BN,Shaziman Abu Mansor,BN,lose,PKR,PH,1002,21433,48466,44.22,60765,79.76,63,24,12,2,0,0,0,5340,7
+Negeri Sembilan,133,Tampin,GS,Abdul Halim Abu Bakar,PAS,lose,PKR,PH,1002,4598,48466,9.49,60765,79.76,63,24,12,2,0,0,0,5340,7
+Melaka,134,Masjid Tanah,BN,Mas Ermieyati Samsudin,BN,win,BN,BN,8159,22898,42325,54.1,51441,82.28,84,12,4,1,0,0,0,381,12
+Melaka,134,Masjid Tanah,PH,Sabirin Ja'afar,PKR,lose,BN,BN,8159,14739,42325,34.82,51441,82.28,84,12,4,1,0,0,0,381,12
+Melaka,134,Masjid Tanah,GS,Mohd Nasir Othman,PAS,lose,BN,BN,8159,4688,42325,11.08,51441,82.28,84,12,4,1,0,0,0,381,12
+Melaka,135,Alor Gajah,PH,Mohd Redzuan Md Yusof,PKR,win,PKR,PH,6980,29330,57815,50.73,70364,82.17,61,25,13,1,0,0,0,584,6
+Melaka,135,Alor Gajah,BN,Wong Nai Chee,BN,lose,PKR,PH,6980,22350,57815,38.66,70364,82.17,61,25,13,1,0,0,0,584,6
+Melaka,135,Alor Gajah,GS,Mohammad Nazree Mohammad Aris,PAS,lose,PKR,PH,6980,6135,57815,10.61,70364,82.17,61,25,13,1,0,0,0,584,6
+Melaka,136,Tangga Batu,PH,Rusnah Aluai,PKR,win,PKR,PH,4659,32420,69142,46.89,83213,83.09,71,22,4,3,0,0,0,11741,22
+Melaka,136,Tangga Batu,BN,Zali Mat Yasin,BN,lose,PKR,PH,4659,27761,69142,40.15,83213,83.09,71,22,4,3,0,0,0,11741,22
+Melaka,136,Tangga Batu,GS,Zukifli Ismail,PAS,lose,PKR,PH,4659,8961,69142,12.96,83213,83.09,71,22,4,3,0,0,0,11741,22
+Melaka,137,Hang Tuah Jaya,PH,Shamsul Iskandar @ Yusre Mohd Akin,PKR,win,PKR,PH,8640,39067,76583,51.01,89364,85.7,63,31,6,1,0,0,0,1260,22
+Melaka,137,Hang Tuah Jaya,BN,Mohd Ali Mohd Rustam,BN,lose,PKR,PH,8640,30427,76583,39.73,89364,85.7,63,31,6,1,0,0,0,1260,22
+Melaka,137,Hang Tuah Jaya,GS,Md Khalid Kassim,PAS,lose,PKR,PH,8640,7089,76583,9.26,89364,85.7,63,31,6,1,0,0,0,1260,22
+Melaka,138,Kota Melaka,PH,Khoo Poay Tiong,PKR,win,PKR,PH,49175,76518,105276,72.68,126848,82.99,38,57,4,1,0,0,0,796,40
+Melaka,138,Kota Melaka,BN,Choo Wei Sern,BN,lose,PKR,PH,49175,27343,105276,25.97,126848,82.99,38,57,4,1,0,0,0,796,40
+Melaka,138,Kota Melaka,Others,Goh Leong San,IND,lose,PKR,PH,49175,1415,105276,1.34,126848,82.99,38,57,4,1,0,0,0,796,40
+Melaka,139,Jasin,BN,Ahmad Hamzah,BN,win,BN,BN,219,26560,61761,43,73432,84.11,74,16,10,0,0,0,0,410,9
+Melaka,139,Jasin,PH,Khairuddin Abu Hassan,PKR,lose,BN,BN,219,26341,61761,42.65,73432,84.11,74,16,10,0,0,0,0,410,9
+Melaka,139,Jasin,GS,Abd Alim Shapie,PAS,lose,BN,BN,219,8860,61761,14.35,73432,84.11,74,16,10,0,0,0,0,410,9
+Johor,140,Segamat,PH,Santhara Kumar Ramanaidu,PKR,win,PKR,PH,5476,24060,45320,53.09,55350,81.88,47,43,10,1,0,0,0,2297,10
+Johor,140,Segamat,BN,Subramaniam K.V. Sathasivam,BN,lose,PKR,PH,5476,18584,45320,41.01,55350,81.88,47,43,10,1,0,0,0,2297,10
+Johor,140,Segamat,GS,Khairul Faizi Ahmad Kamil,PAS,lose,PKR,PH,5476,2676,45320,5.9,55350,81.88,47,43,10,1,0,0,0,2297,10
+Johor,141,Sekijang,PH,Natrah Ismail,PKR,win,PKR,PH,1281,19559,37837,51.69,45596,82.98,59,36,4,0,0,0,0,7,10
+Johor,141,Sekijang,BN,Ayub Rahmat,BN,lose,PKR,PH,1281,18278,37837,48.31,45596,82.98,59,36,4,0,0,0,0,7,10
+Johor,142,Labis,PH,Pang Hok Liong,PKR,win,PKR,PH,3408,16709,32030,52.17,40356,79.37,38,45,15,2,0,0,0,66,8
+Johor,142,Labis,BN,Chua Tee Yong ,BN,lose,PKR,PH,3408,13301,32030,41.53,40356,79.37,38,45,15,2,0,0,0,66,8
+Johor,142,Labis,GS,Sarchu Sawal,PAS,lose,PKR,PH,3408,2020,32030,6.31,40356,79.37,38,45,15,2,0,0,0,66,8
+Johor,143,Pagoh,PH,Muhyiddin Md Yasin,PKR,win,PKR,PH,6927,23558,42672,55.21,51512,82.84,66,30,4,1,0,0,0,105,3
+Johor,143,Pagoh,BN,Ismail Mohamed,BN,lose,PKR,PH,6927,16631,42672,38.97,51512,82.84,66,30,4,1,0,0,0,105,3
+Johor,143,Pagoh,GS,Ahmad Nawfal Mahfodz,PAS,lose,PKR,PH,6927,2483,42672,5.82,51512,82.84,66,30,4,1,0,0,0,105,3
+Johor,144,Ledang,PH,Syed Ibrahim Syed Nor,PKR,win,PKR,PH,8666,34706,65414,53.06,77474,84.43,56,39,5,1,0,0,0,398,21
+Johor,144,Ledang,BN,Hamim Samuri,BN,lose,PKR,PH,8666,26040,65414,39.81,77474,84.43,56,39,5,1,0,0,0,398,21
+Johor,144,Ledang,GS,Rusman Kemin,PAS,lose,PKR,PH,8666,4668,65414,7.14,77474,84.43,56,39,5,1,0,0,0,398,21
+Johor,145,Bakri,PH,Yeo Bee Yin ,PKR,win,PKR,PH,23211,38718,61800,62.65,73883,83.65,44,53,2,0,0,0,0,1194,16
+Johor,145,Bakri,BN,Koh Chon Chai,BN,lose,PKR,PH,23211,15507,61800,25.09,73883,83.65,44,53,2,0,0,0,0,1194,16
+Johor,145,Bakri,GS,Zarul @ Mohamad Zahrul Salleh,PAS,lose,PKR,PH,23211,7575,61800,12.26,73883,83.65,44,53,2,0,0,0,0,1194,16
+Johor,146,Muar,PH,Syed Saddiq Syed Abdul Rahman,PKR,win,PKR,PH,6953,22341,42083,53.09,50843,82.77,67,32,1,0,0,0,0,643,13
+Johor,146,Muar,BN,Razali Ibrahim,BN,lose,PKR,PH,6953,15388,42083,36.57,50843,82.77,67,32,1,0,0,0,0,643,13
+Johor,146,Muar,GS,Abdul Aziz Talib,PAS,lose,PKR,PH,6953,4354,42083,10.35,50843,82.77,67,32,1,0,0,0,0,643,13
+Johor,147,Parit Sulong,BN,Noraini Ahmad,BN,win,BN,BN,6341,24481,49769,49.19,59609,83.49,79,21,1,0,0,0,0,41,7
+Johor,147,Parit Sulong,PH,Anis Afida Mohd Azli,PKR,lose,BN,BN,6341,18140,49769,36.45,59609,83.49,79,21,1,0,0,0,0,41,7
+Johor,147,Parit Sulong,GS,Ahmad Rosdi Bahari,PAS,lose,BN,BN,6341,7148,49769,14.36,59609,83.49,79,21,1,0,0,0,0,41,7
+Johor,148,Ayer Hitam,BN,Wee Ka Siong,BN,win,BN,BN,303,17076,38824,43.98,46157,84.11,58,38,4,0,0,0,0,73,7
+Johor,148,Ayer Hitam,PH,Liew Chin Tong,PKR,lose,BN,BN,303,16773,38824,43.2,46157,84.11,58,38,4,0,0,0,0,73,7
+Johor,148,Ayer Hitam,GS,Mardi Marwan,PAS,lose,BN,BN,303,4975,38824,12.81,46157,84.11,58,38,4,0,0,0,0,73,7
+Johor,149,Sri Gading,PH,Sharuddin Md Salleh,PKR,win,PKR,PH,3288,21511,44282,48.58,52119,84.96,65,33,1,0,0,0,0,106,10
+Johor,149,Sri Gading,BN,Ab Aziz Kaprawi,BN,lose,PKR,PH,3288,18223,44282,41.15,52119,84.96,65,33,1,0,0,0,0,106,10
+Johor,149,Sri Gading,GS,M Ash'ari Sidon,PAS,lose,PKR,PH,3288,4548,44282,10.27,52119,84.96,65,33,1,0,0,0,0,106,10
+Johor,150,Batu Pahat,PH,Mohd Rashid Hasnon,PKR,win,PKR,PH,17894,45929,82137,55.92,98543,83.35,55,44,1,0,0,0,0,1318,38
+Johor,150,Batu Pahat,BN,Haliza Abdullah,BN,lose,PKR,PH,17894,28035,82137,34.13,98543,83.35,55,44,1,0,0,0,0,1318,38
+Johor,150,Batu Pahat,GS,Mahfodz Mohamed,PAS,lose,PKR,PH,17894,8173,82137,9.95,98543,83.35,55,44,1,0,0,0,0,1318,38
+Johor,151,Simpang Renggam,PH,Mazlee Malik,PKR,win,PKR,PH,3475,18157,35822,50.69,43998,81.42,60,31,9,0,0,0,0,908,8
+Johor,151,Simpang Renggam,BN,Liang Teck Meng,BN,lose,PKR,PH,3475,14682,35822,40.99,43998,81.42,60,31,9,0,0,0,0,908,8
+Johor,151,Simpang Renggam,GS,Mohd Jubri Selamat,PAS,lose,PKR,PH,3475,2983,35822,8.33,43998,81.42,60,31,9,0,0,0,0,908,8
+Johor,152,Kluang,PH,Wong Shu Qi,PKR,win,PKR,PH,23053,47671,80531,59.2,96915,83.09,42,48,9,1,0,0,0,6229,36
+Johor,152,Kluang,BN,Gan Ping Sieu ,BN,lose,PKR,PH,23053,24618,80531,30.57,96915,83.09,42,48,9,1,0,0,0,6229,36
+Johor,152,Kluang,GS,Muhammad Hasbullah Md Najib,PAS,lose,PKR,PH,23053,8242,80531,10.23,96915,83.09,42,48,9,1,0,0,0,6229,36
+Johor,153,Sembrong,BN,Hishammuddin Hussein,BN,win,BN,BN,6662,21353,36044,59.24,44137,81.66,61,29,9,2,0,0,0,51,4
+Johor,153,Sembrong,PH,Onn Abu Bakar,PKR,lose,BN,BN,6662,14691,36044,40.76,44137,81.66,61,29,9,2,0,0,0,51,4
+Johor,154,Mersing,BN,Abd Latiff Ahmad,BN,win,BN,BN,8459,19806,37368,53,48176,77.57,82,14,1,3,0,0,0,2293,11
+Johor,154,Mersing,PH,Md Nasir Hashim,PKR,lose,BN,BN,8459,11347,37368,30.37,48176,77.57,82,14,1,3,0,0,0,2293,11
+Johor,154,Mersing,GS,A. Rahman A. Hamid,PAS,lose,BN,BN,8459,6215,37368,16.63,48176,77.57,82,14,1,3,0,0,0,2293,11
+Johor,155,Tenggara,BN,Adham Baba,BN,win,BN,BN,5933,20142,37034,54.39,44749,82.76,75,16,7,2,0,0,0,1924,8
+Johor,155,Tenggara,PH,Norjepri Mohamed Jelani,PKR,lose,BN,BN,5933,14209,37034,38.37,44749,82.76,75,16,7,2,0,0,0,1924,8
+Johor,155,Tenggara,GS,Yuhanita Yunan,PAS,lose,BN,BN,5933,2683,37034,7.24,44749,82.76,75,16,7,2,0,0,0,1924,8
+Johor,156,Kota Tinggi,BN,Halimah Mohd Sadique,BN,win,BN,BN,14621,26407,38193,69.14,46677,81.82,89,9,2,0,0,0,0,351,2
+Johor,156,Kota Tinggi,PH,Azlinda Abdul Latif,PKR,lose,BN,BN,14621,11786,38193,30.86,46677,81.82,89,9,2,0,0,0,0,351,2
+Johor,157,Pengerang,BN,Azalina Othman Said,BN,win,BN,BN,11417,21829,32241,67.71,40479,79.65,90,9,1,1,0,0,0,1080,5
+Johor,157,Pengerang,PH,Norliza Ngadiran,PKR,lose,BN,BN,11417,10412,32241,32.29,40479,79.65,90,9,1,1,0,0,0,1080,5
+Johor,158,Tebrau,PH,Choong Shiau Yoon,PKR,win,PKR,PH,37225,64535,103943,62.09,123033,84.48,48,39,12,1,0,0,0,221,19
+Johor,158,Tebrau,BN,Hou Kok Chung,BN,lose,PKR,PH,37225,27310,103943,26.27,123033,84.48,48,39,12,1,0,0,0,221,19
+Johor,158,Tebrau,GS,Abdullah Husin,PAS,lose,PKR,PH,37225,12098,103943,11.64,123033,84.48,48,39,12,1,0,0,0,221,19
+Johor,159,Pasir Gudang,PH,Hassan Abdul Karim,PKR,win,PKR,PH,24726,61615,105009,58.68,124172,84.57,50,37,10,3,0,0,0,2143,33
+Johor,159,Pasir Gudang,BN,Mohamed Khaled Nordin ,BN,lose,PKR,PH,24726,36889,105009,35.13,124172,84.57,50,37,10,3,0,0,0,2143,33
+Johor,159,Pasir Gudang,GS,Ab Aziz Abdullah,PAS,lose,PKR,PH,24726,6278,105009,5.98,124172,84.57,50,37,10,3,0,0,0,2143,33
+Johor,159,Pasir Gudang,Others,Sey Jock @ Chee Jock,IND,lose,PKR,PH,24726,227,105009,0.22,124172,84.57,50,37,10,3,0,0,0,2143,33
+Johor,160,Johor Bahru,PH,Akmal Nasrullah Mohd Nasir,PKR,win,PKR,PH,19782,50052,80322,62.31,101409,79.21,53,41,5,1,0,0,0,1546,46
+Johor,160,Johor Bahru,BN,Sharir Ab Samad,BN,lose,PKR,PH,19782,30270,80322,37.69,101409,79.21,53,41,5,1,0,0,0,1546,46
+Johor,161,Pulai,PH,Salahuddin Ayub,PKR,win,PKR,PH,28924,55447,86893,63.81,106268,81.77,49,39,10,1,0,0,0,1779,41
+Johor,161,Pulai,BN,Nur Jazlan Mohamed,BN,lose,PKR,PH,28924,26523,86893,30.52,106268,81.77,49,39,10,1,0,0,0,1779,41
+Johor,161,Pulai,GS,Mohd Mazri Yahya,PAS,lose,PKR,PH,28924,4332,86893,4.99,106268,81.77,49,39,10,1,0,0,0,1779,41
+Johor,161,Pulai,Others,Yap Keng Tak,IND,lose,PKR,PH,28924,591,86893,0.68,106268,81.77,49,39,10,1,0,0,0,1779,41
+Johor,162,Iskandar Puteri,PH,Lim Kit Siang,PKR,win,PKR,PH,44864,80726,116588,69.24,138299,84.3,37,50,12,1,0,0,0,920,29
+Johor,162,Iskandar Puteri,BN,Teoh Sew Hock,BN,lose,PKR,PH,44864,35862,116588,30.76,138299,84.3,37,50,12,1,0,0,0,920,29
+Johor,163,Kulai,PH,Teo Nie Ching,PKR,win,PKR,PH,32748,55312,84543,65.42,99147,85.27,35,54,10,1,0,0,0,738,23
+Johor,163,Kulai,BN,Tang Nai Soon,BN,lose,PKR,PH,32748,22564,84543,26.69,99147,85.27,35,54,10,1,0,0,0,738,23
+Johor,163,Kulai,GS,Juwahir Amin,PAS,lose,PKR,PH,32748,6667,84543,7.89,99147,85.27,35,54,10,1,0,0,0,738,23
+Johor,164,Pontian,BN,Ahmad Maslan,BN,win,BN,BN,833,21132,45726,46.21,55570,82.29,69,30,1,0,0,0,0,100,9
+Johor,164,Pontian,PH,Karmaine Sardini,PKR,lose,BN,BN,833,20299,45726,44.39,55570,82.29,69,30,1,0,0,0,0,100,9
+Johor,164,Pontian,GS,Baharom Mohamad,PAS,lose,BN,BN,833,4295,45726,9.39,55570,82.29,69,30,1,0,0,0,0,100,9
+Johor,165,Tanjung Piai,PH,Md Farid Md Rafik,PKR,win,PKR,PH,524,21255,44948,47.29,53528,83.97,57,42,1,0,0,0,0,334,8
+Johor,165,Tanjung Piai,BN,Wee Jeck Seng,BN,lose,PKR,PH,524,20731,44948,46.12,53528,83.97,57,42,1,0,0,0,0,334,8
+Johor,165,Tanjung Piai,GS,Nordin Othman,PAS,lose,PKR,PH,524,2962,44948,6.59,53528,83.97,57,42,1,0,0,0,0,334,8
+W.P. Labuan,166,Labuan,BN,Rozman Isli,BN,win,BN,BN,1450,10164,21358,47.59,28356,75.32,44,21,0,5,0,0,30,26042,2309
+W.P. Labuan,166,Labuan,PH,Noor Halim Zaini,WARISAN,lose,BN,BN,1450,8714,21358,40.8,28356,75.32,44,21,0,5,0,0,30,26042,2309
+W.P. Labuan,166,Labuan,GS,Ahmad Junid @ Junit B. Modh Aling @ Aling,PAS,lose,BN,BN,1450,1555,21358,7.28,28356,75.32,44,21,0,5,0,0,30,26042,2309
+W.P. Labuan,166,Labuan,HR,Siti Zaleha S.W.Ibrahim,HR,lose,BN,BN,1450,925,21358,4.33,28356,75.32,44,21,0,5,0,0,30,26042,2309
+Sabah,167,Kudat,BN,Abdul Rahim Bakri,BN,win,BN,BN,1359,18503,37079,49.9,52251,70.96,8,10,0,10,0,0,73,51692,559
+Sabah,167,Kudat,PH,Sh Azman Sh Along,WARISAN,lose,BN,BN,1359,17144,37079,46.24,52251,70.96,8,10,0,10,0,0,73,51692,559
+Sabah,167,Kudat,PPRS,Mohd Ashraf Chin Abdullah,PPRS,lose,BN,BN,1359,1432,37079,3.86,52251,70.96,8,10,0,10,0,0,73,51692,559
+Sabah,168,Kota Marudu,BN,Johnity @ Maximus Ongkili,BN,win,BN,BN,1774,13033,33906,38.44,47007,72.13,5,3,0,2,0,0,91,46825,182
+Sabah,168,Kota Marudu,HR,Maijol Mahap,HR,lose,BN,BN,1774,11259,33906,33.21,47007,72.13,5,3,0,2,0,0,91,46825,182
+Sabah,168,Kota Marudu,PH,Barlus Mangabis,WARISAN,lose,BN,BN,1774,7113,33906,20.98,47007,72.13,5,3,0,2,0,0,91,46825,182
+Sabah,168,Kota Marudu,PCS,Paul Porodong,PCS,lose,BN,BN,1774,2501,33906,7.38,47007,72.13,5,3,0,2,0,0,91,46825,182
+Sabah,169,Kota Belud,PH,Isnaraissah Munirah Majilis @ Fakharudy,WARISAN,win,WARISAN,PH,4262,23429,46098,50.82,57919,79.59,5,2,0,3,0,0,90,57560,357
+Sabah,169,Kota Belud,BN,Salleh Said Keruak,BN,lose,WARISAN,PH,4262,19167,46098,41.58,57919,79.59,5,2,0,3,0,0,90,57560,357
+Sabah,169,Kota Belud,HR,Miasin @ Aimaduddin Mion,HR,lose,WARISAN,PH,4262,2092,46098,4.54,57919,79.59,5,2,0,3,0,0,90,57560,357
+Sabah,169,Kota Belud,GS,Laiman Ikin @ Ag Laiman B. Kakimin,PAS,lose,WARISAN,PH,4262,1410,46098,3.06,57919,79.59,5,2,0,3,0,0,90,57560,357
+Sabah,170,Tuaran,BN,Wilfred Madius Tangau,BN,win,BN,BN,7624,22494,43643,51.54,54400,80.23,6,6,0,2,0,0,87,54206,192
+Sabah,170,Tuaran,PH,Chrisnadia Sinam,PKR,lose,BN,BN,7624,14870,43643,34.07,54400,80.23,6,6,0,2,0,0,87,54206,192
+Sabah,170,Tuaran,PCS,Kalakau @ Kalakan Untol @ Entol,PCS,lose,BN,BN,7624,2611,43643,5.98,54400,80.23,6,6,0,2,0,0,87,54206,192
+Sabah,170,Tuaran,HR,Syra Peter @ P Gom,HR,lose,BN,BN,7624,2311,43643,5.3,54400,80.23,6,6,0,2,0,0,87,54206,192
+Sabah,170,Tuaran,GS,Paumin @ Mohd Aminuddin Aling,PAS,lose,BN,BN,7624,1357,43643,3.11,54400,80.23,6,6,0,2,0,0,87,54206,192
+Sabah,171,Sepanggar,PH,Mohd Azis Jamman,WARISAN,win,WARISAN,PH,12984,28420,47785,59.47,62415,76.56,19,20,0,6,0,0,55,59390,3014
+Sabah,171,Sepanggar,BN,Abd Rahman Dahlan,BN,lose,WARISAN,PH,12984,15436,47785,32.3,62415,76.56,19,20,0,6,0,0,55,59390,3014
+Sabah,171,Sepanggar,Others,Jeffrey Kumin,SAPP,lose,WARISAN,PH,12984,2958,47785,6.19,62415,76.56,19,20,0,6,0,0,55,59390,3014
+Sabah,171,Sepanggar,PCS,Robert Sopining,PCS,lose,WARISAN,PH,12984,971,47785,2.03,62415,76.56,19,20,0,6,0,0,55,59390,3014
+Sabah,172,Kota Kinabalu,PH,Chan Foong Hin,DAP,win,DAP,PH,24086,31632,42310,74.76,56220,75.26,8,64,0,4,0,0,25,54696,1512
+Sabah,172,Kota Kinabalu,BN,Lee Han Kyun @ Joseph Lee,BN,lose,DAP,PH,24086,7546,42310,17.84,56220,75.26,8,64,0,4,0,0,25,54696,1512
+Sabah,172,Kota Kinabalu,Others,Yong Teck Lee,SAPP,lose,DAP,PH,24086,3132,42310,7.4,56220,75.26,8,64,0,4,0,0,25,54696,1512
+Sabah,173,Putatan,PH,Awang Husaini Sahari,PKR,win,PKR,PH,2339,14106,30790,45.81,41312,74.53,24,16,0,7,0,0,53,37567,3740
+Sabah,173,Putatan,BN,Makin @ Marcus Majigoh,BN,lose,PKR,PH,2339,11767,30790,38.22,41312,74.53,24,16,0,7,0,0,53,37567,3740
+Sabah,173,Putatan,GS,Zulzaim Hilmee Abidin,PAS,lose,PKR,PH,2339,2434,30790,7.91,41312,74.53,24,16,0,7,0,0,53,37567,3740
+Sabah,173,Putatan,HR,Jivol @ Edmund Doudilim,HR,lose,PKR,PH,2339,1755,30790,5.7,41312,74.53,24,16,0,7,0,0,53,37567,3740
+Sabah,173,Putatan,ANAKNEGERI,Mil Kusin Abdillah,ANAKNEGERI,lose,PKR,PH,2339,728,30790,2.36,41312,74.53,24,16,0,7,0,0,53,37567,3740
+Sabah,174,Penampang,PH,Darell Leiking,WARISAN,win,WARISAN,PH,23473,32470,43108,75.32,53131,81.14,6,35,0,2,0,0,57,51097,2027
+Sabah,174,Penampang,BN,Caesar Mandela Malakun,BN,lose,WARISAN,PH,23473,8997,43108,20.87,53131,81.14,6,35,0,2,0,0,57,51097,2027
+Sabah,174,Penampang,SOLIDARITI,Cleftus Stephen Spine,SOLIDARITI,lose,WARISAN,PH,23473,1196,43108,2.77,53131,81.14,6,35,0,2,0,0,57,51097,2027
+Sabah,174,Penampang,ANAKNEGERI,Edwin @ Jack Bosi,ANAKNEGERI,lose,WARISAN,PH,23473,445,43108,1.03,53131,81.14,6,35,0,2,0,0,57,51097,2027
+Sabah,175,Papar,PH,Ahmad Hassan,WARISAN,win,WARISAN,PH,325,17394,35836,48.54,43586,82.22,11,8,0,5,0,0,76,42684,899
+Sabah,175,Papar,BN,Rosnah Abd Rashid Shirlin,BN,lose,WARISAN,PH,325,17069,35836,47.63,43586,82.22,11,8,0,5,0,0,76,42684,899
+Sabah,175,Papar,SOLIDARITI,Jamil William Core,SOLIDARITI,lose,WARISAN,PH,325,892,35836,2.49,43586,82.22,11,8,0,5,0,0,76,42684,899
+Sabah,175,Papar,PCS,Elbert Sikuil,PCS,lose,WARISAN,PH,325,481,35836,1.34,43586,82.22,11,8,0,5,0,0,76,42684,899
+Sabah,176,Kimanis,BN,Anifah Aman ,BN,win,BN,BN,156,11942,25028,47.71,29618,84.5,12,4,0,5,0,0,79,29607,9
+Sabah,176,Kimanis,PH,Karim Bujang,WARISAN,lose,BN,BN,156,11786,25028,47.09,29618,84.5,12,4,0,5,0,0,79,29607,9
+Sabah,176,Kimanis,HR,Jaafar Ismail,HR,lose,BN,BN,156,1300,25028,5.19,29618,84.5,12,4,0,5,0,0,79,29607,9
+Sabah,177,Beaufort,BN,Azizah Mohd Dun,BN,win,BN,BN,3331,11354,27212,41.72,33342,81.61,9,7,0,3,0,0,81,33142,199
+Sabah,177,Beaufort,HR,Lajim Ukin,HR,lose,BN,BN,3331,8023,27212,29.48,33342,81.61,9,7,0,3,0,0,81,33142,199
+Sabah,177,Beaufort,PH,Johan @ Christopher Ot Ghani,PKR,lose,BN,BN,3331,7835,27212,28.79,33342,81.61,9,7,0,3,0,0,81,33142,199
+Sabah,178,Sipitang,BN,Yamani Hafez Musa,BN,win,BN,BN,852,12038,24771,48.6,31882,77.7,11,4,0,3,0,0,82,31739,143
+Sabah,178,Sipitang,PH,Noor Hayaty Mustapha,WARISAN,lose,BN,BN,852,11186,24771,45.16,31882,77.7,11,4,0,3,0,0,82,31739,143
+Sabah,178,Sipitang,HR,Dayang Aezzy Liman,HR,lose,BN,BN,852,1547,24771,6.25,31882,77.7,11,4,0,3,0,0,82,31739,143
+Sabah,179,Ranau,PH,Jonathan Yasin,PKR,win,PKR,PH,1076,14880,32942,45.17,43706,75.37,4,2,0,1,0,0,93,43531,175
+Sabah,179,Ranau,BN,Ewon Ebin,BN,lose,PKR,PH,1076,13804,32942,41.9,43706,75.37,4,2,0,1,0,0,93,43531,175
+Sabah,179,Ranau,SOLIDARITI,Soudi @ Sami Andang,SOLIDARITI,lose,PKR,PH,1076,3148,32942,9.56,43706,75.37,4,2,0,1,0,0,93,43531,175
+Sabah,179,Ranau,PCS,Andau Yasun @ Bruno,PCS,lose,PKR,PH,1076,1110,32942,3.37,43706,75.37,4,2,0,1,0,0,93,43531,175
+Sabah,180,Keningau,SOLIDARITI,Jeffrey Kitingan,SOLIDARITI,win,SOLIDARITI,SOLIDARITI,45,13286,40149,33.09,51177,78.45,6,10,0,2,0,0,82,50888,285
+Sabah,180,Keningau,PH,Jikulin Nointin @ Anastasius,WARISAN,lose,SOLIDARITI,SOLIDARITI,45,13241,40149,32.98,51177,78.45,6,10,0,2,0,0,82,50888,285
+Sabah,180,Keningau,BN,Daniel Kinsik,BN,lose,SOLIDARITI,SOLIDARITI,45,12742,40149,31.74,51177,78.45,6,10,0,2,0,0,82,50888,285
+Sabah,180,Keningau,PCS,Jius Awang,PCS,lose,SOLIDARITI,SOLIDARITI,45,433,40149,1.08,51177,78.45,6,10,0,2,0,0,82,50888,285
+Sabah,180,Keningau,Others,Maimin Rijan @ Jeffrus Rijan,IND,lose,SOLIDARITI,SOLIDARITI,45,248,40149,0.62,51177,78.45,6,10,0,2,0,0,82,50888,285
+Sabah,180,Keningau,Others,Justin Guka,IND,lose,SOLIDARITI,SOLIDARITI,45,199,40149,0.5,51177,78.45,6,10,0,2,0,0,82,50888,285
+Sabah,181,Tenom,PH,Noorita Sual,DAP,win,DAP,PH,1133,11363,22238,51.1,29182,76.2,10,11,0,2,0,0,77,29019,160
+Sabah,181,Tenom,BN,Rubin Balang,BN,lose,DAP,PH,1133,10230,22238,46,29182,76.2,10,11,0,2,0,0,77,29019,160
+Sabah,181,Tenom,HR,Laimoi @ Yuslinah Laikim,HR,lose,DAP,PH,1133,645,22238,2.9,29182,76.2,10,11,0,2,0,0,77,29019,160
+Sabah,182,Pensiangan,BN,Arthur Joseph Kurup,BN,win,BN,BN,2314,11783,24368,48.35,31377,77.66,3,2,0,1,0,0,94,31368,9
+Sabah,182,Pensiangan,PH,Raymond Ahuar,PKR,lose,BN,BN,2314,9469,24368,38.86,31377,77.66,3,2,0,1,0,0,94,31368,9
+Sabah,182,Pensiangan,SOLIDARITI,Joh Jimmy @ Richard Joe Jimmy,SOLIDARITI,lose,BN,BN,2314,2839,24368,11.65,31377,77.66,3,2,0,1,0,0,94,31368,9
+Sabah,182,Pensiangan,PCS,Maidin Atak @ Maidin Osman,PCS,lose,BN,BN,2314,212,24368,0.87,31377,77.66,3,2,0,1,0,0,94,31368,9
+Sabah,182,Pensiangan,Others,Engah Sintan @ Dahlan Abdullah,IND,lose,BN,BN,2314,65,24368,0.27,31377,77.66,3,2,0,1,0,0,94,31368,9
+Sabah,183,Beluran,BN,Ronald Kiandee,BN,win,BN,BN,7115,13007,20698,62.84,28509,72.6,10,1,0,6,0,0,82,28354,155
+Sabah,183,Beluran,PH,Japar Zairun,WARISAN,lose,BN,BN,7115,5892,20698,28.47,28509,72.6,10,1,0,6,0,0,82,28354,155
+Sabah,183,Beluran,HR,Sipin Kadandi,HR,lose,BN,BN,7115,996,20698,4.81,28509,72.6,10,1,0,6,0,0,82,28354,155
+Sabah,183,Beluran,PCS,Toidy Luit,PCS,lose,BN,BN,7115,284,20698,1.37,28509,72.6,10,1,0,6,0,0,82,28354,155
+Sabah,183,Beluran,PPRS,Lem @ Salim Matin,PPRS,lose,BN,BN,7115,273,20698,1.32,28509,72.6,10,1,0,6,0,0,82,28354,155
+Sabah,183,Beluran,Others,Salimah Oyong,IND,lose,BN,BN,7115,246,20698,1.19,28509,72.6,10,1,0,6,0,0,82,28354,155
+Sabah,184,Libaran,BN,Zakaria Mohd Edris @ Tubau,BN,win,BN,BN,678,17799,36143,49.25,47914,75.43,30,17,0,14,0,0,39,46666,1245
+Sabah,184,Libaran,PH,Irwanshah Mustapa,WARISAN,lose,BN,BN,678,17121,36143,47.37,47914,75.43,30,17,0,14,0,0,39,46666,1245
+Sabah,184,Libaran,HR,Alfian Mansyur,HR,lose,BN,BN,678,1223,36143,3.38,47914,75.43,30,17,0,14,0,0,39,46666,1245
+Sabah,185,Batu Sapi,PH,Liew Vui Keong,WARISAN,win,WARISAN,PH,4619,12976,23261,55.78,32574,71.41,20,31,0,10,0,0,39,30371,2203
+Sabah,185,Batu Sapi,BN,Tsen Thau Lin,BN,lose,WARISAN,PH,4619,8357,23261,35.93,32574,71.41,20,31,0,10,0,0,39,30371,2203
+Sabah,185,Batu Sapi,AMANAH,Hamza A. Abdullah @ Hamzah,AMANAH,lose,WARISAN,PH,4619,980,23261,4.21,32574,71.41,20,31,0,10,0,0,39,30371,2203
+Sabah,185,Batu Sapi,GS,Norsah Bongsu,PAS,lose,WARISAN,PH,4619,948,23261,4.08,32574,71.41,20,31,0,10,0,0,39,30371,2203
+Sabah,186,Sandakan,PH,Wong Tien Fatt,DAP,win,DAP,PH,10098,19094,28090,67.97,39777,70.62,16,51,0,7,0,0,26,39494,279
+Sabah,186,Sandakan,BN,Lim Ming Hoo,BN,lose,DAP,PH,10098,8996,28090,32.03,39777,70.62,16,51,0,7,0,0,26,39494,279
+Sabah,187,Kinabatangan,BN,Bung Moktar Radin,BN,win,BN,BN,9478,14465,21518,67.22,28730,74.9,17,1,0,6,0,0,76,28549,181
+Sabah,187,Kinabatangan,PH,M A Ghazali Abdul Ghani,WARISAN,lose,BN,BN,9478,4987,21518,23.18,28730,74.9,17,1,0,6,0,0,76,28549,181
+Sabah,187,Kinabatangan,HR,Mustapa Tambuyong,HR,lose,BN,BN,9478,2066,21518,9.6,28730,74.9,17,1,0,6,0,0,76,28549,181
+Sabah,188,Silam,PH,Mohamaddin Ketapi,WARISAN,win,WARISAN,PH,6401,23352,43040,54.26,60942,70.62,28,11,0,11,0,0,50,59104,1837
+Sabah,188,Silam,BN,Nasrun Mansur,BN,lose,WARISAN,PH,6401,16951,43040,39.38,60942,70.62,28,11,0,11,0,0,50,59104,1837
+Sabah,188,Silam,GS,Ramli Pataruddin,PAS,lose,WARISAN,PH,6401,1431,43040,3.32,60942,70.62,28,11,0,11,0,0,50,59104,1837
+Sabah,188,Silam,HR,Siti Shazianti Ajak,HR,lose,WARISAN,PH,6401,1306,43040,3.03,60942,70.62,28,11,0,11,0,0,50,59104,1837
+Sabah,189,Semporna,PH,Mohd Shafie Apdal,WARISAN,win,WARISAN,PH,20674,26809,33426,80.2,48248,69.28,12,2,0,3,0,0,84,47198,1050
+Sabah,189,Semporna,BN,Ramlee Marahaban,BN,lose,WARISAN,PH,20674,6135,33426,18.35,48248,69.28,12,2,0,3,0,0,84,47198,1050
+Sabah,189,Semporna,GS,Abdul Nasir Ab Raup,PAS,lose,WARISAN,PH,20674,384,33426,1.15,48248,69.28,12,2,0,3,0,0,84,47198,1050
+Sabah,189,Semporna,HR,Asmara Asmad,HR,lose,WARISAN,PH,20674,98,33426,0.29,48248,69.28,12,2,0,3,0,0,84,47198,1050
+Sabah,190,Tawau,PH,Liew Chin Jin,PKR,win,PKR,PH,4727,21400,42753,50.05,59919,71.35,37,35,0,11,0,0,17,59083,830
+Sabah,190,Tawau,BN,Mary Yap Ken Jin,BN,lose,PKR,PH,4727,16673,42753,39,59919,71.35,37,35,0,11,0,0,17,59083,830
+Sabah,190,Tawau,GS,Mohamad Husain,PAS,lose,PKR,PH,4727,2518,42753,5.89,59919,71.35,37,35,0,11,0,0,17,59083,830
+Sabah,190,Tawau,HR,Alizaman Jijurahman,HR,lose,PKR,PH,4727,2162,42753,5.06,59919,71.35,37,35,0,11,0,0,17,59083,830
+Sabah,191,Kalabakan,PH,Ma'Mun Sulaiman,WARISAN,win,WARISAN,PH,3187,18486,36909,50.09,52199,70.71,51,9,0,21,0,0,20,49251,2945
+Sabah,191,Kalabakan,BN,Abdul Ghapur Salleh,BN,lose,WARISAN,PH,3187,15299,36909,41.45,52199,70.71,51,9,0,21,0,0,20,49251,2945
+Sabah,191,Kalabakan,GS,Nor Aloh,PAS,lose,WARISAN,PH,3187,2813,36909,7.62,52199,70.71,51,9,0,21,0,0,20,49251,2945
+Sabah,191,Kalabakan,PPRS,Ahmad Lahama,PPRS,lose,WARISAN,PH,3187,311,36909,0.84,52199,70.71,51,9,0,21,0,0,20,49251,2945
+Sarawak,192,Mas Gading,PH,Mordi Bimol,DAP,win,DAP,PH,3024,12771,22518,56.71,29617,76.03,0,18,0,2,5,75,0,335,1
+Sarawak,192,Mas Gading,BN,Nogeh Gumbek,BN,lose,DAP,PH,3024,9747,22518,43.29,29617,76.03,0,18,0,2,5,75,0,335,1
+Sarawak,193,Santubong,BN,Wan Junaidi Tuanku Jaafar,BN,win,BN,BN,19485,26379,33273,79.28,45628,72.92,0,8,0,0,81,11,0,184,3
+Sarawak,193,Santubong,PH,Mohamad Fidzuan Zaidi,PKR,lose,BN,BN,19485,6894,33273,20.72,45628,72.92,0,8,0,0,81,11,0,184,3
+Sarawak,194,Petra Jaya,BN,Fadillah Yusof,BN,win,BN,BN,15017,28306,42945,65.91,57925,74.14,0,13,0,1,74,12,0,908,22
+Sarawak,194,Petra Jaya,PH,Nor Irwan Ahmat Nor,PKR,lose,BN,BN,15017,13289,42945,30.94,57925,74.14,0,13,0,1,74,12,0,908,22
+Sarawak,194,Petra Jaya,GS,Hamdan Sani,PAS,lose,BN,BN,15017,1350,42945,3.14,57925,74.14,0,13,0,1,74,12,0,908,22
+Sarawak,195,Bandar Kuching,PH,Kelvin Yii Lee Wuen,DAP,win,DAP,PH,35973,48548,61123,79.43,81856,74.67,0,89,0,1,4,6,0,1193,19
+Sarawak,195,Bandar Kuching,BN,Kho Teck Wan,BN,lose,DAP,PH,35973,12575,61123,20.57,81856,74.67,0,89,0,1,4,6,0,1193,19
+Sarawak,196,Stampin,PH,Chong Chieng Jen,DAP,win,DAP,PH,14221,33060,51899,63.7,66240,78.35,0,64,0,1,16,18,0,4299,22
+Sarawak,196,Stampin,BN,Sim Kui Hian,BN,lose,DAP,PH,14221,18839,51899,36.3,66240,78.35,0,64,0,1,16,18,0,4299,22
+Sarawak,197,Kota Samarahan,BN,Rubiah Wang,BN,win,BN,BN,16992,25070,35867,69.9,46300,77.47,0,11,0,1,62,25,0,6067,5
+Sarawak,197,Kota Samarahan,PH,Sopian Julaihi,PKR,lose,BN,BN,16992,8078,35867,22.52,46300,77.47,0,11,0,1,62,25,0,6067,5
+Sarawak,197,Kota Samarahan,GS,Zulkipli Ramzi,PAS,lose,BN,BN,16992,2719,35867,7.58,46300,77.47,0,11,0,1,62,25,0,6067,5
+Sarawak,198,Puncak Borneo,PH,Willie Mongin,PKR,win,PKR,PH,4005,18865,34520,54.65,46180,74.75,0,26,0,1,5,68,0,1065,2
+Sarawak,198,Puncak Borneo,BN,Genot Anak Sinel @ Jeannoth Sinel,BN,lose,PKR,PH,4005,14860,34520,43.05,46180,74.75,0,26,0,1,5,68,0,1065,2
+Sarawak,198,Puncak Borneo,STAR,Buln Patrick Ribos,STAR,lose,PKR,PH,4005,795,34520,2.3,46180,74.75,0,26,0,1,5,68,0,1065,2
+Sarawak,199,Serian,BN,Richard Riot Jaem,BN,win,BN,BN,9905,17545,27419,63.99,37629,72.87,0,10,0,1,8,81,0,188,1
+Sarawak,199,Serian,PH,Edward Andrew Luwak @ Edward Luwak,DAP,lose,BN,BN,9905,7640,27419,27.86,37629,72.87,0,10,0,1,8,81,0,188,1
+Sarawak,199,Serian,Others,Senior William Rade,IND,lose,BN,BN,9905,2234,27419,8.15,37629,72.87,0,10,0,1,8,81,0,188,1
+Sarawak,200,Batang Sadong,BN,Nancy Shukri,BN,win,BN,BN,12328,14208,17066,83.25,23213,73.52,0,5,0,0,70,24,0,103,1
+Sarawak,200,Batang Sadong,PH,Othman Mustapha @ Mos,PKR,lose,BN,BN,12328,1880,17066,11.02,23213,73.52,0,5,0,0,70,24,0,103,1
+Sarawak,200,Batang Sadong,GS,Asan Singkro,PAS,lose,BN,BN,12328,978,17066,5.73,23213,73.52,0,5,0,0,70,24,0,103,1
+Sarawak,201,Batang Lupar,BN,Rohani Karim,BN,win,BN,BN,10277,14204,20151,70.49,29811,67.6,0,3,0,0,67,30,0,7,2
+Sarawak,201,Batang Lupar,GS,Wan Abdillah Wan Ahmad,PAS,lose,BN,BN,10277,3927,20151,19.49,29811,67.6,0,3,0,0,67,30,0,7,2
+Sarawak,201,Batang Lupar,PH,Narudin Mentali,PKR,lose,BN,BN,10277,2020,20151,10.02,29811,67.6,0,3,0,0,67,30,0,7,2
+Sarawak,202,Sri Aman,BN,Masir Kujat,BN,win,BN,BN,5820,14141,23000,61.48,33016,69.66,0,17,0,1,10,72,0,1248,1
+Sarawak,202,Sri Aman,PH,Norina Umoi Anak Utot,PKR,lose,BN,BN,5820,8321,23000,36.18,33016,69.66,0,17,0,1,10,72,0,1248,1
+Sarawak,202,Sri Aman,PBDSB,Cobbold Lusoi,PBDSB,lose,BN,BN,5820,538,23000,2.34,33016,69.66,0,17,0,1,10,72,0,1248,1
+Sarawak,203,Lubok Antu,Others,Tambat @ Jugah AK Muyang,IND,win,IND,IND,1059,5834,14551,40.09,20801,69.95,0,8,0,1,2,90,0,60,1
+Sarawak,203,Lubok Antu,BN,Robert Pasang Alam,BN,lose,IND,IND,1059,4775,14551,32.82,20801,69.95,0,8,0,1,2,90,0,60,1
+Sarawak,203,Lubok Antu,PH,Nicholas Bawin Anggat,PKR,lose,IND,IND,1059,3942,14551,27.09,20801,69.95,0,8,0,1,2,90,0,60,1
+Sarawak,204,Betong,BN,Robert Lawson Chuat,BN,win,BN,BN,8116,12517,20720,60.41,29145,71.09,0,7,0,0,38,55,0,129,0
+Sarawak,204,Betong,Others,Abang Ahmad Abang Suni,IND,lose,BN,BN,8116,4401,20720,21.24,29145,71.09,0,7,0,0,38,55,0,129,0
+Sarawak,204,Betong,PH,Noel Changgai Bucking,PKR,lose,BN,BN,8116,3802,20720,18.35,29145,71.09,0,7,0,0,38,55,0,129,0
+Sarawak,205,Saratok,PH,Ali Biju ,PKR,win,PKR,PH,989,11848,22707,52.18,30517,74.41,0,6,0,1,36,57,0,132,1
+Sarawak,205,Saratok,BN,Jagah @ Subeng Mula,BN,lose,PKR,PH,989,10859,22707,47.82,30517,74.41,0,6,0,1,36,57,0,132,1
+Sarawak,206,Tanjong Manis,BN,Yusuf Abd Wahab,BN,win,BN,BN,8674,11402,14130,80.69,21899,64.52,0,5,0,1,26,69,0,4,0
+Sarawak,206,Tanjong Manis,PH,Mohamad Fadillah Sabali,PKR,lose,BN,BN,8674,2728,14130,19.31,21899,64.52,0,5,0,1,26,69,0,4,0
+Sarawak,207,Igan,BN,Ahmad Johnie Zawawi,BN,win,BN,BN,8495,10538,12581,83.76,19592,64.21,0,4,0,0,7,89,0,88,1
+Sarawak,207,Igan,PH,Andri Zulkarnaen Hamden,PKR,lose,BN,BN,8495,2043,12581,16.24,19592,64.21,0,4,0,0,7,89,0,88,1
+Sarawak,208,Sarikei,PH,Wong Ling Biu,DAP,win,DAP,PH,2570,16327,30476,53.57,39561,77.04,0,63,0,1,5,32,0,372,0
+Sarawak,208,Sarikei,BN,Huang Tiong Sii,BN,lose,DAP,PH,2570,13757,30476,45.14,39561,77.04,0,63,0,1,5,32,0,372,0
+Sarawak,208,Sarikei,PBK,Wong Chin King,PBK,lose,DAP,PH,2570,392,30476,1.29,39561,77.04,0,63,0,1,5,32,0,372,0
+Sarawak,209,Julau,Others,Larry Soon @ Larry Sng Wei Shien,IND,win,IND,IND,1931,10105,18279,55.28,25380,72.02,0,5,0,2,1,93,0,56,0
+Sarawak,209,Julau,BN,Joseph Salang Gandum,BN,lose,IND,IND,1931,8174,18279,44.72,25380,72.02,0,5,0,2,1,93,0,56,0
+Sarawak,210,Kanowit,BN,Ago Dagang,BN,win,BN,BN,4312,9552,14792,64.58,21022,70.36,0,12,0,1,2,86,0,72,1
+Sarawak,210,Kanowit,PH,Satu Anchom,PKR,lose,BN,BN,4312,5240,14792,35.42,21022,70.36,0,12,0,1,2,86,0,72,1
+Sarawak,211,Lanang,PH,Alice Lau Kiong Yieng,DAP,win,DAP,PH,14546,29905,45892,65.16,61973,74.05,0,69,0,1,4,27,0,1250,5
+Sarawak,211,Lanang,BN,Kong Sien Chiu,BN,lose,DAP,PH,14546,15359,45892,33.47,61973,74.05,0,69,0,1,4,27,0,1250,5
+Sarawak,211,Lanang,PEACE,Priscilla Lau,PEACE,lose,DAP,PH,14546,628,45892,1.37,61973,74.05,0,69,0,1,4,27,0,1250,5
+Sarawak,212,Sibu,PH,Oscar Ling Chai Yew,DAP,win,DAP,PH,11422,33811,56753,59.58,74149,76.54,0,63,0,1,12,25,0,3188,10
+Sarawak,212,Sibu,BN,Wong Kee Yew,BN,lose,DAP,PH,11422,22389,56753,39.45,74149,76.54,0,63,0,1,12,25,0,3188,10
+Sarawak,212,Sibu,PEACE,Tiew Yen Houng,PEACE,lose,DAP,PH,11422,377,56753,0.66,74149,76.54,0,63,0,1,12,25,0,3188,10
+Sarawak,212,Sibu,STAR,Tiong Ing Tung,STAR,lose,DAP,PH,11422,176,56753,0.31,74149,76.54,0,63,0,1,12,25,0,3188,10
+Sarawak,213,Mukah,BN,Hanifah Hajar Taib,BN,win,BN,BN,7000,13853,20706,66.9,30608,67.65,0,9,0,1,7,84,0,204,1
+Sarawak,213,Mukah,PH,Abdul Jalil Bujang,PKR,lose,BN,BN,7000,6853,20706,33.1,30608,67.65,0,9,0,1,7,84,0,204,1
+Sarawak,214,Selangau,PH,Baru Bian,PKR,win,PKR,PH,486,11228,21970,51.11,30026,73.17,0,3,0,1,1,94,0,75,0
+Sarawak,214,Selangau,BN,Rita Sarimah Patrick Insol,BN,lose,PKR,PH,486,10742,21970,48.89,30026,73.17,0,3,0,1,1,94,0,75,0
+Sarawak,215,Kapit,BN,Alexander Nanta Linggi,BN,win,BN,BN,10479,14302,18125,78.91,30658,59.12,0,9,0,1,3,87,0,157,1
+Sarawak,215,Kapit,PH,Paren Nyawi,DAP,lose,BN,BN,10479,3823,18125,21.09,30658,59.12,0,9,0,1,3,87,0,157,1
+Sarawak,216,Hulu Rajang,BN,Ugak Kumbong,BN,win,BN,BN,6315,11834,17353,68.2,27520,63.06,0,2,0,1,1,95,0,66,0
+Sarawak,216,Hulu Rajang,PH,Abun Sui Anyit,PKR,lose,BN,BN,6315,5519,17353,31.8,27520,63.06,0,2,0,1,1,95,0,66,0
+Sarawak,217,Bintulu,BN,Tiong King Sing,BN,win,BN,BN,7022,27076,47458,57.05,65049,72.96,0,29,0,1,11,60,0,548,3
+Sarawak,217,Bintulu,PH,Chiew Chan Yew,DAP,lose,BN,BN,7022,20054,47458,42.26,65049,72.96,0,29,0,1,11,60,0,548,3
+Sarawak,217,Bintulu,STAR,Chieng Lea Phing,STAR,lose,BN,BN,7022,328,47458,0.69,65049,72.96,0,29,0,1,11,60,0,548,3
+Sarawak,218,Sibuti,BN,Lukanisman Awang Sauni,BN,win,BN,BN,3676,12214,22369,54.6,31868,70.19,0,22,0,1,24,54,0,967,2
+Sarawak,218,Sibuti,PH,Jemat Panjang,PKR,lose,BN,BN,3676,8538,22369,38.17,31868,70.19,0,22,0,1,24,54,0,967,2
+Sarawak,218,Sibuti,GS,Zulaihi Bakar,PAS,lose,BN,BN,3676,1617,22369,7.23,31868,70.19,0,22,0,1,24,54,0,967,2
+Sarawak,219,Miri,PH,Michael Teo Yu Keng,PKR,win,BN,BN,13663,35739,57815,61.82,80386,71.92,0,55,0,1,16,28,0,995,11
+Sarawak,219,Miri,BN,Sebastian Ting Chiew Yew,BN,lose,BN,BN,13663,22076,57815,38.18,80386,71.92,0,55,0,1,16,28,0,995,11
+Sarawak,220,Baram,BN,Anyi Ngau,BN,win,BN,BN,1990,12171,22352,54.45,35685,62.64,0,8,0,1,5,86,0,90,1
+Sarawak,220,Baram,PH,Roland Engan,PKR,lose,BN,BN,1990,10181,22352,45.55,35685,62.64,0,8,0,1,5,86,0,90,1
+Sarawak,221,Limbang,BN,Hasbi Habibollah,BN,win,BN,BN,7710,12589,17468,72.07,26409,66.14,0,18,0,1,28,53,0,376,2
+Sarawak,221,Limbang,PH,Ricardo Osmund Yampil Baba,PKR,lose,BN,BN,7710,4879,17468,27.93,26409,66.14,0,18,0,1,28,53,0,376,2
+Sarawak,222,Lawas,BN,Henry Sum Agong,BN,win,BN,BN,6000,10037,14250,70.44,21297,66.91,0,10,0,1,41,49,0,119,1
+Sarawak,222,Lawas,PH,Danny Piri,PKR,lose,BN,BN,6000,4037,14250,28.33,21297,66.91,0,10,0,1,41,49,0,119,1
+Sarawak,222,Lawas,Others,Mohamad Brahim,IND,lose,BN,BN,6000,176,14250,1.24,21297,66.91,0,10,0,1,41,49,0,119,1
