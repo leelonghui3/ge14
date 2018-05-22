@@ -1,0 +1,223 @@
+const_name,won_coallition,winlose,total_voters,KodPAR
+Bangi,PH,win,178790,102
+Damansara,PH,win,164322,106
+Klang,PH,win,149348,110
+Kota Raja,PH,win,149021,111
+Subang,PH,win,146422,104
+Gombak,PH,win,141112,98
+Petaling Jaya ,PH,win,140920,105
+Iskandar Puteri,PH,win,138299,162
+Kota Melaka,PH,win,126848,138
+Kapar,PH,win,124983,109
+Pasir Gudang,PH,win,124172,159
+Tebrau,PH,win,123033,158
+Selayang,PH,win,116176,97
+Sungai Petani,PH,win,112577,15
+Tumpat,PAS,win,110924,19
+Seremban,PH,win,110168,128
+Tambun,PH,win,107763,63
+Kemaman,PAS,win,107593,40
+Shah Alam,PH,win,107316,108
+Baling,BN,win,107213,16
+Pulai,PH,win,106268,161
+Marang,PAS,win,104898,37
+Sepang,PH,win,104508,113
+Kuala Terengganu,PAS,win,103611,36
+Rasah,PH,win,102838,130
+Kuala Langat,PH,win,102406,112
+Hulu Langat,PH,win,102363,101
+Johor Bahru,PH,win,101409,160
+Pandan,PH,win,101319,100
+Hulu Selangor,PH,win,100990,94
+Gopeng,PH,win,99167,71
+Kulai,PH,win,99147,163
+Batu Pahat,PH,win,98543,150
+Kuala Kedah,PH,win,97753,10
+Kluang,PH,win,96915,152
+Puchong,PH,win,96437,103
+Bachok,PAS,win,92606,25
+Ampang,PH,win,91737,99
+Bukit Gelugor,PH,win,91595,51
+Ipoh Timor,PH,win,91486,64
+Bayan Baru,PH,win,90780,52
+Taiping,PH,win,90729,60
+Sungai Buloh,PH,win,90707,107
+Dungun,PAS,win,90506,39
+Hang Tuah Jaya,PH,win,89364,137
+Bukit Mertajam,PH,win,88998,45
+Pekan,BN,win,88899,85
+Kota Bharu,PAS,win,88708,21
+Wangsa Maju,PH,win,88482,116
+Rembau,BN,win,88365,131
+Merbok,PH,win,87782,14
+Pokok Sena,PH,win,86892,8
+Besut,BN,win,86627,33
+Seputeh,PH,win,86256,122
+Setiu,PAS,win,86247,34
+Pasir Puteh,PAS,win,85411,28
+Ipoh Barat,PH,win,84874,65
+Padang Serai,PH,win,84834,17
+Kuala Nerus,PAS,win,83663,35
+Bandar Tun Razak,PH,win,83650,124
+Tangga Batu,PH,win,83213,136
+Kubang Kerian,PAS,win,82018,24
+Bandar Kuching,PH,win,81856,195
+Permatang Pauh,PH,win,81789,44
+Batu Gajah,PH,win,81399,66
+Miri,BN,win,80386,219
+Lembah Pantai,PH,win,80346,121
+Alor Setar,PH,win,80272,9
+Jerai,PAS,win,79976,12
+Beruas,PH,win,79794,68
+Cheras,PH,win,78819,123
+Segambut,PH,win,77956,117
+Ledang,PH,win,77474,144
+Indera Mahkota,PH,win,77208,82
+Jelutong,PH,win,76991,50
+Batu,IND,win,76328,115
+Pengkalan Chepa,PAS,win,75384,20
+Port Dickson,PH,win,75212,132
+Temerloh,PH,win,75081,88
+Bukit Bendera,PH,win,75069,48
+Pendang,PAS,win,74867,11
+Sibu,PH,win,74149,212
+Bakri,PH,win,73883,145
+Kubang Pasu,PH,win,73881,6
+Hulu Terengganu,BN,win,73487,38
+Jasin,BN,win,73432,139
+Nibong Tebal,PH,win,73383,47
+Tanah Merah,BN,win,73172,27
+Kepong,PH,win,72696,114
+Setiawangsa,PH,win,72136,118
+Jempol,BN,win,72122,127
+Bagan,PH,win,71583,43
+Pasir Mas,PAS,win,71222,22
+Alor Gajah,PH,win,70364,135
+Kuala Krai,PAS,win,70348,31
+Bukit Gantang,BN,win,69873,59
+Bukit Bintang,PH,win,69526,120
+Kampar,PH,win,69436,70
+Kuala Selangor,PH,win,69397,96
+Tanjong Malim,PH,win,68468,77
+Machang,BN,win,68387,29
+Bentong,PH,win,67359,89
+Lumut,PH,win,67157,74
+Kulim-Bandar Baharu,PH,win,66587,18
+Teluk Intan,PH,win,66487,76
+Stampin,PH,win,66240,196
+Rantau Panjang,PAS,win,66115,23
+Batu Kawan,PH,win,65394,46
+Ketereh,BN,win,65238,26
+Bintulu,BN,win,65049,217
+Jerantut,BN,win,63609,81
+Kuantan,PH,win,62696,83
+Sepanggar,PH,win,62415,171
+Lanang,PH,win,61973,211
+Rompin,BN,win,61918,91
+Titiwangsa,PH,win,61598,119
+Silam,PH,win,60942,188
+Tasek Gelugor,BN,win,60850,42
+Tampin,PH,win,60765,133
+Kepala Batas,BN,win,60523,41
+Tawau,PH,win,59919,190
+Parit Sulong,BN,win,59609,147
+Bagan Serai,BN,win,59293,58
+Balik Pulau,PH,win,59086,53
+Bera,BN,win,58711,90
+Petra Jaya,BN,win,57925,194
+Kota Belud,PH,win,57919,169
+Raub,PH,win,57723,80
+Kota Kinabalu,PH,win,56220,172
+Kangar,PH,win,55938,2
+Pontian,BN,win,55570,164
+Segamat,PH,win,55350,140
+Paya Besar,BN,win,55135,84
+Sungai Siput,PH,win,55002,62
+Pasir Salak,BN,win,54671,73
+Tuaran,BN,win,54400,170
+Jerlun,PH,win,54132,5
+Tanjung Piai,PH,win,53528,165
+Penampang,PH,win,53131,174
+Gua Musang,BN,win,52524,32
+Kudat,BN,win,52251,167
+Kalabakan,PH,win,52199,191
+Sri Gading,PH,win,52119,149
+Parit Buntar,PH,win,51860,57
+Pagoh,PH,win,51512,143
+Masjid Tanah,BN,win,51441,134
+Keningau,SOLIDARITI,win,51177,180
+Muar,PH,win,50843,146
+Sik,PAS,win,50385,13
+Kuala Pilah,PH,win,49801,129
+Tanjong,PH,win,49586,49
+Larut,BN,win,49453,56
+Sungai Besar,PH,win,48739,93
+Jelebu,BN,win,48522,126
+Semporna,PH,win,48248,189
+Arau,BN,win,48187,3
+Mersing,BN,win,48176,154
+Libaran,BN,win,47914,184
+Jeli,BN,win,47470,30
+Bagan Datuk,BN,win,47309,75
+Kuala Krau,BN,win,47264,87
+Tanjong Karang,BN,win,47198,95
+Tapah,BN,win,47128,72
+Kota Marudu,BN,win,47007,168
+Kota Tinggi,BN,win,46677,156
+Padang Terap,BN,win,46644,7
+Kota Samarahan,BN,win,46300,197
+Puncak Borneo,PH,win,46180,198
+Ayer Hitam,BN,win,46157,148
+Padang Besar,BN,win,46096,1
+Santubong,BN,win,45628,193
+Sekijang,PH,win,45596,141
+Tenggara,BN,win,44749,155
+Sembrong,BN,win,44137,153
+Simpang Renggam,PH,win,43998,151
+Ranau,PH,win,43706,179
+Papar,PH,win,43586,175
+Langkawi,PH,win,42697,4
+Putatan,PH,win,41312,173
+Maran,BN,win,41036,86
+Sabak Bernam,BN,win,40863,92
+Pengerang,BN,win,40479,157
+Labis,PH,win,40356,142
+Sandakan,PH,win,39777,186
+Sarikei,PH,win,39561,208
+Serian,BN,win,37629,199
+Kuala Kangsar,BN,win,36954,67
+Parit,BN,win,35910,69
+Gerik,BN,win,35903,54
+Baram,BN,win,35685,220
+Lipis,BN,win,35294,79
+Beaufort,BN,win,33342,177
+Sri Aman,BN,win,33016,202
+Batu Sapi,PH,win,32574,185
+Cameron Highlands,BN,win,32048,78
+Sipitang,BN,win,31882,178
+Sibuti,BN,win,31868,218
+Pensiangan,BN,win,31377,182
+Padang Rengas,BN,win,30996,61
+Kapit,BN,win,30658,215
+Mukah,BN,win,30608,213
+Saratok,PH,win,30517,205
+Selangau,PH,win,30026,214
+Batang Lupar,BN,win,29811,201
+Lenggong,BN,win,29752,55
+Kimanis,BN,win,29618,176
+Mas Gading,PH,win,29617,192
+Tenom,PH,win,29182,181
+Betong,BN,win,29145,204
+Kinabatangan,BN,win,28730,187
+Beluran,BN,win,28509,183
+Labuan,BN,win,28356,166
+Hulu Rajang,BN,win,27520,216
+Putrajaya,BN,win,27306,125
+Limbang,BN,win,26409,221
+Julau,IND,win,25380,209
+Batang Sadong,BN,win,23213,200
+Tanjong Manis,BN,win,21899,206
+Lawas,BN,win,21297,222
+Kanowit,BN,win,21022,210
+Lubok Antu,IND,win,20801,203
+Igan,BN,win,19592,207

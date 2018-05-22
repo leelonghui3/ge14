@@ -1,6 +1,7 @@
 library(readr)
 library(dplyr)
 library(ggplot2)
+library(r2d3)
 
 ge13 <- read.csv("ge13.csv")
 ge14 <- read.csv('ge14.csv')
@@ -116,7 +117,7 @@ summary(ge14_6wayfight_won_coallition)
 const_difference <- ge14 %>%
   select(KodPAR, const_name, won_coallition, winlose, total_voters) %>%
   filter(winlose == "win") %>%
-  arrange(total_voters)
+  arrange(desc(total_voters))
 
 summary(const_difference)
 
@@ -144,3 +145,13 @@ solidarity_seat <- ge14 %>%
   select(KodPAR, const_name, won_coallition, winlose, total_voters) %>%
   filter(winlose == "win" & won_coallition == "SOLIDARITI") %>%
   arrange(total_voters)
+
+###########
+#export csv
+###########
+
+write.csv(const_difference, "const_difference.csv")
+
+#################
+#d3 column chart#
+#################
