@@ -67,128 +67,124 @@
     <!-- <div id="const_chart" align="center"></div> -->
   </div>
   <script>
-    $(document).ready(function () {
+    var margin = 60;
+    // var width = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) - margin;
+    // var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    //
+    // var width = 1400;
+    // var height = 600;
 
+    var viewportWidth = $(window).width();
+    var viewportHeight = $(window).height() / 2;
+    var width = viewportWidth * .90;
+    var height = width / 1.85;
 
-      var margin = 60;
-      // var width = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) - margin;
-      // var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-      //
-      // var width = 1400;
-      // var height = 600;
+    var mapContainer = d3.select('#map')
+      .append('svg')
+      .attr('width', width)
+      .attr('height', height)
+      .append('g');
 
-      var viewportWidth = $(window).width();
-      var viewportHeight = $(window).height() / 2;
-      var width = viewportWidth * .90;
-      var height = width / 1.85;
+    var projection = d3.geoMercator()
 
-      var mapContainer = d3.select('#map')
-        .append('svg')
-        .attr('width', width)
-        .attr('height', height)
-        .append('g');
+    var path = d3.geoPath()
+      .projection(projection);
 
-      var projection = d3.geoMercator()
+    var Kod_PAR = d3.map();
+    var constByKodPAR = d3.map();
+    var wonCoallitionByKodPAR = d3.map();
+    var winnerByKodPAR = d3.map();
+    var wonPartyByKodPAR = d3.map();
 
-      var path = d3.geoPath()
-        .projection(projection);
+    var constName = mapContainer.append('text')
+      .attr('text-anchor', 'middle')
+      .attr('y', 30)
+      .attr('x', (width) / 2)
+      .text('');
 
-      var Kod_PAR = d3.map();
-      var constByKodPAR = d3.map();
-      var wonCoallitionByKodPAR = d3.map();
-      var winnerByKodPAR = d3.map();
-      var wonPartyByKodPAR = d3.map();
+    var wonCoallition = mapContainer.append('text')
+      .attr('text-anchor', 'start')
+      .attr('y', 50)
+      .attr('x', (width) * 0.4)
+      .text('');
 
-      var constName = mapContainer.append('text')
-        .attr('text-anchor', 'middle')
-        .attr('y', 30)
-        .attr('x', (width) / 2)
-        .text('');
+    var winner = mapContainer.append('text')
+      .attr('text-anchor', 'start')
+      .attr('y', 70)
+      .attr('x', (width) * 0.4)
+      .text('');
 
-      var wonCoallition = mapContainer.append('text')
-        .attr('text-anchor', 'start')
-        .attr('y', 50)
-        .attr('x', (width) * 0.4)
-        .text('');
-
-      var winner = mapContainer.append('text')
-        .attr('text-anchor', 'start')
-        .attr('y', 70)
-        .attr('x', (width) * 0.4)
-        .text('');
-
-      d3.queue()
-        .defer(d3.json, 'data/Malaysia_Parliamentary_Boundaries_2018.json')
-        .defer(d3.csv, 'data/ge14.csv', function (d) {
-          // console.log(d['State']);
-          constByKodPAR.set(d['KodPAR'], d['const_name']);
-          wonCoallitionByKodPAR.set(d['KodPAR'], d['won_coallition']);
-          wonPartyByKodPAR.set(d['KodPAR'], d['won_party']);
-          
-          // Only allow winner name displayed
-          if (d['won_party'] === d['party']) {
-            winnerByKodPAR.set(d['KodPAR'], d['candidate_name']);
-          }
-        })
-        .await(ready);
-
-      function ready(error, map, ge14) {
-        if (error) {
-          throw error;
+    d3.queue()
+      .defer(d3.json, 'data/Malaysia_Parliamentary_Boundaries_2018.json')
+      .defer(d3.csv, 'data/ge14.csv', function (d) {
+        // console.log(d['State']);
+        constByKodPAR.set(d['KodPAR'], d['const_name']);
+        wonCoallitionByKodPAR.set(d['KodPAR'], d['won_coallition']);
+        wonPartyByKodPAR.set(d['KodPAR'], d['won_party']);
+        
+        // Only allow winner name displayed
+        if (d['won_party'] === d['party']) {
+          winnerByKodPAR.set(d['KodPAR'], d['candidate_name']);
         }
+      })
+      .await(ready);
 
-        console.log(map);
-        console.log(ge14);
-
-        setProjection(map, 'Malaysia_Parliamentary_Boundaries_2018');
-
-        var const_map = topojson.feature(map, map.objects.Malaysia_Parliamentary_Boundaries_2018).features;
-
-        console.log(const_map);
-
-        mapContainer.selectAll('.constituency')
-          .data(const_map)
-          .enter()
-          .append('path')
-          // set colour for each constituency according to the winning coallition
-          .attr('class', function (d) {
-            if (wonCoallitionByKodPAR.get(d.properties.KodPAR) === 'PH')
-              return 'ph'
-            else if (wonCoallitionByKodPAR.get(d.properties.KodPAR) === 'PAS')
-              return 'pas'
-            else if (wonCoallitionByKodPAR.get(d.properties.KodPAR) === 'BN')
-              return 'bn'
-            else if (wonCoallitionByKodPAR.get(d.properties.KodPAR) === 'IND')
-              return 'ind'
-            else { return 'solidariti' }
-          })
-          .on('mouseover', function (d) {
-            showInfo.call(this, d);
-          })
-          .on('mouseout', function (d) {
-            removeInfo();
-          })
-          .attr('d', path);
+    function ready(error, map, ge14) {
+      if (error) {
+        throw error;
       }
 
-      function setProjection(map, code) {
-        projection.scale(1).translate([0, 0]);
-        var b = path.bounds(topojson.feature(map, map.objects[code]));
-        var s = .95 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height);
-        var t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
-        projection.scale(s).translate(t);
-      }
+      console.log(map);
+      console.log(ge14);
 
-      function showInfo(d) {
-        constName.text(constByKodPAR.get(d.properties.KodPAR));
-        winner.text('Winner: ' + winnerByKodPAR.get(d.properties.KodPAR) + ' (' + wonCoallitionByKodPAR.get(d.properties.KodPAR) + ')');
-      }
+      setProjection(map, 'Malaysia_Parliamentary_Boundaries_2018');
 
-      function removeInfo() {
-        constName.text('');
-        winner.text('')
-      }
-    });
+      var const_map = topojson.feature(map, map.objects.Malaysia_Parliamentary_Boundaries_2018).features;
+
+      console.log(const_map);
+
+      mapContainer.selectAll('.constituency')
+        .data(const_map)
+        .enter()
+        .append('path')
+        // set colour for each constituency according to the winning coallition
+        .attr('class', function (d) {
+          if (wonCoallitionByKodPAR.get(d.properties.KodPAR) === 'PH')
+            return 'ph'
+          else if (wonCoallitionByKodPAR.get(d.properties.KodPAR) === 'PAS')
+            return 'pas'
+          else if (wonCoallitionByKodPAR.get(d.properties.KodPAR) === 'BN')
+            return 'bn'
+          else if (wonCoallitionByKodPAR.get(d.properties.KodPAR) === 'IND')
+            return 'ind'
+          else { return 'solidariti' }
+        })
+        .on('mouseover', function (d) {
+          showInfo.call(this, d);
+        })
+        .on('mouseout', function (d) {
+          removeInfo();
+        })
+        .attr('d', path);
+    }
+
+    function setProjection(map, code) {
+      projection.scale(1).translate([0, 0]);
+      var b = path.bounds(topojson.feature(map, map.objects[code]));
+      var s = .95 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height);
+      var t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
+      projection.scale(s).translate(t);
+    }
+
+    function showInfo(d) {
+      constName.text(constByKodPAR.get(d.properties.KodPAR));
+      winner.text('Winner: ' + winnerByKodPAR.get(d.properties.KodPAR) + ' (' + wonCoallitionByKodPAR.get(d.properties.KodPAR) + ')');
+    }
+
+    function removeInfo() {
+      constName.text('');
+      winner.text('')
+    }
 
     // responsive
     // d3.select(window).on('resize', resize);
