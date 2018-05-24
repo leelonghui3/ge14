@@ -94,6 +94,7 @@
     var constByKodPAR = d3.map();
     var wonCoallitionByKodPAR = d3.map();
     var winnerByKodPAR = d3.map();
+    var losersByKodPAR = d3.map();
     var wonPartyByKodPAR = d3.map();
 
     var constName = mapContainer.append('text')
@@ -114,9 +115,29 @@
       .attr('x', (width) * 0.4)
       .text('');
 
+    var loser = function(n) {
+      n = n || 1;
+      var extraHeight = 20 * n;
+      return mapContainer.append('text')
+      .classed('losers', true)
+      .attr('text-anchor', 'start')
+      .attr('y', extraHeight + 70)
+      .attr('x', (width) * 0.4)
+      .text('');
+    }
+
+    var results = {};
     d3.queue()
       .defer(d3.json, 'data/Malaysia_Parliamentary_Boundaries_2018.json')
       .defer(d3.csv, 'data/ge14.csv', function (d) {
+        if (!results[d['KodPAR']]) {
+          results[d['KodPAR']] = {
+            winner: '',
+            losers: [],
+          };
+        }
+
+
         // console.log(d['State']);
         constByKodPAR.set(d['KodPAR'], d['const_name']);
         wonCoallitionByKodPAR.set(d['KodPAR'], d['won_coallition']);
@@ -124,8 +145,15 @@
         
         // Only allow winner name displayed
         if (d['won_party'] === d['party']) {
-          winnerByKodPAR.set(d['KodPAR'], d['candidate_name']);
+          results[d['KodPAR']].winner = d['candidate_name'];
+        } else {
+          results[d['KodPAR']].losers.push({
+            name: d['candidate_name'],
+            party: d['party'],
+          });
         }
+
+        winnerByKodPAR.set(d['KodPAR'], results[d['KodPAR']]);
       })
       .await(ready);
 
@@ -178,12 +206,21 @@
 
     function showInfo(d) {
       constName.text(constByKodPAR.get(d.properties.KodPAR));
-      winner.text('Winner: ' + winnerByKodPAR.get(d.properties.KodPAR) + ' (' + wonCoallitionByKodPAR.get(d.properties.KodPAR) + ')');
+      var candidates = winnerByKodPAR.get(d.properties.KodPAR);
+      console.log(candidates);
+      winner.text('Winner: ' + candidates.winner + ' (' + wonCoallitionByKodPAR.get(d.properties.KodPAR) + ')');
+
+      
+      var losers = candidates.losers;
+      losers.forEach(function(candidate, index) {
+        loser(index+1).text('Loser: ' + candidate.name + ' (' + candidate.party + ')');
+      });
     }
 
     function removeInfo() {
       constName.text('');
-      winner.text('')
+      winner.text('');
+      mapContainer.selectAll('.losers').text('');
     }
 
     // responsive
