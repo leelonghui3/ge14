@@ -29,28 +29,45 @@
     }
 
     /* BN's seats colour */
+
     .bn {
       fill: #092781;
     }
 
     /* PH's seats colour */
+
     .ph {
       fill: #ED1C24;
     }
 
     /* PAS' seats colour */
+
     .pas {
       fill: #009000;
     }
 
     /* Independent candidates' seats colour */
+
     .ind {
       fill: #E6E6E6;
     }
 
     /* Solidariti's seat colour */
+
     .solidariti {
       fill: #78D7F5;
+    }
+
+    .bar {
+      fill: steelblue;
+    }
+
+    .bar:hover {
+      fill: brown;
+    }
+
+    .axis--x path {
+      display: none;
     }
   </style>
 </head>
@@ -58,11 +75,10 @@
 <body>
   <div class="uk-margin-top uk-container uk-container-center uk-container-expand">
     <h2 class="uk-text-center">Title</h2>
-    <div id="map" align="center"></div>
-    <!-- <div id="const_chart" align="center"></div> -->
+    <!-- <div id="map" align="center"></div> -->
+    <div id="const_chart" align="center"></div>
   </div>
   <script>
-
     var margin = 60;
     // var width = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) - margin;
     // var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
@@ -113,7 +129,6 @@
     d3.queue()
       .defer(d3.json, 'data/Malaysia_Parliamentary_Boundaries_2018.json')
       .defer(d3.csv, 'data/ge14.csv', function(d) {
-        console.log(d['State']);
         constByKodPAR.set(d['KodPAR'], d['const_name']);
         wonCoallitionByKodPAR.set(d['KodPAR'], d['won_coallition']);
         wonPartyByKodPAR.set(d['KodPAR'], d['won_party']);
@@ -127,14 +142,14 @@
         throw error;
       }
 
-      console.log(map);
-      console.log(ge14);
+      // console.log(map);
+      // console.log(ge14);
 
       setProjection(map, 'Malaysia_Parliamentary_Boundaries_2018');
 
       var const_map = topojson.feature(map, map.objects.Malaysia_Parliamentary_Boundaries_2018).features;
 
-      console.log(const_map);
+      // console.log(const_map);
 
       mapContainer.selectAll('.constituency')
         .data(const_map)
@@ -143,14 +158,16 @@
         // set colour for each constituency according to the winning coallition
         .attr('class', function(d) {
           if (wonCoallitionByKodPAR.get(d.properties.KodPAR) === 'PH')
-          return 'ph'
+            return 'ph'
           else if (wonCoallitionByKodPAR.get(d.properties.KodPAR) === 'PAS')
-          return 'pas'
+            return 'pas'
           else if (wonCoallitionByKodPAR.get(d.properties.KodPAR) === 'BN')
-          return 'bn'
+            return 'bn'
           else if (wonCoallitionByKodPAR.get(d.properties.KodPAR) === 'IND')
-          return 'ind'
-          else { return 'solidariti' }
+            return 'ind'
+          else {
+            return 'solidariti'
+          }
         })
         .on('mouseover', function(d) {
           showInfo.call(this, d);
@@ -171,8 +188,7 @@
 
     function showInfo(d) {
       constName.text(constByKodPAR.get(d.properties.KodPAR));
-      winner.text('Winner: ' + winnerByKodPAR.get(d.properties.KodPAR) + ' (' + wonCoallitionByKodPAR.get(d.properties.KodPAR) + ')'
-      );
+      winner.text('Winner: ' + winnerByKodPAR.get(d.properties.KodPAR) + ' (' + wonCoallitionByKodPAR.get(d.properties.KodPAR) + ')');
     }
 
     function removeInfo() {
@@ -202,6 +218,8 @@
     //
     // }
   </script>
+
+  <script type="text/javascript" src="js/barchart.js"></script>
 </body>
 
 </html>
