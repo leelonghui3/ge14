@@ -117,32 +117,22 @@
         .attr('x', (width) * 0.4)
         .text('');
 
-      var repeated = {};
-
       d3.queue()
         .defer(d3.json, 'data/Malaysia_Parliamentary_Boundaries_2018.json')
         .defer(d3.csv, 'data/ge14.csv', function (d) {
-          if (!repeated[d.KodPAR]) {
-            repeated[d.KodPAR] = [];
-          }
-          repeated[d.KodPAR].push({
-            id: d.KodPAR,
-            name: d.candidate_name,
-            party: d.party,
-          });
-
-          console.log(d['State']);
-          var candidate = d;
+          // console.log(d['State']);
           constByKodPAR.set(d['KodPAR'], d['const_name']);
           wonCoallitionByKodPAR.set(d['KodPAR'], d['won_coallition']);
           wonPartyByKodPAR.set(d['KodPAR'], d['won_party']);
-          winnerByKodPAR.set(d['KodPAR'], candidate['candidate_name']);
+          
+          // Only allow winner name displayed
+          if (d['won_party'] === d['party']) {
+            winnerByKodPAR.set(d['KodPAR'], d['candidate_name']);
+          }
         })
         .await(ready);
 
       function ready(error, map, ge14) {
-        // display repeated
-        console.log('repeated::', repeated);
         if (error) {
           throw error;
         }
@@ -170,9 +160,7 @@
               return 'bn'
             else if (wonCoallitionByKodPAR.get(d.properties.KodPAR) === 'IND')
               return 'ind'
-            else {
-              return 'solidariti'
-            }
+            else { return 'solidariti' }
           })
           .on('mouseover', function (d) {
             showInfo.call(this, d);
@@ -193,8 +181,7 @@
 
       function showInfo(d) {
         constName.text(constByKodPAR.get(d.properties.KodPAR));
-        winner.text('Winner: ' + winnerByKodPAR.get(d.properties.KodPAR) + ' (' + wonCoallitionByKodPAR.get(d.properties
-          .KodPAR) + ')');
+        winner.text('Winner: ' + winnerByKodPAR.get(d.properties.KodPAR) + ' (' + wonCoallitionByKodPAR.get(d.properties.KodPAR) + ')');
       }
 
       function removeInfo() {
