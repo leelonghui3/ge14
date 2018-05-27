@@ -78,14 +78,6 @@ svg {
   fill: #78D7F5;
 }
 
-.bar {
-  fill: steelblue;
-}
-
-.bar:hover {
-  fill: brown;
-}
-
 .axis--x path {
   display: none;
 }
@@ -96,4 +88,59 @@ svg {
 
 .constituency {
   font-family: 'Varela Round', sans-serif;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.winner {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+}
+
+.majority {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
+.credit, .losers {
+  font-family: 'Open Sans', sans-sans-serif;
+}
+
+.active {
+  fill: #FFFF00;
+}
+
+div.chart-tooltip {
+  position: absolute;
+  text-align: center;
+  width: 150px;
+  height: 90px;
+  padding: 2px;
+  font: 1em 'Open Sans', sans-serif;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  /* border-radius: 8px; */
+  pointer-events: none;
+}
+
+div.map-tooltip {
+  position: absolute;
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  padding: 2px;
+  font: 1em 'Open Sans', sans-serif;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  /* border-radius: 8px; */
+  pointer-events: none;
+}
+
+.yAxis_label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.legend {
+  font-family: 'Open Sans', sans-serif;
 }

@@ -1,223 +1,223 @@
-const_name,won_coallition,winlose,total_voters,KodPAR
-Bangi,PH,win,178790,102
-Damansara,PH,win,164322,106
-Klang,PH,win,149348,110
-Kota Raja,PH,win,149021,111
-Subang,PH,win,146422,104
-Gombak,PH,win,141112,98
-Petaling Jaya ,PH,win,140920,105
-Iskandar Puteri,PH,win,138299,162
-Kota Melaka,PH,win,126848,138
-Kapar,PH,win,124983,109
-Pasir Gudang,PH,win,124172,159
-Tebrau,PH,win,123033,158
-Selayang,PH,win,116176,97
-Sungai Petani,PH,win,112577,15
-Tumpat,PAS,win,110924,19
-Seremban,PH,win,110168,128
-Tambun,PH,win,107763,63
-Kemaman,PAS,win,107593,40
-Shah Alam,PH,win,107316,108
-Baling,BN,win,107213,16
-Pulai,PH,win,106268,161
-Marang,PAS,win,104898,37
-Sepang,PH,win,104508,113
-Kuala Terengganu,PAS,win,103611,36
-Rasah,PH,win,102838,130
-Kuala Langat,PH,win,102406,112
-Hulu Langat,PH,win,102363,101
-Johor Bahru,PH,win,101409,160
-Pandan,PH,win,101319,100
-Hulu Selangor,PH,win,100990,94
-Gopeng,PH,win,99167,71
-Kulai,PH,win,99147,163
-Batu Pahat,PH,win,98543,150
-Kuala Kedah,PH,win,97753,10
-Kluang,PH,win,96915,152
-Puchong,PH,win,96437,103
-Bachok,PAS,win,92606,25
-Ampang,PH,win,91737,99
-Bukit Gelugor,PH,win,91595,51
-Ipoh Timor,PH,win,91486,64
-Bayan Baru,PH,win,90780,52
-Taiping,PH,win,90729,60
-Sungai Buloh,PH,win,90707,107
-Dungun,PAS,win,90506,39
-Hang Tuah Jaya,PH,win,89364,137
-Bukit Mertajam,PH,win,88998,45
-Pekan,BN,win,88899,85
-Kota Bharu,PAS,win,88708,21
-Wangsa Maju,PH,win,88482,116
-Rembau,BN,win,88365,131
-Merbok,PH,win,87782,14
-Pokok Sena,PH,win,86892,8
-Besut,BN,win,86627,33
-Seputeh,PH,win,86256,122
-Setiu,PAS,win,86247,34
-Pasir Puteh,PAS,win,85411,28
-Ipoh Barat,PH,win,84874,65
-Padang Serai,PH,win,84834,17
-Kuala Nerus,PAS,win,83663,35
-Bandar Tun Razak,PH,win,83650,124
-Tangga Batu,PH,win,83213,136
-Kubang Kerian,PAS,win,82018,24
-Bandar Kuching,PH,win,81856,195
-Permatang Pauh,PH,win,81789,44
-Batu Gajah,PH,win,81399,66
-Miri,BN,win,80386,219
-Lembah Pantai,PH,win,80346,121
-Alor Setar,PH,win,80272,9
-Jerai,PAS,win,79976,12
-Beruas,PH,win,79794,68
-Cheras,PH,win,78819,123
-Segambut,PH,win,77956,117
-Ledang,PH,win,77474,144
-Indera Mahkota,PH,win,77208,82
-Jelutong,PH,win,76991,50
-Batu,IND,win,76328,115
-Pengkalan Chepa,PAS,win,75384,20
-Port Dickson,PH,win,75212,132
-Temerloh,PH,win,75081,88
-Bukit Bendera,PH,win,75069,48
-Pendang,PAS,win,74867,11
-Sibu,PH,win,74149,212
-Bakri,PH,win,73883,145
-Kubang Pasu,PH,win,73881,6
-Hulu Terengganu,BN,win,73487,38
-Jasin,BN,win,73432,139
-Nibong Tebal,PH,win,73383,47
-Tanah Merah,BN,win,73172,27
-Kepong,PH,win,72696,114
-Setiawangsa,PH,win,72136,118
-Jempol,BN,win,72122,127
-Bagan,PH,win,71583,43
-Pasir Mas,PAS,win,71222,22
-Alor Gajah,PH,win,70364,135
-Kuala Krai,PAS,win,70348,31
-Bukit Gantang,BN,win,69873,59
-Bukit Bintang,PH,win,69526,120
-Kampar,PH,win,69436,70
-Kuala Selangor,PH,win,69397,96
-Tanjong Malim,PH,win,68468,77
-Machang,BN,win,68387,29
-Bentong,PH,win,67359,89
-Lumut,PH,win,67157,74
-Kulim-Bandar Baharu,PH,win,66587,18
-Teluk Intan,PH,win,66487,76
-Stampin,PH,win,66240,196
-Rantau Panjang,PAS,win,66115,23
-Batu Kawan,PH,win,65394,46
-Ketereh,BN,win,65238,26
-Bintulu,BN,win,65049,217
-Jerantut,BN,win,63609,81
-Kuantan,PH,win,62696,83
-Sepanggar,PH,win,62415,171
-Lanang,PH,win,61973,211
-Rompin,BN,win,61918,91
-Titiwangsa,PH,win,61598,119
-Silam,PH,win,60942,188
-Tasek Gelugor,BN,win,60850,42
-Tampin,PH,win,60765,133
-Kepala Batas,BN,win,60523,41
-Tawau,PH,win,59919,190
-Parit Sulong,BN,win,59609,147
-Bagan Serai,BN,win,59293,58
-Balik Pulau,PH,win,59086,53
-Bera,BN,win,58711,90
-Petra Jaya,BN,win,57925,194
-Kota Belud,PH,win,57919,169
-Raub,PH,win,57723,80
-Kota Kinabalu,PH,win,56220,172
-Kangar,PH,win,55938,2
-Pontian,BN,win,55570,164
-Segamat,PH,win,55350,140
-Paya Besar,BN,win,55135,84
-Sungai Siput,PH,win,55002,62
-Pasir Salak,BN,win,54671,73
-Tuaran,BN,win,54400,170
-Jerlun,PH,win,54132,5
-Tanjung Piai,PH,win,53528,165
-Penampang,PH,win,53131,174
-Gua Musang,BN,win,52524,32
-Kudat,BN,win,52251,167
-Kalabakan,PH,win,52199,191
-Sri Gading,PH,win,52119,149
-Parit Buntar,PH,win,51860,57
-Pagoh,PH,win,51512,143
-Masjid Tanah,BN,win,51441,134
-Keningau,SOLIDARITI,win,51177,180
-Muar,PH,win,50843,146
-Sik,PAS,win,50385,13
-Kuala Pilah,PH,win,49801,129
-Tanjong,PH,win,49586,49
-Larut,BN,win,49453,56
-Sungai Besar,PH,win,48739,93
-Jelebu,BN,win,48522,126
-Semporna,PH,win,48248,189
-Arau,BN,win,48187,3
-Mersing,BN,win,48176,154
-Libaran,BN,win,47914,184
-Jeli,BN,win,47470,30
-Bagan Datuk,BN,win,47309,75
-Kuala Krau,BN,win,47264,87
-Tanjong Karang,BN,win,47198,95
-Tapah,BN,win,47128,72
-Kota Marudu,BN,win,47007,168
-Kota Tinggi,BN,win,46677,156
-Padang Terap,BN,win,46644,7
-Kota Samarahan,BN,win,46300,197
-Puncak Borneo,PH,win,46180,198
-Ayer Hitam,BN,win,46157,148
-Padang Besar,BN,win,46096,1
-Santubong,BN,win,45628,193
-Sekijang,PH,win,45596,141
-Tenggara,BN,win,44749,155
-Sembrong,BN,win,44137,153
-Simpang Renggam,PH,win,43998,151
-Ranau,PH,win,43706,179
-Papar,PH,win,43586,175
-Langkawi,PH,win,42697,4
-Putatan,PH,win,41312,173
-Maran,BN,win,41036,86
-Sabak Bernam,BN,win,40863,92
-Pengerang,BN,win,40479,157
-Labis,PH,win,40356,142
-Sandakan,PH,win,39777,186
-Sarikei,PH,win,39561,208
-Serian,BN,win,37629,199
-Kuala Kangsar,BN,win,36954,67
-Parit,BN,win,35910,69
-Gerik,BN,win,35903,54
-Baram,BN,win,35685,220
-Lipis,BN,win,35294,79
-Beaufort,BN,win,33342,177
-Sri Aman,BN,win,33016,202
-Batu Sapi,PH,win,32574,185
-Cameron Highlands,BN,win,32048,78
-Sipitang,BN,win,31882,178
-Sibuti,BN,win,31868,218
-Pensiangan,BN,win,31377,182
-Padang Rengas,BN,win,30996,61
-Kapit,BN,win,30658,215
-Mukah,BN,win,30608,213
-Saratok,PH,win,30517,205
-Selangau,PH,win,30026,214
-Batang Lupar,BN,win,29811,201
-Lenggong,BN,win,29752,55
-Kimanis,BN,win,29618,176
-Mas Gading,PH,win,29617,192
-Tenom,PH,win,29182,181
-Betong,BN,win,29145,204
-Kinabatangan,BN,win,28730,187
-Beluran,BN,win,28509,183
-Labuan,BN,win,28356,166
-Hulu Rajang,BN,win,27520,216
-Putrajaya,BN,win,27306,125
-Limbang,BN,win,26409,221
-Julau,IND,win,25380,209
-Batang Sadong,BN,win,23213,200
-Tanjong Manis,BN,win,21899,206
-Lawas,BN,win,21297,222
-Kanowit,BN,win,21022,210
-Lubok Antu,IND,win,20801,203
-Igan,BN,win,19592,207
+State,KodPAR,const_name,won_coallition,winlose,total_voters,voters
+Perak,71,Gopeng,Pakatan Harapan,win,99167,"99,167"
+Johor,163,Kulai,Pakatan Harapan,win,99147,"99,147"
+Johor,150,Batu Pahat,Pakatan Harapan,win,98543,"98,543"
+Kedah,10,Kuala Kedah,Pakatan Harapan,win,97753,"97,753"
+Johor,152,Kluang,Pakatan Harapan,win,96915,"96,915"
+Selangor,103,Puchong,Pakatan Harapan,win,96437,"96,437"
+Kelantan,25,Bachok,PAS,win,92606,"92,606"
+Selangor,99,Ampang,Pakatan Harapan,win,91737,"91,737"
+Pulau Pinang,51,Bukit Gelugor,Pakatan Harapan,win,91595,"91,595"
+Perak,64,Ipoh Timor,Pakatan Harapan,win,91486,"91,486"
+Pulau Pinang,52,Bayan Baru,Pakatan Harapan,win,90780,"90,780"
+Perak,60,Taiping,Pakatan Harapan,win,90729,"90,729"
+Selangor,107,Sungai Buloh,Pakatan Harapan,win,90707,"90,707"
+Terengganu,39,Dungun,PAS,win,90506,"90,506"
+Melaka,137,Hang Tuah Jaya,Pakatan Harapan,win,89364,"89,364"
+Pulau Pinang,45,Bukit Mertajam,Pakatan Harapan,win,88998,"88,998"
+Pahang,85,Pekan,Barisan Nasional,win,88899,"88,899"
+Kelantan,21,Kota Bharu,PAS,win,88708,"88,708"
+W.P. Kuala Lumpur,116,Wangsa Maju,Pakatan Harapan,win,88482,"88,482"
+Negeri Sembilan,131,Rembau,Barisan Nasional,win,88365,"88,365"
+Kedah,14,Merbok,Pakatan Harapan,win,87782,"87,782"
+Kedah,8,Pokok Sena,Pakatan Harapan,win,86892,"86,892"
+Terengganu,33,Besut,Barisan Nasional,win,86627,"86,627"
+W.P. Kuala Lumpur,122,Seputeh,Pakatan Harapan,win,86256,"86,256"
+Terengganu,34,Setiu,PAS,win,86247,"86,247"
+Kelantan,28,Pasir Puteh,PAS,win,85411,"85,411"
+Perak,65,Ipoh Barat,Pakatan Harapan,win,84874,"84,874"
+Kedah,17,Padang Serai,Pakatan Harapan,win,84834,"84,834"
+Terengganu,35,Kuala Nerus,PAS,win,83663,"83,663"
+W.P. Kuala Lumpur,124,Bandar Tun Razak,Pakatan Harapan,win,83650,"83,650"
+Melaka,136,Tangga Batu,Pakatan Harapan,win,83213,"83,213"
+Kelantan,24,Kubang Kerian,PAS,win,82018,"82,018"
+Sarawak,195,Bandar Kuching,Pakatan Harapan,win,81856,"81,856"
+Pulau Pinang,44,Permatang Pauh,Pakatan Harapan,win,81789,"81,789"
+Perak,66,Batu Gajah,Pakatan Harapan,win,81399,"81,399"
+Sarawak,219,Miri,Pakatan Harapan,win,80386,"80,386"
+W.P. Kuala Lumpur,121,Lembah Pantai,Pakatan Harapan,win,80346,"80,346"
+Kedah,9,Alor Setar,Pakatan Harapan,win,80272,"80,272"
+Kedah,12,Jerai,PAS,win,79976,"79,976"
+Perak,68,Beruas,Pakatan Harapan,win,79794,"79,794"
+W.P. Kuala Lumpur,123,Cheras,Pakatan Harapan,win,78819,"78,819"
+W.P. Kuala Lumpur,117,Segambut,Pakatan Harapan,win,77956,"77,956"
+Johor,144,Ledang,Pakatan Harapan,win,77474,"77,474"
+Pahang,82,Indera Mahkota,Pakatan Harapan,win,77208,"77,208"
+Pulau Pinang,50,Jelutong,Pakatan Harapan,win,76991,"76,991"
+W.P. Kuala Lumpur,115,Batu,IND,win,76328,"76,328"
+Kelantan,20,Pengkalan Chepa,PAS,win,75384,"75,384"
+Negeri Sembilan,132,Port Dickson,Pakatan Harapan,win,75212,"75,212"
+Pahang,88,Temerloh,Pakatan Harapan,win,75081,"75,081"
+Pulau Pinang,48,Bukit Bendera,Pakatan Harapan,win,75069,"75,069"
+Kedah,11,Pendang,PAS,win,74867,"74,867"
+Sarawak,212,Sibu,Pakatan Harapan,win,74149,"74,149"
+Johor,145,Bakri,Pakatan Harapan,win,73883,"73,883"
+Kedah,6,Kubang Pasu,Pakatan Harapan,win,73881,"73,881"
+Terengganu,38,Hulu Terengganu,Barisan Nasional,win,73487,"73,487"
+Melaka,139,Jasin,Barisan Nasional,win,73432,"73,432"
+Pulau Pinang,47,Nibong Tebal,Pakatan Harapan,win,73383,"73,383"
+Kelantan,27,Tanah Merah,Barisan Nasional,win,73172,"73,172"
+W.P. Kuala Lumpur,114,Kepong,Pakatan Harapan,win,72696,"72,696"
+W.P. Kuala Lumpur,118,Setiawangsa,Pakatan Harapan,win,72136,"72,136"
+Negeri Sembilan,127,Jempol,Barisan Nasional,win,72122,"72,122"
+Pulau Pinang,43,Bagan,Pakatan Harapan,win,71583,"71,583"
+Kelantan,22,Pasir Mas,PAS,win,71222,"71,222"
+Melaka,135,Alor Gajah,Pakatan Harapan,win,70364,"70,364"
+Kelantan,31,Kuala Krai,PAS,win,70348,"70,348"
+Perak,59,Bukit Gantang,Barisan Nasional,win,69873,"69,873"
+W.P. Kuala Lumpur,120,Bukit Bintang,Pakatan Harapan,win,69526,"69,526"
+Perak,70,Kampar,Pakatan Harapan,win,69436,"69,436"
+Selangor,96,Kuala Selangor,Pakatan Harapan,win,69397,"69,397"
+Perak,77,Tanjong Malim,Pakatan Harapan,win,68468,"68,468"
+Kelantan,29,Machang,Barisan Nasional,win,68387,"68,387"
+Pahang,89,Bentong,Pakatan Harapan,win,67359,"67,359"
+Perak,74,Lumut,Pakatan Harapan,win,67157,"67,157"
+Kedah,18,Kulim-Bandar Baharu,Pakatan Harapan,win,66587,"66,587"
+Perak,76,Teluk Intan,Pakatan Harapan,win,66487,"66,487"
+Sarawak,196,Stampin,Pakatan Harapan,win,66240,"66,240"
+Kelantan,23,Rantau Panjang,PAS,win,66115,"66,115"
+Pulau Pinang,46,Batu Kawan,Pakatan Harapan,win,65394,"65,394"
+Kelantan,26,Ketereh,Barisan Nasional,win,65238,"65,238"
+Sarawak,217,Bintulu,Barisan Nasional,win,65049,"65,049"
+Pahang,81,Jerantut,Barisan Nasional,win,63609,"63,609"
+Pahang,83,Kuantan,Pakatan Harapan,win,62696,"62,696"
+Sabah,171,Sepanggar,Pakatan Harapan,win,62415,"62,415"
+Sarawak,211,Lanang,Pakatan Harapan,win,61973,"61,973"
+Pahang,91,Rompin,Barisan Nasional,win,61918,"61,918"
+W.P. Kuala Lumpur,119,Titiwangsa,Pakatan Harapan,win,61598,"61,598"
+Sabah,188,Silam,Pakatan Harapan,win,60942,"60,942"
+Pulau Pinang,42,Tasek Gelugor,Barisan Nasional,win,60850,"60,850"
+Negeri Sembilan,133,Tampin,Pakatan Harapan,win,60765,"60,765"
+Pulau Pinang,41,Kepala Batas,Barisan Nasional,win,60523,"60,523"
+Sabah,190,Tawau,Pakatan Harapan,win,59919,"59,919"
+Johor,147,Parit Sulong,Barisan Nasional,win,59609,"59,609"
+Perak,58,Bagan Serai,Barisan Nasional,win,59293,"59,293"
+Pulau Pinang,53,Balik Pulau,Pakatan Harapan,win,59086,"59,086"
+Pahang,90,Bera,Barisan Nasional,win,58711,"58,711"
+Sarawak,194,Petra Jaya,Barisan Nasional,win,57925,"57,925"
+Sabah,169,Kota Belud,Pakatan Harapan,win,57919,"57,919"
+Pahang,80,Raub,Pakatan Harapan,win,57723,"57,723"
+Sabah,172,Kota Kinabalu,Pakatan Harapan,win,56220,"56,220"
+Perlis,2,Kangar,Pakatan Harapan,win,55938,"55,938"
+Johor,164,Pontian,Barisan Nasional,win,55570,"55,570"
+Johor,140,Segamat,Pakatan Harapan,win,55350,"55,350"
+Pahang,84,Paya Besar,Barisan Nasional,win,55135,"55,135"
+Perak,62,Sungai Siput,Pakatan Harapan,win,55002,"55,002"
+Perak,73,Pasir Salak,Barisan Nasional,win,54671,"54,671"
+Sabah,170,Tuaran,Barisan Nasional,win,54400,"54,400"
+Kedah,5,Jerlun,Pakatan Harapan,win,54132,"54,132"
+Johor,165,Tanjung Piai,Pakatan Harapan,win,53528,"53,528"
+Sabah,174,Penampang,Pakatan Harapan,win,53131,"53,131"
+Kelantan,32,Gua Musang,Barisan Nasional,win,52524,"52,524"
+Sabah,167,Kudat,Barisan Nasional,win,52251,"52,251"
+Sabah,191,Kalabakan,Pakatan Harapan,win,52199,"52,199"
+Johor,149,Sri Gading,Pakatan Harapan,win,52119,"52,119"
+Perak,57,Parit Buntar,Pakatan Harapan,win,51860,"51,860"
+Johor,143,Pagoh,Pakatan Harapan,win,51512,"51,512"
+Melaka,134,Masjid Tanah,Barisan Nasional,win,51441,"51,441"
+Sabah,180,Keningau,SOLIDARITI,win,51177,"51,177"
+Johor,146,Muar,Pakatan Harapan,win,50843,"50,843"
+Kedah,13,Sik,PAS,win,50385,"50,385"
+Negeri Sembilan,129,Kuala Pilah,Pakatan Harapan,win,49801,"49,801"
+Pulau Pinang,49,Tanjong,Pakatan Harapan,win,49586,"49,586"
+Perak,56,Larut,Barisan Nasional,win,49453,"49,453"
+Selangor,93,Sungai Besar,Pakatan Harapan,win,48739,"48,739"
+Negeri Sembilan,126,Jelebu,Barisan Nasional,win,48522,"48,522"
+Sabah,189,Semporna,Pakatan Harapan,win,48248,"48,248"
+Perlis,3,Arau,Barisan Nasional,win,48187,"48,187"
+Johor,154,Mersing,Barisan Nasional,win,48176,"48,176"
+Sabah,184,Libaran,Barisan Nasional,win,47914,"47,914"
+Kelantan,30,Jeli,Barisan Nasional,win,47470,"47,470"
+Perak,75,Bagan Datuk,Barisan Nasional,win,47309,"47,309"
+Pahang,87,Kuala Krau,Barisan Nasional,win,47264,"47,264"
+Selangor,95,Tanjong Karang,Barisan Nasional,win,47198,"47,198"
+Perak,72,Tapah,Barisan Nasional,win,47128,"47,128"
+Sabah,168,Kota Marudu,Barisan Nasional,win,47007,"47,007"
+Johor,156,Kota Tinggi,Barisan Nasional,win,46677,"46,677"
+Kedah,7,Padang Terap,Barisan Nasional,win,46644,"46,644"
+Sarawak,197,Kota Samarahan,Barisan Nasional,win,46300,"46,300"
+Sarawak,198,Puncak Borneo,Pakatan Harapan,win,46180,"46,180"
+Johor,148,Ayer Hitam,Barisan Nasional,win,46157,"46,157"
+Perlis,1,Padang Besar,Barisan Nasional,win,46096,"46,096"
+Sarawak,193,Santubong,Barisan Nasional,win,45628,"45,628"
+Johor,141,Sekijang,Pakatan Harapan,win,45596,"45,596"
+Johor,155,Tenggara,Barisan Nasional,win,44749,"44,749"
+Johor,153,Sembrong,Barisan Nasional,win,44137,"44,137"
+Johor,151,Simpang Renggam,Pakatan Harapan,win,43998,"43,998"
+Sabah,179,Ranau,Pakatan Harapan,win,43706,"43,706"
+Sabah,175,Papar,Pakatan Harapan,win,43586,"43,586"
+Kedah,4,Langkawi,Pakatan Harapan,win,42697,"42,697"
+Sabah,173,Putatan,Pakatan Harapan,win,41312,"41,312"
+Pahang,86,Maran,Barisan Nasional,win,41036,"41,036"
+Selangor,92,Sabak Bernam,Barisan Nasional,win,40863,"40,863"
+Johor,157,Pengerang,Barisan Nasional,win,40479,"40,479"
+Johor,142,Labis,Pakatan Harapan,win,40356,"40,356"
+Sabah,186,Sandakan,Pakatan Harapan,win,39777,"39,777"
+Sarawak,208,Sarikei,Pakatan Harapan,win,39561,"39,561"
+Sarawak,199,Serian,Barisan Nasional,win,37629,"37,629"
+Perak,67,Kuala Kangsar,Barisan Nasional,win,36954,"36,954"
+Perak,69,Parit,Barisan Nasional,win,35910,"35,910"
+Perak,54,Gerik,Barisan Nasional,win,35903,"35,903"
+Sarawak,220,Baram,Barisan Nasional,win,35685,"35,685"
+Pahang,79,Lipis,Barisan Nasional,win,35294,"35,294"
+Sabah,177,Beaufort,Barisan Nasional,win,33342,"33,342"
+Sarawak,202,Sri Aman,Barisan Nasional,win,33016,"33,016"
+Sabah,185,Batu Sapi,Pakatan Harapan,win,32574,"32,574"
+Pahang,78,Cameron Highlands,Barisan Nasional,win,32048,"32,048"
+Sabah,178,Sipitang,Barisan Nasional,win,31882,"31,882"
+Sarawak,218,Sibuti,Barisan Nasional,win,31868,"31,868"
+Sabah,182,Pensiangan,Barisan Nasional,win,31377,"31,377"
+Perak,61,Padang Rengas,Barisan Nasional,win,30996,"30,996"
+Sarawak,215,Kapit,Barisan Nasional,win,30658,"30,658"
+Sarawak,213,Mukah,Barisan Nasional,win,30608,"30,608"
+Sarawak,205,Saratok,Pakatan Harapan,win,30517,"30,517"
+Sarawak,214,Selangau,Pakatan Harapan,win,30026,"30,026"
+Sarawak,201,Batang Lupar,Barisan Nasional,win,29811,"29,811"
+Perak,55,Lenggong,Barisan Nasional,win,29752,"29,752"
+Sabah,176,Kimanis,Barisan Nasional,win,29618,"29,618"
+Sarawak,192,Mas Gading,Pakatan Harapan,win,29617,"29,617"
+Sabah,181,Tenom,Pakatan Harapan,win,29182,"29,182"
+Sarawak,204,Betong,Barisan Nasional,win,29145,"29,145"
+Sabah,187,Kinabatangan,Barisan Nasional,win,28730,"28,730"
+Sabah,183,Beluran,Barisan Nasional,win,28509,"28,509"
+W.P. Labuan,166,Labuan,Barisan Nasional,win,28356,"28,356"
+Sarawak,216,Hulu Rajang,Barisan Nasional,win,27520,"27,520"
+W.P. Putrajaya,125,Putrajaya,Barisan Nasional,win,27306,"27,306"
+Sarawak,221,Limbang,Barisan Nasional,win,26409,"26,409"
+Sarawak,209,Julau,IND,win,25380,"25,380"
+Sarawak,200,Batang Sadong,Barisan Nasional,win,23213,"23,213"
+Sarawak,206,Tanjong Manis,Barisan Nasional,win,21899,"21,899"
+Sarawak,222,Lawas,Barisan Nasional,win,21297,"21,297"
+Sarawak,210,Kanowit,Barisan Nasional,win,21022,"21,022"
+Sarawak,203,Lubok Antu,IND,win,20801,"20,801"
+Sarawak,207,Igan,Barisan Nasional,win,19592,"19,592"
+Selangor,102,Bangi,Pakatan Harapan,win,178790,"178,790"
+Selangor,106,Damansara,Pakatan Harapan,win,164322,"164,322"
+Selangor,110,Klang,Pakatan Harapan,win,149348,"149,348"
+Selangor,111,Kota Raja,Pakatan Harapan,win,149021,"149,021"
+Selangor,104,Subang,Pakatan Harapan,win,146422,"146,422"
+Selangor,98,Gombak,Pakatan Harapan,win,141112,"141,112"
+Selangor,105,Petaling Jaya ,Pakatan Harapan,win,140920,"140,920"
+Johor,162,Iskandar Puteri,Pakatan Harapan,win,138299,"138,299"
+Melaka,138,Kota Melaka,Pakatan Harapan,win,126848,"126,848"
+Selangor,109,Kapar,Pakatan Harapan,win,124983,"124,983"
+Johor,159,Pasir Gudang,Pakatan Harapan,win,124172,"124,172"
+Johor,158,Tebrau,Pakatan Harapan,win,123033,"123,033"
+Selangor,97,Selayang,Pakatan Harapan,win,116176,"116,176"
+Kedah,15,Sungai Petani,Pakatan Harapan,win,112577,"112,577"
+Kelantan,19,Tumpat,PAS,win,110924,"110,924"
+Negeri Sembilan,128,Seremban,Pakatan Harapan,win,110168,"110,168"
+Perak,63,Tambun,Pakatan Harapan,win,107763,"107,763"
+Terengganu,40,Kemaman,PAS,win,107593,"107,593"
+Selangor,108,Shah Alam,Pakatan Harapan,win,107316,"107,316"
+Kedah,16,Baling,Barisan Nasional,win,107213,"107,213"
+Johor,161,Pulai,Pakatan Harapan,win,106268,"106,268"
+Terengganu,37,Marang,PAS,win,104898,"104,898"
+Selangor,113,Sepang,Pakatan Harapan,win,104508,"104,508"
+Terengganu,36,Kuala Terengganu,PAS,win,103611,"103,611"
+Negeri Sembilan,130,Rasah,Pakatan Harapan,win,102838,"102,838"
+Selangor,112,Kuala Langat,Pakatan Harapan,win,102406,"102,406"
+Selangor,101,Hulu Langat,Pakatan Harapan,win,102363,"102,363"
+Johor,160,Johor Bahru,Pakatan Harapan,win,101409,"101,409"
+Selangor,100,Pandan,Pakatan Harapan,win,101319,"101,319"
+Selangor,94,Hulu Selangor,Pakatan Harapan,win,100990,"100,990"
