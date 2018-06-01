@@ -151,7 +151,7 @@ summary(ph_seats)
 #export csv
 ###########
 
-#write.csv(const_difference, "const_difference.csv")
+write.csv(const_difference, "const_difference.csv")
 
 #################
 #d3 column chart#

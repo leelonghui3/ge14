@@ -95,27 +95,13 @@ $(document).ready(function() {
       });
 
     // transition
-    var Waypoint_asdf = new Waypoint({
-      element: document.getElementById('barchart-2'),
-      handler: function(direction) {
-        if (direction === 'down') {
-          console.log('barchart-2 down');
-          bars.transition()
-            .duration(2000)
-            .attr('width', function(d) {
-              return xScale(d.total_voters);
-            })
-            .ease(d3.easeElastic);
-        } else {
-          console.log('barchart-2 up');
-            bars.transition()
-                .duration(1500)
-                .attr('width', 0);
-        }
-      }
-    }, {
-      offset: Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 100
-    });
+    bars.transition()
+      .duration(1500)
+      .delay(3000)
+      .attr('width', function(d) {
+        return xScale(d.total_voters);
+      })
+      .ease(d3.easeElastic);
 
     // mean
     var nationalmean = d3.mean(data, function(d) {

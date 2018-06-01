@@ -11,19 +11,38 @@
   <script type="text/javascript" src="js/uikit-icons.min.js"></script>
   <script type="text/javascript" src="js/d3-queue.min.js"></script>
   <script type="text/javascript" src="js/topojson.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
   <link type='text/css' rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/uikit.min.css" />
+
 
 </head>
 
 <body>
-  <div class="uk-margin-top uk-container uk-container-center uk-container-expand">
-    <h2 class="uk-text-center">Title</h2>
-    <!-- <div id="const_chart" align="center"></div> -->
-    <div id="map" align="center"></div>
-  </div>
+  <h2 class="uk-text-center">Title</h2>
+  <section class="uk-margin-top uk-container uk-container-center uk-container-expand uk-position-relative" style="background: #c3c3c3">
+    <div class="text-wrapper">
+      <div id="barchart-1" class="testing uk-position-relative uk-padding-large"></div>
+      <div id="barchart-2" class="testing uk-position-relative uk-padding-large">Shows PH seats</div>
+      <div id="barchart-3" class="testing uk-position-relative uk-padding-large">Shows BN seats</div>
+      <div id="barchart-4" class="testing uk-position-relative uk-padding-large">D</div>
+      <div id="barchart-5" class="testing uk-position-relative uk-padding-large">E</div>
+      <div id="barchart-6" class="testing uk-position-relative uk-padding-large">F</div>
+    </div>
+    <div class="uk-align-center uk-position-fixed" style="bottom: 50px;">
+      <div id="const_chart"></div>
+    </div>
+  </section>
+  <section>
+    <div class="">
+      Other section
+    </div>
+  </section>
   <script type="text/javascript" src="js/map.js"></script>
   <script type="text/javascript" src="js/barchart.js"></script>
 </body>
 
 </html>
+
+<!-- <div id="map" align="center"></div>
+<img src="img/ballot-box.jpeg" alt=""> -->

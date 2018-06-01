@@ -35,25 +35,25 @@ $(document).ready(function() {
 
   var constName = mapContainer.append('text')
   .attr('text-anchor', 'start')
-  .attr('y', 200)
+  .attr('y', 150)
   .attr('x', (width) * 0.25)
   .text('');
 
   var stateName = mapContainer.append('text')
     .attr('text-anchor', 'start')
-    .attr('y', 230)
+    .attr('y', 180)
     .attr('x', (width) * 0.25)
     .text('');
 
   var winner = mapContainer.append('text')
     .attr('text-anchor', 'start')
-    .attr('y', 260)
+    .attr('y', 210)
     .attr('x', (width) * 0.25)
     .text('');
 
   var majority = mapContainer.append('text')
     .attr('text-anchor', 'start')
-    .attr('y', 290)
+    .attr('y', 240)
     .attr('x', (width) * 0.25)
     .text('');
 
@@ -63,7 +63,7 @@ $(document).ready(function() {
     return mapContainer.append('text')
       .classed('losers', true)
       .attr('text-anchor', 'start')
-      .attr('y', extraHeight + 290)
+      .attr('y', extraHeight + 240)
       .attr('x', (width) * 0.25)
       .text('');
   };
