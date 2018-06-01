@@ -114,19 +114,6 @@ svg {
   fill: #FFFF00;
 }
 
-.chart-wrapper {
-  position: fixed;
-  z-index: 0;
-  bottom: 20px;
-}
-
-.chart-wrapper.is-bottom {
-  position:absolute;
-  top: auto;
-  bottom:50px;
-  z-index: 2;
-}
-
 .testing {
   background: #FFFF00;
   margin:0 auto;
