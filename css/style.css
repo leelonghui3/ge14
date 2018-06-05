@@ -111,7 +111,7 @@ svg {
 }
 
 .active {
-  fill: #FFFF00;
+  fill: #FFA500;
 }
 
 .chart-wrapper {
@@ -137,7 +137,14 @@ svg {
 .testing {
   background: #FFFF00;
   margin:0 auto;
-  margin-bottom: 700px;
+  margin-bottom: 1000px;
+  z-index: 1;
+}
+
+#constChart-text-wrapper {
+  /* margin:0 auto; */
+  padding-bottom: 1800px;
+  z-index: 1;
 }
 
 .text-wrapper {

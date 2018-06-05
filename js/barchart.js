@@ -228,17 +228,17 @@ $(document).ready(function() {
     console.log('PAS: ' + PASmean);
 
     // transition
-    $('#showChart').waypoint(function(direction) {
-      if (direction === 'down') {
-        console.log('show chart');
-        $('#constChart').removeClass('.constChart-wrapper').addClass('uk-position-fixed uk-position-bottom-center');
-      } else {
-        console.log('hide chart');
-        $('#constChart').removeClass('uk-position-fixed uk-position-bottom-center').addClass('.constChart-wrapper');
-      }
-    }, {
-      offset: 0
-    });
+    // $('#showChart').waypoint(function(direction) {
+    //   if (direction === 'down') {
+    //     console.log('show chart');
+    //     $('#constChart').removeClass('.constChart-wrapper').addClass('uk-position-fixed uk-position-bottom-center');
+    //   } else {
+    //     console.log('hide chart');
+    //     $('#constChart').removeClass('uk-position-fixed uk-position-bottom-center').addClass('.constChart-wrapper');
+    //   }
+    // }, {
+    //   offset: 0
+    // });
 
     // Show biggest and smallest Seats
     $('#barchart-1').waypoint(function(direction) {
@@ -257,7 +257,7 @@ $(document).ready(function() {
           .attr('width', 0);
       }
     }, {
-      offset: '20%'
+      offset: '10%'
     });
 
     // BN seats and transition
@@ -490,16 +490,16 @@ $(document).ready(function() {
     });
 
 
-    $('#constChart-text-wrapper').waypoint(function(direction) {
-      if (direction === 'down') {
-        $('#constChart').removeClass('uk-position-fixed').addClass('uk-position-absolute');
-      } else {
-        console.log('isnotbottom');
-        $('#constChart').removeClass('uk-position-absolute').addClass('uk-position-fixed');
-      }
-    }, {
-      offset: 'bottom-in-view'
-    });
+    // $('#constChart-text-wrapper').waypoint(function(direction) {
+    //   if (direction === 'down') {
+    //     $('#constChart').removeClass('uk-position-fixed').addClass('uk-position-absolute');
+    //   } else {
+    //     console.log('isnotbottom');
+    //     $('#constChart').removeClass('uk-position-absolute').addClass('uk-position-fixed');
+    //   }
+    // }, {
+    //   offset: 'bottom-in-view'
+    // });
 
   });
 });
