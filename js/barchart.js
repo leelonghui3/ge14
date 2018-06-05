@@ -6,17 +6,79 @@ $(document).ready(function() {
       throw error;
     }
 
-    var width = 850;
-    var height = 500;
+    var width = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) * 0.8;
+    var height = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) * 0.7;
     padding = 20;
 
     var constChart = d3.select('#const_chart').append('svg')
       .attr('width', width)
-      .attr('height', height);
+      .attr('height', height)
+      .call(responsivefy);
+
+    function responsivefy(svg) {
+      // get container + svg aspect ratio
+      var container = d3.select(svg.node().parentNode),
+        width = parseInt(svg.style("width")),
+        height = parseInt(svg.style("height")),
+        aspect = width / height;
+
+      // add viewBox and preserveAspectRatio properties,
+      // and call resize so that svg resizes on inital page load
+      svg.attr("viewBox", "0 0 " + width + " " + height)
+        .attr("perserveAspectRatio", "xMinYMid")
+        .call(resize);
+
+      // to register multiple listeners for same event type,
+      // you need to add namespace, i.e., 'click.foo'
+      // necessary if you call invoke this function for multiple svgs
+      // api docs: https://github.com/mbostock/d3/wiki/Selections#on
+      d3.select(window).on("resize." + container.attr("id"), resize);
+
+      // get width of container and resize svg to fit it
+      function resize() {
+        var targetWidth = parseInt(container.style("width"));
+        svg.attr("width", targetWidth);
+        svg.attr("height", Math.round(targetWidth / aspect));
+      }
+    }
 
     var div = d3.select('#const_chart').append('div')
       .attr('class', 'chart-tooltip')
       .style('opacity', 0);
+
+    var infoBox = constChart.append('svg')
+      .attr('width', 200)
+      .attr('height', 400)
+      .attr('x', (width - padding - 200))
+      .attr('y', padding);
+
+    var constName = infoBox.append('text')
+      .attr('x', 0)
+      .attr('y', 30)
+      .text('');
+
+    var state = infoBox.append('text')
+      .attr('x', 0)
+      .attr('y', 60)
+      .text('')
+      .text('');
+
+    var coallitionColour = infoBox.append('rect')
+      .attr('width', 35)
+      .attr('height', 35)
+      .attr('x', 0)
+      .attr('y', 70)
+      .style('opacity', '0');
+
+    var wonCoallition = infoBox.append('text')
+      .attr('x', 40)
+      .attr('y', 93)
+      .text('');
+
+    var voters = infoBox.append('text')
+      .attr('x', 0)
+      .attr('y', 130)
+      .text('');
 
     // clean data
     data.forEach(function(d) {
@@ -44,12 +106,13 @@ $(document).ready(function() {
       .domain(data.map(function(d) {
         return d.const_name;
       }))
-      .rangeRound([(height - padding), padding])
-      .padding(0.28);
+      .range([(height - padding), padding])
+      .padding(0.2);
 
     // define axes
     var xAxis = d3.axisBottom(xScale)
       .ticks(20);
+
     var yAxis = d3.axisLeft(yScale);
 
     constChart.append('g')
@@ -69,7 +132,7 @@ $(document).ready(function() {
       .enter()
       .append('rect')
       .attr('x', padding)
-      .attr('y', function(d) {
+      .attr('y', function(d, i) {
         return yScale(d.const_name);
       })
       .attr('width', 0)
@@ -78,44 +141,58 @@ $(document).ready(function() {
 
     // tooltip
     bars.on('mouseover', function(d) {
-        div.style('opacity', 0.9);
-        div.html('<strong><span font-family = "Varela Round">' + d.const_name + '</span></strong><br>' +
-            '<span class = "state">' + d.State + '</span><br>' +
-            '<span class = "state">' + d.won_coallition + '</span><br>' +
-            '<span class = "losers">Voters: ' + '<strong>' + d.voters + '</strong></span>')
-          .style('left', (d3.event.pageX) + 'px')
-          .style('top', (d3.event.pageY - 28) + 'px');
+        showInfo.call(this, d);
         d3.select(this).classed('active', true);
         d3.select(this).classed('const_color', false);
       })
       .on('mouseout', function(d) {
+        removeInfo();
         div.style('opacity', 0);
         d3.select(this).classed('active', false);
         d3.select(this).classed('const_color', true);
       });
 
-    // transition
-    var Waypoint_asdf = new Waypoint({
-      element: document.getElementById('barchart-2'),
-      handler: function(direction) {
-        if (direction === 'down') {
-          console.log('barchart-2 down');
-          bars.transition()
-            .duration(2000)
-            .attr('width', function(d) {
-              return xScale(d.total_voters);
-            })
-            .ease(d3.easeElastic);
-        } else {
-          console.log('barchart-2 up');
-            bars.transition()
-                .duration(1500)
-                .attr('width', 0);
-        }
+    // // add a label for the y axis
+    // constChart.append('text')
+    //   .attr("class", 'xAxis_label')
+    //   .attr('text-anchor', 'middle')
+    //   .attr('y', (height))
+    //   .attr('x', (width / 2))
+    //   .text('Number of Voters');
+
+    // Show seat information
+    function showInfo(d) {
+      constName.text(d.const_name);
+      state.text(d.State);
+      coallitionColour.style('opacity', 1)
+        .attr('class', const_color(d));
+      wonCoallition.text(d.won_coallition)
+        .attr('class', const_color(d));
+      voters.text(d3.format(',')(d.total_voters) + ' voters');
+    }
+
+    function removeInfo() {
+      constName.text('');
+      state.text('');
+      coallitionColour.style('opacity', 0);
+      wonCoallition.text('');
+      voters.text('');
+    }
+
+    // render color for each bar
+    function const_color(d) {
+      if (d.won_coallition === 'Pakatan Harapan') {
+        return 'ph';
+      } else if (d.won_coallition === 'PAS') {
+        return 'pas';
+      } else if (d.won_coallition === 'Barisan Nasional') {
+        return 'bn';
+      } else if (d.won_coallition === 'Independent') {
+        return 'ind';
+      } else {
+        return 'solidariti';
       }
-    }, {
-      offset: Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 100
-    });
+    }
 
     // mean
     var nationalmean = d3.mean(data, function(d) {
@@ -150,7 +227,70 @@ $(document).ready(function() {
     console.log('BN: ' + BNmean);
     console.log('PAS: ' + PASmean);
 
-    // National mean dashed line and transition
+    // transition
+    $('#showChart').waypoint(function(direction) {
+      if (direction === 'down') {
+        console.log('show chart');
+        $('#constChart').removeClass('.constChart-wrapper').addClass('uk-position-fixed uk-position-bottom-center');
+      } else {
+        console.log('hide chart');
+        $('#constChart').removeClass('uk-position-fixed uk-position-bottom-center').addClass('.constChart-wrapper');
+      }
+    }, {
+      offset: 0
+    });
+
+    // Show biggest and smallest Seats
+    $('#barchart-1').waypoint(function(direction) {
+      if (direction === 'down') {
+        bars.transition()
+          .duration(2000)
+          .attr('width', function(d) {
+            if (d.const_name === 'Igan' || d.const_name === 'Bangi') {
+              return xScale(d.total_voters);
+            }
+          })
+          .ease(d3.easeElastic);
+      } else {
+        bars.transition()
+          .duration(500)
+          .attr('width', 0);
+      }
+    }, {
+      offset: '20%'
+    });
+
+    // BN seats and transition
+    $('#barchart-2').waypoint(function(direction) {
+      if (direction === 'down') {
+        console.log('Show BN seats');
+        bars.transition()
+          .duration(2000)
+          .attr('width', function(d) {
+            if (d.won_coallition === 'Barisan Nasional') {
+              return xScale(d.total_voters);
+            } else if (d.const_name === 'Bangi') {
+              return 0;
+            }
+          })
+          .ease(d3.easeElastic);
+      } else {
+        console.log('Hide BN seats');
+        bars.transition()
+          .duration(500)
+          .attr('width', function(d) {
+            if (d.won_coallition === 'Barisan Nasional' && d.const_name != 'Igan') {
+              return 0;
+            } else if (d.const_name === 'Igan' || d.const_name === 'Bangi') {
+              return xScale(d.total_voters);
+            }
+          });
+      }
+    }, {
+      offset: '50%'
+    });
+
+    // National and BN mean dashed line and transition
     var nationalmeanLine = constChart.append('line')
       .attr('x1', xScale(nationalmean))
       .attr('x2', xScale(nationalmean))
@@ -159,18 +299,77 @@ $(document).ready(function() {
       .style('stroke', '#D3D')
       .style('stroke-dasharray', '3, 3');
 
-      nationalmeanLine.transition()
-      .duration(1000)
-      .attr('y2', (height - padding))
-      .delay(4500);
-
-    constChart.append('text')
-      .transition()
-      .delay(5500)
+    var nationalText = constChart.append('text')
       .attr('x', (xScale(nationalmean)) + 5)
-      .attr('y', (padding + 100))
-      .text('National average: ' + d3.format(',')(nationalmean))
-      .style('fill', '#D3D');
+      .attr('y', (padding + 100));
+
+    var BNmeanLine = constChart.append('line')
+      .attr('x1', xScale(BNmean))
+      .attr('x2', xScale(BNmean))
+      .attr('y1', padding)
+      .attr('y2', padding)
+      .style('stroke', '#092781')
+      .style('stroke-dasharray', '3, 3');
+
+    var BNText = constChart.append('text')
+      .attr('x', (xScale(BNmean)) + 5)
+      .attr('y', (padding + 30));
+
+    $('#barchart-3').waypoint(function(direction) {
+      if (direction === 'down') {
+        console.log('Show national and BN line and text');
+        nationalmeanLine.transition()
+          .duration(1000)
+          .attr('y2', (height - padding));
+
+        nationalText.transition()
+          .delay(1000)
+          .text('National average: ' + d3.format(',')(nationalmean))
+          .style('fill', '#D3D');
+
+        BNmeanLine.transition()
+          .duration(1000)
+          .attr('y2', (height - padding));
+
+        BNText.transition()
+          .delay(1000)
+          .text('BN average: ' + d3.format(',')(BNmean))
+          .style('fill', '#092781');
+      } else {
+        console.log('Hide national line and text');
+        nationalmeanLine.transition()
+          .attr('y2', padding);
+
+        nationalText.text('');
+      }
+    }, {
+      offset: '50%'
+    });
+
+
+
+    $('#barchart-3').waypoint(function(direction) {
+      if (direction === 'down') {
+        console.log('Show BN line and text');
+
+        BNmeanLine.transition()
+          .duration(1000)
+          .attr('y2', (height - padding));
+
+        BNText.transition()
+          .delay(1000)
+          .text('BN average: ' + d3.format(',')(BNmean))
+          .style('fill', '#092781');
+      } else {
+        console.log('Hide BN line and text');
+        BNmeanLine.transition()
+          .attr('y2', padding);
+
+        BNText.text('');
+      }
+    }, {
+      offset: '50%'
+    });
 
     // PH mean dashed line and transition
     var PHmeanLine = constChart.append('line')
@@ -181,42 +380,57 @@ $(document).ready(function() {
       .style('stroke', '#ED1C24')
       .style('stroke-dasharray', '3, 3');
 
-      PHmeanLine.transition()
-      .duration(1000)
-      .attr('y2', (height - padding))
-      .delay(8500);
-
-    constChart.append('text')
-    .transition()
-    .delay(9500)
+    var PHText = constChart.append('text')
       .attr('x', (xScale(PHmean)) + 5)
-      .attr('y', (padding + 170))
-      .text('PH average: ' + d3.format(',')(PHmean))
-      .style('fill', '#ED1C24');
+      .attr('y', (padding + 170));
 
-    // BN mean dashed line and transition
-    var BNmeanLine = constChart.append('line')
-      .attr('x1', xScale(BNmean))
-      .attr('x2', xScale(BNmean))
-      .attr('y1', padding)
-      .attr('y2', padding)
-      .style('stroke', '#092781')
-      .style('stroke-dasharray', '3, 3');
+    $('#barchart-4').waypoint(function(direction) {
+      if (direction === 'down') {
+        console.log('Show PH seats, line and text, keep BN seats');
 
-      BNmeanLine.transition()
-      .duration(1000)
-      .attr('y2', (height - padding))
-      .delay(6500);
+        bars.transition()
+          .duration(2000)
+          .attr('width', function(d) {
+            if (d.won_coallition === 'Pakatan Harapan') {
+              return xScale(d.total_voters);
+            } else if (d.won_coallition === 'Barisan Nasional') {
+              return xScale(d.total_voters);
+            }
+          })
+          .ease(d3.easeElastic);
 
-    constChart.append('text')
-      .transition()
-      .delay(7500)
-      .attr('x', (xScale(BNmean)) + 5)
-      .attr('y', (padding + 30))
-      .text('BN average: ' + d3.format(',')(BNmean))
-      .style('fill', '#092781');
+        PHmeanLine.transition()
+          .duration(1000)
+          .attr('y2', (height - padding));
 
-    // PAS mean dashed line and transition
+        PHText.transition()
+          .delay(1000)
+          .attr('x', (xScale(PHmean)) + 5)
+          .attr('y', (padding + 170))
+          .text('PH average: ' + d3.format(',')(PHmean))
+          .style('fill', '#ED1C24');
+      } else {
+        console.log('Hide PH seats, line and text');
+        bars.transition()
+          .duration(500)
+          .attr('width', function(d) {
+            if (d.won_coallition === 'Pakatan Harapan') {
+              return 0;
+            } else if (d.won_coallition === 'Barisan Nasional') {
+              return xScale(d.total_voters);
+            }
+          });
+
+        PHmeanLine.transition()
+          .attr('y2', padding);
+
+        PHText.text('');
+      }
+    }, {
+      offset: '50%'
+    });
+
+    // PAS and others' mean dashed line and transition
     var PASmeanLine = constChart.append('line')
       .attr('x1', xScale(PASmean))
       .attr('x2', xScale(PASmean))
@@ -225,85 +439,67 @@ $(document).ready(function() {
       .attr('stroke', '#009000')
       .style('stroke-dasharray', '3, 3');
 
-      PASmeanLine.transition()
-      .duration(1000)
-      .attr('y2', (height - padding))
-      .delay(10500);
-
-    constChart.append('text')
-    .transition()
-    .delay(11500)
+    var PASText = constChart.append('text')
       .attr('x', (xScale(PASmean)) + 5)
-      .attr('y', (padding + 240))
-      .text('PAS average: ' + d3.format(',')(PASmean))
-      .style('fill', '#009000');
+      .attr('y', (padding + 240));
 
-    // // add a label for the y axis
-    // constChart.append('text')
-    //   .attr("class", 'xAxis_label')
-    //   .attr('text-anchor', 'middle')
-    //   .attr('y', (height))
-    //   .attr('x', (width / 2))
-    //   .text('Number of Voters');
+    $('#barchart-5').waypoint(function(direction) {
 
-    // legend
-    var size = 200;
-    var legend_coallition = ['Pakatan Harapan', 'Barisan Nasional', 'PAS', 'Solidariti', 'Independent'];
-    var legend = constChart.append('svg')
-      .attr('width', 200)
-      .attr('height', (size * 2))
-      .attr('x', (width - padding - size))
-      .attr('y', padding)
-      .selectAll('g')
-      .data(legend_coallition)
-      .enter()
-      .append('g')
-      .attr('transform', function(d, i) {
-        return "translate(0," + i * 40 + ")";
-      });
+      if (direction === 'down') {
+        console.log('Show PAS and independent seats, PAS line and text');
 
-    legend.append('rect')
-      .attr('width', 36)
-      .attr('height', 36)
-      .attr('class', function(d) {
-        if (d === 'Pakatan Harapan') {
-          return 'ph';
-        } else if (d === 'PAS') {
-          return 'pas';
-        } else if (d === 'Barisan Nasional') {
-          return 'bn';
-        } else if (d === 'Independent') {
-          return 'ind';
-        } else {
-          return 'solidariti';
-        }
-      });
+        bars.transition()
+          .duration(2000)
+          .attr('width', function(d) {
+            if (d.won_coallition === 'PAS' || d.won_coallition === 'Independent' || d.won_coallition === 'Solidariti') {
+              return xScale(d.total_voters);
+            } else if (d.won_coallition === 'Barisan Nasional' || d.won_coallition === 'Pakatan Harapan') {
+              return xScale(d.total_voters);
+            }
+          })
+          .ease(d3.easeElastic);
 
-    legend.append('text')
-      .attr('x', 40)
-      .attr('y', 15)
-      .attr('dy', '0.5em')
-      .attr('text-anchor', 'start')
-      .attr('class', 'legend')
-      .text(function(d) {
-        return d;
-      });
+        PASmeanLine.transition()
+          .duration(1000)
+          .attr('y2', (height - padding));
 
-    // render color for each bar
-    function const_color(d) {
-      if (d.won_coallition === 'Pakatan Harapan') {
-        return 'ph';
-      } else if (d.won_coallition === 'PAS') {
-        return 'pas';
-      } else if (d.won_coallition === 'Barisan Nasional') {
-        return 'bn';
-      } else if (d.won_coallition === 'Independent') {
-        return 'ind';
+        PASText.transition()
+          .delay(1000)
+          .text('PAS average: ' + d3.format(',')(PASmean))
+          .style('fill', '#009000');
       } else {
-        return 'solidariti';
+        console.log('Hide PAS and independent seats, PAS line and text');
+
+        bars.transition()
+          .duration(500)
+          .attr('width', function(d) {
+            if (d.won_coallition === 'PAS' || d.won_coallition === 'Independent' || d.won_coallition === 'Solidariti') {
+              return 0;
+            } else if (d.won_coallition === 'Pakatan Harapan' || d.won_coallition === 'Barisan Nasional') {
+              return xScale(d.total_voters);
+            }
+          });
+
+        PASmeanLine.transition()
+          .attr('y2', padding);
+
+        PASText.text('');
       }
-    }
+    }, {
+      offset: '50%'
+    });
+
+
+    $('#constChart-text-wrapper').waypoint(function(direction) {
+      if (direction === 'down') {
+        $('#constChart').removeClass('uk-position-fixed').addClass('uk-position-absolute');
+      } else {
+        console.log('isnotbottom');
+        $('#constChart').removeClass('uk-position-absolute').addClass('uk-position-fixed');
+      }
+    }, {
+      offset: 'bottom-in-view'
+    });
 
   });
-
 });

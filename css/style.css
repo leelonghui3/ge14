@@ -114,6 +114,26 @@ svg {
   fill: #FFFF00;
 }
 
+.chart-wrapper {
+  display:none;
+  position: fixed;
+  bottom:20px;
+  left:50%;
+  margin-left: -240px;
+  z-index: 0;
+}
+
+.constChart-wrapper {
+  opacity: 0;
+}
+
+.chart-wrapper.is-bottom {
+  position:absolute;
+  top: auto;
+  bottom:50px;
+  z-index: 2;
+}
+
 .testing {
   background: #FFFF00;
   margin:0 auto;
@@ -144,6 +164,7 @@ div.chart-tooltip {
   border: 1px solid #000000;
   /* border-radius: 8px; */
   pointer-events: none;
+  z-index: 2;
 }
 
 div.map-tooltip {
