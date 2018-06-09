@@ -7,7 +7,6 @@
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/d3.min.js"></script>
-  <script src="https://d3js.org/d3-format.v1.min.js"></script>
   <script type="text/javascript" src="js/uikit.min.js"></script>
   <script type="text/javascript" src="js/uikit-icons.min.js"></script>
   <script type="text/javascript" src="js/d3-queue.min.js"></script>
@@ -21,7 +20,7 @@
 
 <body>
   <h2 class="uk-text-center">Title</h2>
-  <section id="" class="constChart-text-wrapper uk-section uk-margin-top uk-container uk-container-center uk-position-relative" style="background-color: #cccccc">
+  <!-- <section id="" class="constChart-text-wrapper uk-section uk-margin-top uk-container uk-container-center uk-position-relative" style="background-color: #cccccc">
     <div id="constChart" class="" uk-sticky="offset: 200; bottom: true">
       <div id="const_chart" class=""></div>
     </div>
@@ -39,12 +38,40 @@
     </div>
     <div id="2013map-text" class="testing" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">2013</div>
     <div id="2018map-text" class="testing" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">2018</div>
-  </section>
+  </section> -->
 
-  <script type="text/javascript" src="js/east_map_2018.js"></script>
-  <script type="text/javascript" src="js/east_map_2013.js"></script>
-  <script type="text/javascript" src="js/map_waypoints.js"></script>
-  <script type="text/javascript" src="js/barchart.js"></script>
+<section class="uk-section">
+  <h1 class="">Map title</h1>
+  <p uk-margin class="uk-text-center">
+    <button id="malay" class="uk-button uk-button-primary" name="button">Malay</button>
+    <button id="party" class="uk-button uk-button-secondary" name="button">Party</button>
+  </p>
+  <div id="west_map_wrapper" class="uk-display-inline-block">
+  <div id="west_map_malay" class="uk-position-relative"></div>
+  <div id="west_map_party" class="hide-map uk-position-relative"></div>
+</div>
+
+</section>
+
+  <!-- <script src="js/east_map_2018.js" charset="utf-8"></script>
+  <script src="js/east_map_2013.js" charset="utf-8"></script>
+  <script src="js/map_waypoints.js" charset="utf-8"></script>
+  <script src="js/barchart.js" charset="utf-8"></script> -->
+  <script src="js/west_map_malay.js" charset="utf-8"></script>
+  <script src="js/west_map_party.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    $('#party').click(function() {
+      $('#west_map_malay').addClass('hide-map');
+      $('#west_map_party').removeClass('hide-map');
+    })
+
+    $('#malay').click(function() {
+      $('#west_map_party').addClass('hide-map');
+      $('#west_map_malay').removeClass('hide-map');
+    })
+  </script>
+
 </body>
 
 </html>

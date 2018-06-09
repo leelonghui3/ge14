@@ -50,6 +50,14 @@
   stroke: #FFFFFF;
 }
 
+#west_map_malay path {
+  stroke: #FFFFFF;
+}
+
+#west_map_party {
+  stroke: #FFFFFFF;
+}
+
 .y-axis line {
   display: none;
 }
@@ -81,7 +89,7 @@ svg {
 /* Independent candidates' seats colour */
 
 .ind {
-  fill: #E6E6E6;
+  fill: #333333;
 }
 
 /* Solidariti's seat colour */
@@ -90,9 +98,25 @@ svg {
   fill: #78D7F5;
 }
 
-/* .axis--x path {
-  display: none;
-} */
+.q0-5 {
+  fill: #f2f0f7;
+}
+
+.q1-5 {
+  fill: #cbc9e2;
+}
+
+.q2-5 {
+  fill: #9e9ac8;
+}
+
+.q3-5 {
+  fill: #756bb1;
+}
+
+.q4-5 {
+  fill: #54278f;
+}
 
 .state {
   font-family: 'Varela Round', sans-serif;
@@ -138,13 +162,11 @@ svg {
     margin-bottom: 1500px;
     z-index: 2;
   }
-
   .constChart-text-wrapper {
     margin: 0 auto;
     padding-bottom: 1700px !important;
     z-index: -1;
   }
-
   .map-wrapper {
     margin: 0 auto;
     padding-bottom: 1000px !important;
@@ -164,11 +186,10 @@ svg {
     padding-bottom: 1500px !important;
     z-index: -1;
   }
-
 }
 
 .hide-map {
-  display: none;
+  display: none!important;
 }
 
 div.chart-tooltip {
