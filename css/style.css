@@ -54,8 +54,8 @@
   stroke: #FFFFFF;
 }
 
-#west_map_party {
-  stroke: #FFFFFFF;
+#west_map_party path {
+  stroke: #FFFFFF;
 }
 
 .y-axis line {
@@ -89,13 +89,15 @@ svg {
 /* Independent candidates' seats colour */
 
 .ind {
-  fill: #333333;
+  fill: #FFFF00;
 }
 
 /* Solidariti's seat colour */
 
 .solidariti {
   fill: #78D7F5;
+  stroke: #333333;
+    stroke-width: 1;
 }
 
 .q0-5 {
@@ -152,7 +154,7 @@ svg {
   bottom: 20px;
   left: 50%;
   margin-left: -240px;
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 @media screen and (max-width: 500px) {
@@ -160,17 +162,17 @@ svg {
     background: #FFFF00;
     margin: 0 auto;
     margin-bottom: 1500px;
-    z-index: 2;
+    /* z-index: 2; */
   }
   .constChart-text-wrapper {
     margin: 0 auto;
     padding-bottom: 1700px !important;
-    z-index: -1;
+    /* z-index: -1; */
   }
   .map-wrapper {
     margin: 0 auto;
     padding-bottom: 1000px !important;
-    z-index: -1;
+    /* z-index: -1; */
   }
 }
 
@@ -179,12 +181,12 @@ svg {
     background: #FFFF00;
     margin: 0 auto;
     margin-bottom: 1000px;
-    z-index: 2;
+    /* z-index: 2; */
   }
   .constChart-text-wrapper, .map-wrapper {
     margin: 0 auto;
     padding-bottom: 1500px !important;
-    z-index: -1;
+    /* z-index: -1; */
   }
 }
 
@@ -213,4 +215,11 @@ div.chart-tooltip {
 
 .legend {
   font-family: 'Open Sans', sans-serif;
+}
+
+.legend-container {
+  fill: #FFFFFF;
+  opacity: 0.9;
+  stroke: #D3D3D3;
+  stroke-width: 2;
 }

@@ -67,6 +67,11 @@ $(document).ready(function() {
       .text('');
   };
 
+  var instruction = mapContainer.append('text')
+  .attr('x', (width * 0.65))
+  .attr('y', 120)
+  .text('Mouse over/tab to see details');
+
   // Credit
 
   mapContainer.append('text')
@@ -140,7 +145,7 @@ $(document).ready(function() {
 
   // legend
   var size = 200;
-  var legend_coallition = ['Pakatan Harapan', 'Barisan Nasional', 'PAS', 'Independent'];
+  var legend_coallition = ['Pakatan Harapan (97 seats)', 'Barisan Nasional (50 seats)', 'PAS (18 seats)', 'Independent (1 seat)'];
   var legend = mapContainer.append('svg')
     .attr('width', 300)
     .attr('height', (size * 2))
@@ -158,11 +163,11 @@ $(document).ready(function() {
     .attr('width', 36)
     .attr('height', 36)
     .attr('class', function(d) {
-      if (d === 'Pakatan Harapan') {
+      if (d === 'Pakatan Harapan (97 seats)') {
         return 'ph';
-      } else if (d === 'PAS') {
+      } else if (d === 'PAS (18 seats)') {
         return 'pas';
-      } else if (d === 'Barisan Nasional') {
+      } else if (d === 'Barisan Nasional (50 seats)') {
         return 'bn';
       } else {
         return 'ind';
@@ -207,6 +212,8 @@ $(document).ready(function() {
 
   function showInfo(d) {
 
+    instruction.text('');
+
     constName.text(constByKodPAR.get(d.properties.KodPAR) + ' (' + malayByKodPAR.get(d.properties.KodPAR) +'% Malay voters)')
       .attr('class', 'constituency');
 
@@ -231,6 +238,7 @@ $(document).ready(function() {
 
   function removeInfo() {
 
+    instruction.text('Mouse over/tab to see details.');
     stateName.text('');
     constName.text('');
     winner.text('');
@@ -238,15 +246,13 @@ $(document).ready(function() {
     mapContainer.selectAll('.losers').text('');
   }
 
-
-
   // responsive
   // d3.select(window).on('resize', resize);
   //
   // function resize() {
   //
-  //   width = parseInt(d3.select('#map').style('width'));
-  //   width = $(window).width() * .97;
+  //   width = parseInt(d3.select('#west_map_party').style('width'));
+  //   width = $(window).width() * 0.97;
   //   height = width / 1.85;
   //
   //   projection
@@ -261,4 +267,6 @@ $(document).ready(function() {
   //
   //
   // }
+  //
+  // resize();
 });

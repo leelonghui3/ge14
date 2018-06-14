@@ -106,7 +106,7 @@ $(document).ready(function() {
       .domain(data.map(function(d) {
         return d.const_name;
       }))
-      .range([(height - padding), padding])
+      .range([(height - (padding*2)), 0])
       .padding(0.2);
 
     // define axes
@@ -116,7 +116,7 @@ $(document).ready(function() {
     var yAxis = d3.axisLeft(yScale);
 
     constChart.append('g')
-      .attr('transform', 'translate(0,' + (height - padding) + ')')
+      .attr('transform', 'translate(0,' + (height - (padding*2)) + ')')
       .call(xAxis);
 
     constChart.append('g')
@@ -152,13 +152,12 @@ $(document).ready(function() {
         d3.select(this).classed('const_color', true);
       });
 
-    // // add a label for the y axis
-    // constChart.append('text')
-    //   .attr("class", 'xAxis_label')
-    //   .attr('text-anchor', 'middle')
-    //   .attr('y', (height))
-    //   .attr('x', (width / 2))
-    //   .text('Number of Voters');
+    // add a label for the y axis
+    constChart.append('text')
+      .attr("class", 'xAxis_label')
+      .attr('y', height - 5)
+      .attr('x', padding)
+      .text('Source: Malaysian Election Commission (2018), Malaysiakini (2008)');
 
     // Show seat information
     function showInfo(d) {
@@ -226,39 +225,6 @@ $(document).ready(function() {
     console.log('PH: ' + PHmean);
     console.log('BN: ' + BNmean);
     console.log('PAS: ' + PASmean);
-
-    // transition
-    // $('#showChart').waypoint(function(direction) {
-    //   if (direction === 'down') {
-    //     console.log('show chart');
-    //     $('#constChart').removeClass('.constChart-wrapper').addClass('uk-position-fixed uk-position-bottom-center');
-    //   } else {
-    //     console.log('hide chart');
-    //     $('#constChart').removeClass('uk-position-fixed uk-position-bottom-center').addClass('.constChart-wrapper');
-    //   }
-    // }, {
-    //   offset: 0
-    // });
-
-    // // Show biggest and smallest Seats
-    // $('#barchart-1').waypoint(function(direction) {
-    //   if (direction === 'down') {
-    //     bars.transition()
-    //       .duration(2000)
-    //       .attr('width', function(d) {
-    //         if (d.const_name === 'Igan' || d.const_name === 'Bangi') {
-    //           return xScale(d.total_voters);
-    //         }
-    //       })
-    //       .ease(d3.easeElastic);
-    //   } else {
-    //     bars.transition()
-    //       .duration(500)
-    //       .attr('width', 0);
-    //   }
-    // }, {
-    //   offset: '40%'
-    // });
 
     // BN seats and transition
     $('#barchart-1').waypoint(function(direction) {
@@ -493,17 +459,6 @@ $(document).ready(function() {
     }}, {
       offset: '40%'
     });
-
-    // $('#constChart-text-wrapper').waypoint(function(direction) {
-    //   if (direction === 'down') {
-    //     $('#constChart').removeClass('uk-position-fixed').addClass('uk-position-absolute');
-    //   } else {
-    //     console.log('isnotbottom');
-    //     $('#constChart').removeClass('uk-position-absolute').addClass('uk-position-fixed');
-    //   }
-    // }, {
-    //   offset: 'bottom-in-view'
-    // });
 
   });
 });
