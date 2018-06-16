@@ -4,16 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="js/d3.min.js"></script>
-  <script type="text/javascript" src="js/uikit.min.js"></script>
-  <script type="text/javascript" src="js/uikit-icons.min.js"></script>
-  <script type="text/javascript" src="js/d3-queue.min.js"></script>
-  <script type="text/javascript" src="js/topojson.min.js"></script>
-  <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-  <link type='text/css' rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+  <script src="js/jquery-ui.min.js" charset="utf-8"></script>
+  <script src="js/d3.min.js" charset="utf-8"></script>
+  <script src="js/uikit.min.js" charset="utf-8"></script>
+  <script src="js/uikit-icons.min.js" charset="utf-8"></script>
+  <script src="js/d3-queue.min.js" charset="utf-8"></script>
+  <script src="js/topojson.min.js" charset="utf-8"></script>
+  <script src="js/jquery.waypoints.min.js" charset="utf-8"></script>
   <link type="text/css" rel="stylesheet" href="css/uikit.min.css" />
+  <link type='text/css' rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -21,45 +21,45 @@
 
 
   <!-- <section class="constChart-text-wrapper uk-section uk-margin-top uk-container uk-container-center uk-position-relative" style="background-color: #cccccc">
-    <div class="east-map-wrapper uk-container uk-container-center uk-align-center" uk-sticky="offset: 100; bottom: true">
+    <div class="east-map-wrapper uk-container uk-container-center uk-align-center" data-uk-sticky="offset: 100; bottom: true">
       <div id="east_map_2013"></div>
       <div id="east_map_2018" class="hide-map"></div>
     </div>
-    <div id="2013map-text" class="testing" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">2013</div>
-    <div id="2018map-text" class="testing" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">2018</div>
+    <div id="2013map-text" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">2013</div>
+    <div id="2018map-text" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">2018</div>
   </section> -->
 
-  <!-- <section id="" class="constChart-text-wrapper uk-section uk-margin-top uk-container uk-container-center uk-position-relative" style="background-color: #cccccc">
-    <div id="constChart" class="" uk-sticky="offset: 200; bottom: true">
+  <section id="" class="constChart-text-wrapper uk-section uk-margin-top uk-container uk-container-center uk-position-relative" style="background-color: #cccccc">
+    <div id="constChart" class="constChart-wrapper" data-uk-sticky="offset: 200; bottom: true">
       <div id="const_chart" class=""></div>
     </div>
-    <div id="barchart-1" class="testing" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Shows BN seats</div>
-    <div id="barchart-2" class="testing" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Shows National and BN average line</div>
-    <div id="barchart-3" class="testing" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Show PH seats and PH average</div>
-    <div id="barchart-4" class="testing" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Show PAS and independents seats and PAS average</div>
-    <div id="barchart-5" class="testing" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Show all</div>
-  </section> -->
+    <div id="barchart-1" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Shows BN seats</div>
+    <div id="barchart-2" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Shows National and BN average line</div>
+    <div id="barchart-3" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Show PH seats and PH average</div>
+    <div id="barchart-4" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Show PAS and independents seats and PAS average</div>
+    <div id="barchart-5" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Show all</div>
+  </section>
 
-  <section class="uk-section uk-container uk-container-center">
+  <!-- <section class="uk-section uk-container uk-container-center">
     <h1 class="">Map title</h1>
     <div id="west_map_wrapper" class="uk-display-inline-block">
       <div id="west_map_malay" class="uk-position-relative"></div>
-      <!-- <div id="west_map_party" class="hide-map uk-position-relative"></div> -->
-      <!-- <p uk-margin class="uk-text-center">
-        <button id="malay" class="uk-button uk-button-primary" name="button">Malay</button>
-        <button id="party" class="uk-button uk-button-secondary" name="button">Party</button>
-      </p> -->
+      <div id="west_map_party" class="hide-map uk-position-relative"></div>
+      <p uk-margin class="uk-text-center">
+        <button id="malay" class="uk-button uk-button-default" name="button">Malay</button>
+        <button id="party" class="uk-button uk-button-default" name="button">Party</button>
+      </p>
     </div>
-  </section>
+  </section> -->
 
-  <!-- <script src="js/east_map_2018.js" charset="utf-8"></script>
+  <script src="js/east_map_2018.js" charset="utf-8"></script>
   <script src="js/east_map_2013.js" charset="utf-8"></script>
-  <script src="js/map_waypoints.js" charset="utf-8"></script> -->
-  <!-- <script src="js/barchart.js" charset="utf-8"></script> -->
+  <script src="js/map_waypoints.js" charset="utf-8"></script>
+  <script src="js/barchart.js" charset="utf-8"></script>
   <script src="js/west_map_malay_2.js" charset="utf-8"></script>
-  <!-- <script src="js/west_map_party.js" charset="utf-8"></script> -->
+  <script src="js/west_map_party.js" charset="utf-8"></script>
 
-  <!-- <script type="text/javascript">
+  <script type="text/javascript">
     $('#party').click(function() {
       $('#west_map_malay').addClass('hide-map');
       $('#west_map_party').removeClass('hide-map');
@@ -69,7 +69,7 @@
       $('#west_map_party').addClass('hide-map');
       $('#west_map_malay').removeClass('hide-map');
     })
-  </script> -->
+  </script>
 
 </body>
 

@@ -96,8 +96,6 @@ svg {
 
 .solidariti {
   fill: #78D7F5;
-  stroke: #333333;
-    stroke-width: 1;
 }
 
 .q0-5 {
@@ -162,7 +160,7 @@ svg {
     background: #FFFF00;
     margin: 0 auto;
     margin-bottom: 1500px;
-    /* z-index: 2; */
+    z-index: 1;
   }
   .constChart-text-wrapper {
     margin: 0 auto;
@@ -174,6 +172,9 @@ svg {
     padding-bottom: 1000px !important;
     /* z-index: -1; */
   }
+  .constChart-wrapper {
+    z-index: 0;
+  }
 }
 
 @media screen and (min-width: 501px) {
@@ -181,17 +182,20 @@ svg {
     background: #FFFF00;
     margin: 0 auto;
     margin-bottom: 1000px;
-    /* z-index: 2; */
+    z-index: 1;
   }
   .constChart-text-wrapper, .map-wrapper {
     margin: 0 auto;
     padding-bottom: 1500px !important;
     /* z-index: -1; */
   }
+  .constChart-wrapper {
+    z-index: 0;
+  }
 }
 
 .hide-map {
-  display: none!important;
+  display: none !important;
 }
 
 div.chart-tooltip {
@@ -222,4 +226,9 @@ div.chart-tooltip {
   opacity: 0.9;
   stroke: #D3D3D3;
   stroke-width: 2;
+}
+
+#malay, #party {
+  background: #9e9ac8;
+  color: #FFFFFF;
 }

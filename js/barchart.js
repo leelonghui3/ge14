@@ -8,7 +8,8 @@ $(document).ready(function() {
 
     var width = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) * 0.8;
     var height = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) * 0.7;
-    padding = 20;
+    var padding = 20;
+    var paddingBottom = 70;
 
     var constChart = d3.select('#const_chart').append('svg')
       .attr('width', width)
@@ -28,10 +29,6 @@ $(document).ready(function() {
         .attr("perserveAspectRatio", "xMinYMid")
         .call(resize);
 
-      // to register multiple listeners for same event type,
-      // you need to add namespace, i.e., 'click.foo'
-      // necessary if you call invoke this function for multiple svgs
-      // api docs: https://github.com/mbostock/d3/wiki/Selections#on
       d3.select(window).on("resize." + container.attr("id"), resize);
 
       // get width of container and resize svg to fit it
@@ -42,7 +39,7 @@ $(document).ready(function() {
       }
     }
 
-    var div = d3.select('#const_chart').append('div')
+    var div = d3.select('body').append('div')
       .attr('class', 'chart-tooltip')
       .style('opacity', 0);
 
@@ -106,7 +103,7 @@ $(document).ready(function() {
       .domain(data.map(function(d) {
         return d.const_name;
       }))
-      .range([(height - (padding*2)), 0])
+      .range([(height - paddingBottom), 0])
       .padding(0.2);
 
     // define axes
@@ -116,7 +113,7 @@ $(document).ready(function() {
     var yAxis = d3.axisLeft(yScale);
 
     constChart.append('g')
-      .attr('transform', 'translate(0,' + (height - (padding*2)) + ')')
+      .attr('transform', 'translate(0,' + (height - paddingBottom) + ')')
       .call(xAxis);
 
     constChart.append('g')
@@ -154,28 +151,38 @@ $(document).ready(function() {
 
     // add a label for the y axis
     constChart.append('text')
-      .attr("class", 'xAxis_label')
+    .attr('x', (width / 2))
+    .attr('y', (height - 30))
+    .text('Number of voters');
+
+    // credit
+    constChart.append('text')
       .attr('y', height - 5)
       .attr('x', padding)
       .text('Source: Malaysian Election Commission (2018), Malaysiakini (2008)');
 
     // Show seat information
     function showInfo(d) {
-      constName.text(d.const_name);
-      state.text(d.State);
-      coallitionColour.style('opacity', 1)
-        .attr('class', const_color(d));
-      wonCoallition.text(d.won_coallition)
-        .attr('class', const_color(d));
-      voters.text(d3.format(',')(d.total_voters) + ' voters');
+
+      div.html(d.won_coallition)
+      .style('opacity', 1)
+      .style("left", (d3.event.pageX) + "px")
+      .style("top", (d3.event.pageY - 28) + "px");
+      // constName.text(d.const_name);
+      // state.text(d.State);
+      // coallitionColour.style('opacity', 1)
+      //   .attr('class', const_color(d));
+      // wonCoallition.text(d.won_coallition)
+      //   .attr('class', const_color(d));
+      // voters.text(d3.format(',')(d.total_voters) + ' voters');
     }
 
     function removeInfo() {
-      constName.text('');
-      state.text('');
-      coallitionColour.style('opacity', 0);
-      wonCoallition.text('');
-      voters.text('');
+      // constName.text('');
+      // state.text('');
+      // coallitionColour.style('opacity', 0);
+      // wonCoallition.text('');
+      // voters.text('');
     }
 
     // render color for each bar
@@ -257,8 +264,8 @@ $(document).ready(function() {
     var nationalmeanLine = constChart.append('line')
       .attr('x1', xScale(nationalmean))
       .attr('x2', xScale(nationalmean))
-      .attr('y1', padding)
-      .attr('y2', padding)
+      .attr('y1', 0)
+      .attr('y2', 0)
       .style('stroke', '#333333')
       .style('stroke-dasharray', '3, 3');
 
@@ -269,8 +276,8 @@ $(document).ready(function() {
     var BNmeanLine = constChart.append('line')
       .attr('x1', xScale(BNmean))
       .attr('x2', xScale(BNmean))
-      .attr('y1', padding)
-      .attr('y2', padding)
+      .attr('y1', 0)
+      .attr('y2', 0)
       .style('stroke', '#092781')
       .style('stroke-dasharray', '3, 3');
 
@@ -283,7 +290,7 @@ $(document).ready(function() {
         console.log('Show national and BN line and text');
         nationalmeanLine.transition()
           .duration(1000)
-          .attr('y2', (height - padding));
+          .attr('y2', (height - paddingBottom));
 
         nationalText.transition()
           .delay(1000)
@@ -292,7 +299,7 @@ $(document).ready(function() {
 
         BNmeanLine.transition()
           .duration(1000)
-          .attr('y2', (height - padding));
+          .attr('y2', (height - paddingBottom));
 
         BNText.transition()
           .delay(1000)
@@ -301,10 +308,10 @@ $(document).ready(function() {
       } else {
         console.log('Hide national line and text');
         nationalmeanLine.transition()
-          .attr('y2', padding);
+          .attr('y2', 0);
 
         BNmeanLine.transition()
-        .attr('y2', padding);
+        .attr('y2', 0);
 
         nationalText.text('');
         BNText.text('');
@@ -317,8 +324,8 @@ $(document).ready(function() {
     var PHmeanLine = constChart.append('line')
       .attr('x1', xScale(PHmean))
       .attr('x2', xScale(PHmean))
-      .attr('y1', padding)
-      .attr('y2', padding)
+      .attr('y1', 0)
+      .attr('y2', 0)
       .style('stroke', '#ED1C24')
       .style('stroke-dasharray', '3, 3');
 
@@ -343,7 +350,7 @@ $(document).ready(function() {
 
         PHmeanLine.transition()
           .duration(1000)
-          .attr('y2', (height - padding));
+          .attr('y2', (height - paddingBottom));
 
         PHText.transition()
           .delay(1000)
@@ -365,7 +372,7 @@ $(document).ready(function() {
           .ease(d3.easeElastic);
 
         PHmeanLine.transition()
-          .attr('y2', padding);
+          .attr('y2', 0);
 
         PHText.text('');
       }
@@ -377,8 +384,8 @@ $(document).ready(function() {
     var PASmeanLine = constChart.append('line')
       .attr('x1', xScale(PASmean))
       .attr('x2', xScale(PASmean))
-      .attr('y1', padding)
-      .attr('y2', padding)
+      .attr('y1', 0)
+      .attr('y2', 0)
       .attr('stroke', '#009000')
       .style('stroke-dasharray', '3, 3');
 
@@ -404,7 +411,7 @@ $(document).ready(function() {
 
         PASmeanLine.transition()
           .duration(1000)
-          .attr('y2', (height - padding));
+          .attr('y2', (height - paddingBottom));
 
         PASText.transition()
           .delay(1000)
@@ -425,7 +432,7 @@ $(document).ready(function() {
           .ease(d3.easeElastic);
 
         PASmeanLine.transition()
-          .attr('y2', padding);
+          .attr('y2', 0);
 
         PASText.text('');
       }
