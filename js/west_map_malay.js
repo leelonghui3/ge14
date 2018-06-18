@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
-  // var width = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) * 0.8;
-  // // var height = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) * 0.9;
-  // var height = 600;
+  var width = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) * 0.8;
+  // var height = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) * 0.9;
+  var height = 600;
 
-  var viewportWidth = $(window).width();
-  var viewportHeight = $(window).height()/2;
-  var width = viewportWidth * 0.8;
-  var height = width/1.85;
+  // var viewportWidth = $(window).width();
+  // var viewportHeight = $(window).height() / 2;
+  // var width = viewportWidth * 0.8;
+  // var height = width / 1.85;
 
   var mapContainer = d3.select('#west_map_malay')
     .append('svg')
@@ -15,9 +15,10 @@ $(document).ready(function() {
     .attr('height', height)
     .append('g');
 
-  var projection = d3.geoMercator()
-  .scale([width/3.5])
-  .translate([width/1,height*1.4]);
+  var projection = d3.geoMercator();
+
+    projection.scale([width / 3.5])
+    .translate([width / 1, height * 1.4]);
 
   var path = d3.geoPath()
     .projection(projection);
@@ -39,7 +40,7 @@ $(document).ready(function() {
       return "q" + i + "-5";
     }));
 
-    var instruction = mapContainer.append('text')
+  var instruction = mapContainer.append('text')
     .attr('x', (width * 0.65))
     .attr('y', 120)
     .text('Mouse over/tab to see details');
@@ -146,48 +147,48 @@ $(document).ready(function() {
       .attr('d', path);
 
 
-  // legend
-  var size = 200;
+    // legend
+    var size = 200;
 
-  var legend_malay = ['20', '40', '60', '80+', ''];
+    var legend_malay = ['20', '40', '60', '80+', ''];
 
-  var legendTitle = mapContainer.append('text')
-  .attr('x', (width * 0.65))
-  .attr('y', 40)
-  .attr('width', 300)
-  .attr('height', 20)
-  .text('Malay voters percentage (%)');
+    var legendTitle = mapContainer.append('text')
+      .attr('x', (width * 0.65))
+      .attr('y', 40)
+      .attr('width', 300)
+      .attr('height', 20)
+      .text('Malay voters percentage (%)');
 
-  var legend = mapContainer.append('svg')
-    .attr('width', 300)
-    .attr('height', 100)
-    .attr('x', (width * 0.65))
-    .attr('y', 50)
-    .selectAll('g')
-    .data(legend_malay)
-    .enter()
-    .append('g')
-    .attr('transform', function(d, i) {
-      return 'translate(' + i * 40 + ", 0)";
-    });
+    var legend = mapContainer.append('svg')
+      .attr('width', 300)
+      .attr('height', 100)
+      .attr('x', (width * 0.65))
+      .attr('y', 50)
+      .selectAll('g')
+      .data(legend_malay)
+      .enter()
+      .append('g')
+      .attr('transform', function(d, i) {
+        return 'translate(' + i * 40 + ", 0)";
+      });
 
-  legend.append('rect')
-    .attr('width', 40)
-    .attr('height', 10)
-    .attr('class', function(d, i) {
-      return "q" + i + "-5";
-    });
+    legend.append('rect')
+      .attr('width', 40)
+      .attr('height', 10)
+      .attr('class', function(d, i) {
+        return "q" + i + "-5";
+      });
 
-  legend.append('text')
-    .attr('x', 35)
-    .attr('y', 20)
-    .attr('dy', '0.5em')
-    .attr('text-anchor', 'start')
-    .attr('class', 'legend')
-    .text(function(d) {
-      return d;
-    });
-}
+    legend.append('text')
+      .attr('x', 35)
+      .attr('y', 20)
+      .attr('dy', '0.5em')
+      .attr('text-anchor', 'start')
+      .attr('class', 'legend')
+      .text(function(d) {
+        return d;
+      });
+  }
 
   // render colour for each constituency
   function const_color(d) {
@@ -221,7 +222,7 @@ $(document).ready(function() {
 
     instruction.text('');
 
-    constName.text(constByKodPAR.get(d.properties.KodPAR) + ' (' + malayByKodPAR.get(d.properties.KodPAR) +'% Malay voters)')
+    constName.text(constByKodPAR.get(d.properties.KodPAR) + ' (' + malayByKodPAR.get(d.properties.KodPAR) + '% Malay voters)')
       .attr('class', 'constituency');
 
     stateName.text('State: ' + stateByKodPAR.get(d.properties.KodPAR))
@@ -253,22 +254,22 @@ $(document).ready(function() {
     mapContainer.selectAll('.losers').text('');
   }
 
-  // responsive
-  d3.select(window).on('resize', resize);
-
-  function resize() {
-
-    width = parseInt(d3.select('#west_map_malay').style('width'));
-    width = $(window).width() * 0.8;
-    height = width / 1.85;
-
-    projection
-      .scale([width / 3.5])
-      .translate([width / 1, height * 1.4]);
-
-    d3.select('#west_map_malay').attr('width', width).attr('height', height);
-    d3.select('svg').attr('width', width).attr('height', height);
-
-    d3.selectAll('path').attr('d', path);
-  }
+  // // responsive
+  // d3.select(window).on('resize', resize);
+  //
+  // function resize() {
+  //
+  //   width = parseInt(d3.select('#west_map_malay').style('width'));
+  //   width = $(window).width() * 0.8;
+  //   height = width / 1.85;
+  //
+  //   projection
+  //     .scale([width / 3.5])
+  //     .translate([width / 1, height * 1.4]);
+  //
+  //   d3.select('#west_map_malay').attr('width', width).attr('height', height);
+  //   d3.select('svg').attr('width', width).attr('height', height);
+  //
+  //   d3.selectAll('path').attr('d', path);
+  // }
 });

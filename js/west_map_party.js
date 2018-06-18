@@ -111,7 +111,6 @@ $(document).ready(function() {
         });
       }
       winnerByKodPAR.set(d['KodPAR'], results[d['KodPAR']]);
-      // console.log(winnerByKodPAR.set(d['KodPAR'], results[d['KodPAR']]));
     })
     .await(ready);
 

@@ -43,19 +43,19 @@
 }
 
 #east_map_2018 path {
-  stroke: #FFFFFF;
+  stroke: #D3D3D3;
 }
 
 #east_map_2013 path {
-  stroke: #FFFFFF;
+  stroke: #D3D3D3;
 }
 
 #west_map_malay path {
-  stroke: #FFFFFF;
+  stroke: #D3D3D3;
 }
 
 #west_map_party path {
-  stroke: #FFFFFF;
+  stroke: #D3D3D3;
 }
 
 .y-axis line {
@@ -97,6 +97,9 @@ svg {
 .solidariti {
   fill: #78D7F5;
 }
+
+
+/* choropleth colour scheme */
 
 .q0-5 {
   fill: #f2f0f7;
@@ -205,7 +208,7 @@ div.chart-tooltip {
   height: 90px;
   padding: 2px;
   font: 1em 'Open Sans', sans-serif;
-  background: #FFFFFF;
+  background: #f2f0f7;
   border: 1px solid #000000;
   /* border-radius: 8px; */
   pointer-events: none;
