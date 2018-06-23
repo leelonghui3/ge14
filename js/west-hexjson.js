@@ -7,7 +7,7 @@ $(document).ready(function() {
       bottom: 10,
       left: 10
     },
-    width = 1200 - margin.left - margin.right,
+    width = 1400 - margin.left - margin.right,
     height = 900 - margin.top - margin.bottom;
 
   // Create the svg element
