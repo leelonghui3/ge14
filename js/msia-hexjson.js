@@ -57,10 +57,10 @@ $(document).ready(function() {
 				} else if (d.state === 'Terengganu') {
 					return 'purple'
 				} else if (d.state === 'Perak') {
-          return '#333333';
+          return '#FFDF00';
         } else if (d.state === 'Kelantan') {
           return 'green';
-        } else if (d.state === 'Pulau Pinang' || d.state === 'Sabah') {
+        } else if (d.state === 'Penang' || d.state === 'Sabah') {
           return 'cyan';
         }
 
@@ -75,7 +75,7 @@ $(document).ready(function() {
         return hex.key;
       })
 			.style('fill', function(d) {
-				if (d.state === 'Selangor' || d.state === 'Pulau Pinang' || d.state === 'Sabah') {
+				if (d.state === 'Selangor' || d.state === 'Penang' || d.state === 'Sabah' || d.state === 'Perak') {
 					return '#333333';
 				} else {
 					return '#ffffff'
