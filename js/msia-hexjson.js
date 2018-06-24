@@ -46,7 +46,7 @@ $(document).ready(function() {
 					return 'blue';
 				} else if (d.state === "Negeri Sembilan" || d.state === 'Kedah'){
 					return 'red';
-				} else if (d.state === 'Melaka' || d.state === 'Sarawak') {
+				} else if (d.state === 'Malacca' || d.state === 'Sarawak') {
 					return 'orange';
 				} else if (d.state === 'Selangor') {
 					return 'yellow';
