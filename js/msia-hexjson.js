@@ -35,53 +35,45 @@ $(document).ready(function() {
 
     // Draw the polygons around each hex's centre
     hexmap
-      .append("polygon")
-      .attr("points", function(hex) {
+      .append('polygon')
+      .attr('points', function(hex) {
         return hex.points;
       })
-      .attr("stroke", "white")
-      .attr("stroke-width", "2")
-      .attr("fill", function(d) {
-				if (d.state === "Johor") {
-					return 'blue';
-				} else if (d.state === "Negeri Sembilan" || d.state === 'Kedah'){
-					return 'red';
-				} else if (d.state === 'Malacca' || d.state === 'Sarawak') {
-					return 'orange';
-				} else if (d.state === 'Selangor') {
-					return 'yellow';
-				} else if (d.state === 'Federal Territories' || d.state === 'Perlis') {
-					return '#4682b4';
-				} else if (d.state === 'Pahang') {
-					return 'lightgrey';
-				} else if (d.state === 'Terengganu') {
-					return 'purple'
-				} else if (d.state === 'Perak') {
-          return '#FFDF00';
-        } else if (d.state === 'Kelantan') {
-          return 'green';
-        } else if (d.state === 'Penang' || d.state === 'Sabah') {
-          return 'cyan';
-        }
+      .attr('stroke', '#3d3d3d')
+      .attr('stroke-width', '2')
+      .attr('class', const_color);
 
-			});
+  //   // Add the hex codes as labels
+  //   hexmap
+  //     .append("text")
+  //     .append("tspan")
+  //     .attr("text-anchor", "middle")
+  //     .text(function(hex) {
+  //       return hex.key;
+  //     })
+	// 		.style('fill', function(d) {
+	// 			if (d.state === 'Selangor' || d.state === 'Penang' || d.state === 'Sabah' || d.state === 'Perak') {
+	// 				return '#333333';
+	// 			} else {
+	// 				return '#ffffff'
+	// 			}
+	// 		})
+	// 		.style('font-size', 'small');
+  // });
 
-    // Add the hex codes as labels
-    hexmap
-      .append("text")
-      .append("tspan")
-      .attr("text-anchor", "middle")
-      .text(function(hex) {
-        return hex.key;
-      })
-			.style('fill', function(d) {
-				if (d.state === 'Selangor' || d.state === 'Penang' || d.state === 'Sabah' || d.state === 'Perak') {
-					return '#333333';
-				} else {
-					return '#ffffff'
-				}
-			})
-			.style('font-size', 'small');
-  });
+  function const_color(d) {
+    if (d.ge14_win_coallition === 'PH')
+      return 'ph';
+    else if (d.ge14_win_coallition === 'PAS')
+      return 'pas';
+    else if (d.ge14_win_coallition === 'BN')
+      return 'bn';
+    else if (d.ge14_win_coallition === 'SOLIDARITI')
+      return 'solidariti';
+    else {
+      return 'ind';
+    }
+  }
 
+});
 });
