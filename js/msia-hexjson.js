@@ -7,8 +7,8 @@ $(document).ready(function() {
       bottom: 10,
       left: 10
     },
-    width = 1400 - margin.left - margin.right,
-    height = 900 - margin.top - margin.bottom;
+    width = 1200 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
 
   // Create the svg element
   var svg = d3
@@ -19,7 +19,7 @@ $(document).ready(function() {
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  d3.json("data/msia.hexjson", function(error, hexjson) {
+  d3.json("data/msia-1.hexjson", function(error, hexjson) {
     // Render the hexes
     var hexes = d3.renderHexJSON(hexjson, width, height);
 
@@ -43,23 +43,22 @@ $(document).ready(function() {
       .attr('stroke-width', '2')
       .attr('class', const_color);
 
-  //   // Add the hex codes as labels
-  //   hexmap
-  //     .append("text")
-  //     .append("tspan")
-  //     .attr("text-anchor", "middle")
-  //     .text(function(hex) {
-  //       return hex.key;
-  //     })
-	// 		.style('fill', function(d) {
-	// 			if (d.state === 'Selangor' || d.state === 'Penang' || d.state === 'Sabah' || d.state === 'Perak') {
-	// 				return '#333333';
-	// 			} else {
-	// 				return '#ffffff'
-	// 			}
-	// 		})
-	// 		.style('font-size', 'small');
-  // });
+    // Add the hex codes as labels
+    hexmap
+      .append("text")
+      .append("tspan")
+      .attr("text-anchor", "middle")
+      .text(function(hex) {
+        return hex.key;
+      })
+			.style('fill', function(d) {
+				if (d.ge14_win_coallition === 'IND' || d.ge14_win_coallition === 'SOLIDARITI') {
+					return '#333333';
+				} else {
+					return '#ffffff'
+				}
+			})
+			.style('font-size', 'small');
 
   function const_color(d) {
     if (d.ge14_win_coallition === 'PH')
@@ -74,6 +73,5 @@ $(document).ready(function() {
       return 'ind';
     }
   }
-
 });
 });
