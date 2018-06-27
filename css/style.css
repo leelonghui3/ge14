@@ -89,7 +89,7 @@ svg {
 /* Independent candidates' seats colour */
 
 .ind {
-  fill: #FFFF00;
+  fill: #FFA500;
 }
 
 /* Solidariti's seat colour */
@@ -146,7 +146,7 @@ svg {
 }
 
 .active {
-  fill: #FFA500;
+  fill: #FFFF00;
 }
 
 .chart-wrapper {
@@ -231,7 +231,7 @@ div.chart-tooltip {
   stroke-width: 2;
 }
 
-#malay, #party {
+#toggle {
   background: #9e9ac8;
   color: #FFFFFF;
 }

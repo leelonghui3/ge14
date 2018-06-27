@@ -21,9 +21,9 @@
 <body>
   <h2 class="uk-text-center">Title</h2>
 
-  <div id="msia" class=""></div>
 
-  <div id="vis" class=""></div>
+
+  <!-- <div id="east" class=""></div> -->
 
   <!-- <section class="constChart-text-wrapper uk-section uk-margin-top uk-container uk-container-center uk-position-relative" style="background-color: #cccccc">
     <div class="east-map-wrapper uk-container uk-container-center uk-align-center" data-uk-sticky="offset: 100; bottom: true">
@@ -45,40 +45,31 @@
     <div id="barchart-5" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Show all</div>
   </section> -->
 
-  <!-- <section class="uk-section uk-container uk-container-center">
+  <section class="uk-section uk-container uk-container-center">
     <h1 class="">Map title</h1>
     <div id="west_map_wrapper" class="uk-display-inline-block">
-      <div id="west_map_malay" class="hide-map uk-position-relative"></div>
-      <div id="west_map_party" class="uk-position-relative"></div>
+  <div id="west-party-hexmap" class=""></div>
+  <div id="west-malay-hexmap" class="hide-map"></div>
       <p uk-margin class="uk-text-center">
-        <button id="malay" class="uk-button uk-button-default" name="button">Malay</button>
-        <button id="party" class="uk-button uk-button-default" name="button">Party</button>
+        <button id="toggle" class="uk-button uk-button-default" name="button">Toggle</button>
       </p>
     </div>
-  </section> -->
+  </section>
 
   <script src="js/east_map_2018.js" charset="utf-8"></script>
   <script src="js/east_map_2013.js" charset="utf-8"></script>
   <script src="js/map_waypoints.js" charset="utf-8"></script>
   <script src="js/barchart.js" charset="utf-8"></script>
-  <script src="js/west_map_malay.js" charset="utf-8"></script>
-  <script src="js/west_map_party.js" charset="utf-8"></script>
+  <script src="js/west_malay_hexmap.js" charset="utf-8"></script>
+  <script src="js/west_party_hexmap.js" charset="utf-8"></script>
+  <script src="js/east-hexmap.js" charset="utf-8"></script>
+  <script type="text/javascript">
 
-  <script src="js/west-hexjson.js" charset="utf-8"></script>
-  <script src="js/msia-hexjson.js" charset="utf-8"></script>
-
-  <!-- <script type="text/javascript">
-
-    $('#party').click(function() {
-      $('#west_map_malay').addClass('hide-map');
-      $('#west_map_party').removeClass('hide-map');
-    })
-
-    $('#malay').click(function() {
-      $('#west_map_party').addClass('hide-map');
-      $('#west_map_malay').removeClass('hide-map');
-    })
-  </script> -->
+  $('#toggle').click(function() {
+    $('#west-malay-hexmap').toggleClass('hide-map');
+    $('#west-party-hexmap').toggleClass('hide-map');
+  })
+  </script>
 
 </body>
 

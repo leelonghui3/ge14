@@ -12,14 +12,14 @@ $(document).ready(function() {
 
   // Create the svg element
   var svg = d3
-    .select("#msia")
+    .select('#east')
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  d3.json("data/msia-1.hexjson", function(error, hexjson) {
+  d3.json("data/east.hexjson", function(error, hexjson) {
     // Render the hexes
     var hexes = d3.renderHexJSON(hexjson, width, height);
 
