@@ -39,9 +39,9 @@ $(document).ready(function() {
       }
     }
 
-    var div = d3.select('body').append('div')
-      .attr('class', 'chart-tooltip')
-      .style('opacity', 0);
+    // var div = d3.select('body').append('div')
+    //   .attr('class', 'chart-tooltip')
+    //   .style('opacity', 0);
 
     var infoBox = constChart.append('svg')
       .attr('width', 200)
@@ -60,7 +60,7 @@ $(document).ready(function() {
       .text('')
       .text('');
 
-    var coallitionColour = infoBox.append('rect')
+    var coallitionColor = infoBox.append('rect')
       .attr('width', 35)
       .attr('height', 35)
       .attr('x', 0)
@@ -83,7 +83,7 @@ $(document).ready(function() {
       d.won_coallition = d.won_coallition;
       d.winlose = d.winlose;
       d.total_voters = +d.total_voters;
-      d.voters = d.voters;
+      d.voters = +d.voters;
     });
 
     // sort data
@@ -135,7 +135,7 @@ $(document).ready(function() {
       .attr('height', yScale.bandwidth())
       .attr('class', const_color);
 
-    // tooltip
+    // showInfo
     bars.on('mouseover', function(d) {
         showInfo.call(this, d);
         d3.select(this).classed('active', true);
@@ -147,75 +147,78 @@ $(document).ready(function() {
         d3.select(this).classed('const_color', true);
       });
 
-    // add a label for the y axis
+    // add a label for the x axis
     constChart.append('text')
     .attr('x', (width / 2))
     .attr('y', (height - 30))
     .text('Number of voters');
 
-    // legend
-    var size = 200;
-    var legend_coallition = ['Pakatan Harapan', 'Barisan Nasional', 'PAS', 'Solidariti', 'Independent'];
-    var legend = constChart.append('svg')
-      .attr('width', 300)
-      .attr('height', (size * 2))
-      .attr('x', (width * 0.8))
-      .attr('y', padding)
-      .selectAll('g')
-      .data(legend_coallition)
-      .enter()
-      .append('g')
-      .attr('transform', function(d, i) {
-        return "translate(0," + i * 40 + ")";
-      });
-
-    legend.append('rect')
-      .attr('width', 36)
-      .attr('height', 36)
-      .attr('class', function(d) {
-        if (d === 'Pakatan Harapan') {
-          return 'ph';
-        } else if (d === 'PAS') {
-          return 'pas';
-        } else if (d === 'Barisan Nasional') {
-          return 'bn';
-        } else if (d === 'Solidariti') {
-          return 'solidariti';
-        } else {
-          return 'ind';
-        }
-      });
-
-    legend.append('text')
-      .attr('x', 40)
-      .attr('y', 15)
-      .attr('dy', '0.5em')
-      .attr('text-anchor', 'start')
-      .attr('class', 'legend')
-      .text(function(d) {
-        return d;
-      });
+    // // legend
+    // var size = 200;
+    // var legend_coallition = ['Pakatan Harapan', 'Barisan Nasional', 'PAS', 'Solidariti', 'Independent'];
+    // var legend = constChart.append('svg')
+    //   .attr('width', 300)
+    //   .attr('height', (size * 2))
+    //   .attr('x', (width * 0.8))
+    //   .attr('y', padding)
+    //   .selectAll('g')
+    //   .data(legend_coallition)
+    //   .enter()
+    //   .append('g')
+    //   .attr('transform', function(d, i) {
+    //     return "translate(0," + i * 40 + ")";
+    //   });
+    //
+    // legend.append('rect')
+    //   .attr('width', 36)
+    //   .attr('height', 36)
+    //   .attr('class', function(d) {
+    //     if (d === 'Pakatan Harapan') {
+    //       return 'ph';
+    //     } else if (d === 'PAS') {
+    //       return 'pas';
+    //     } else if (d === 'Barisan Nasional') {
+    //       return 'bn';
+    //     } else if (d === 'Solidariti') {
+    //       return 'solidariti';
+    //     } else {
+    //       return 'ind';
+    //     }
+    //   });
+    //
+    // legend.append('text')
+    //   .attr('x', 40)
+    //   .attr('y', 15)
+    //   .attr('dy', '0.5em')
+    //   .attr('text-anchor', 'start')
+    //   .attr('class', 'legend')
+    //   .text(function(d) {
+    //     return d;
+    //   });
 
     // credit
     constChart.append('text')
       .attr('y', height - 5)
       .attr('x', padding)
-      .text('Source: Malaysian Election Commission (2018), Malaysiakini (2008)');
+      .text('Source: Malaysian Election Commission (2018), Malaysiakini (2018)');
 
     // Show seat information
     function showInfo(d) {
-
-      div.html('<strong>' + d.const_name + '</strong></br>' +
-                d.State + '</br>' +
-                d.won_coallition + '</br>' +
-                'Total voters: <strong>' + d3.format(',')(d.total_voters) + '</strong>')
-      .style('opacity', 1)
-      .style("left", (d3.event.pageX + 10) + "px")
-      .style("top", (d3.event.pageY - 28) + "px");
+      constName.text(d.const_name);
+      state.text(d.State);
+      coallitionColor.style('opacity', 1)
+        .attr('class', const_color(d));
+      wonCoallition.text(d.won_coallition)
+        .attr('class', const_color(d));
+      voters.text(d3.format(',')(d.total_voters) + ' voters');
     }
 
     function removeInfo() {
-      div.style('opacity', 0);
+      constName.text('');
+      state.text('');
+      coallitionColor.style('opacity', 0);
+      wonCoallition.text('');
+      voters.text('');
     }
 
     // render color for each bar

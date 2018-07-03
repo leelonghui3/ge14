@@ -21,18 +21,37 @@
 <body>
   <h2 class="uk-text-center">Title</h2>
 
-
-
-  <!-- <div id="east" class=""></div> -->
-
   <!-- <section class="constChart-text-wrapper uk-section uk-margin-top uk-container uk-container-center uk-position-relative" style="background-color: #cccccc">
     <div class="east-map-wrapper uk-container uk-container-center uk-align-center" data-uk-sticky="offset: 100; bottom: true">
-      <div id="east_map_2013"></div>
-      <div id="east_map_2018" class="hide-map"></div>
+      <div id="east" class=""></div>
     </div>
-    <div id="2013map-text" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">2013</div>
-    <div id="2018map-text" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">2018</div>
+    <div id="2013map-text" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">2013</div>
+    <div id="2018map-text" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">2018</div>
   </section> -->
+
+  <section class="uk-section uk-container uk-container-center">
+    <h1 class="">Map title</h1>
+    <div id="west_map_wrapper" class="uk-display-inline-block">
+      <div id="west-party-hexmap" class=""></div>
+      <div id="west-malay-hexmap" class="hide-map"></div>
+      <p uk-margin class="uk-text-center">
+        <button id="toggle" class="uk-button uk-button-default" name="button">Toggle</button>
+      </p>
+    </div>
+  </section>
+  
+  <section class="constChart-text-wrapper uk-section uk-margin_top uk-container uk-container-center uk-position-relative">
+    <div class="constChart-wrapper" data-uk-sticky="offset:200; bottom: true">
+      <div id="circle-chart" class=""></div>
+    </div>
+    <div id="circlechart-1" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">Shows GE13</div>
+    <div id="circlechart-2" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">Shows GE13 adjusted</div>
+    <div id="circlechart-3" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">Shows GE14</div>
+    <div id="circlechart-4" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">Shows BN positive</div>
+    <div id="circlechart-5" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">Shows Langkawi</div>
+    <div id="circlechart-6" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">Shows Kedah</div>
+  </section>
+
 
   <!-- <section id="" class="constChart-text-wrapper uk-section uk-margin-top uk-container uk-container-center uk-position-relative" style="background-color: #cccccc">
     <div id="constChart" class="constChart-wrapper" data-uk-sticky="offset: 200; bottom: true">
@@ -45,18 +64,10 @@
     <div id="barchart-5" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Show all</div>
   </section> -->
 
-  <section class="uk-section uk-container uk-container-center">
-    <h1 class="">Map title</h1>
-    <div id="west_map_wrapper" class="uk-display-inline-block">
-  <div id="west-party-hexmap" class=""></div>
-  <div id="west-malay-hexmap" class="hide-map"></div>
-      <p uk-margin class="uk-text-center">
-        <button id="toggle" class="uk-button uk-button-default" name="button">Toggle</button>
-      </p>
-    </div>
-  </section>
 
-  <script src="js/east_map_2018.js" charset="utf-8"></script>
+
+  <script src="js/bubblechart.js" charset="utf-8"></script>
+  <script src="js/map_2018.js" charset="utf-8"></script>
   <script src="js/east_map_2013.js" charset="utf-8"></script>
   <script src="js/map_waypoints.js" charset="utf-8"></script>
   <script src="js/barchart.js" charset="utf-8"></script>
@@ -64,11 +75,10 @@
   <script src="js/west_party_hexmap.js" charset="utf-8"></script>
   <script src="js/east-hexmap.js" charset="utf-8"></script>
   <script type="text/javascript">
-
-  $('#toggle').click(function() {
-    $('#west-malay-hexmap').toggleClass('hide-map');
-    $('#west-party-hexmap').toggleClass('hide-map');
-  })
+    $('#toggle').click(function() {
+      $('#west-malay-hexmap').toggleClass('hide-map');
+      $('#west-party-hexmap').toggleClass('hide-map');
+    })
   </script>
 
 </body>

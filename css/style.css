@@ -62,6 +62,11 @@
   display: none;
 }
 
+.circle-y-axis line,
+.circle-y-axis path {
+  display: none
+}
+
 svg {
   display: inline-block;
   margin: auto 0;
@@ -121,6 +126,34 @@ svg {
   fill: #54278f;
 }
 
+.bn-circle {
+  fill: #9e9ac8;
+  stroke: #000000;
+  stroke-width: 2;
+}
+
+.bn-win-circle {
+  fill: #092781;
+  stroke: #000000;
+  stroke-width: 2;
+}
+
+.ph-win-circle {
+  fill: #ED1C24;
+  stroke: #000000;
+  stroke-width: 2;
+}
+
+.grid line {
+  stroke: #D3D3D3;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
 .state {
   font-family: 'Varela Round', sans-serif;
 }
@@ -175,7 +208,7 @@ svg {
     padding-bottom: 1000px !important;
     /* z-index: -1; */
   }
-  .constChart-wrapper {
+  .constChart-wrapper, .east-map-wrapper {
     z-index: 0;
   }
 }
@@ -192,7 +225,7 @@ svg {
     padding-bottom: 1500px !important;
     /* z-index: -1; */
   }
-  .constChart-wrapper {
+  .constChart-wrapper, .east-map-wrapper {
     z-index: 0;
   }
 }

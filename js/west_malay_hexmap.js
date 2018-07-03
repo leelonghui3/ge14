@@ -30,28 +30,38 @@ $(document).ready(function() {
     .attr('y', 120)
     .text('Mouse over/tab to see details');
 
-  var constituency = mapContainer.append('text')
-    .attr('text-anchor', 'start')
-    .attr('y', 150)
-    .attr('x', (width * 0.5))
+  var infoBox = mapContainer.append('svg')
+    .attr('width', 400)
+    .attr('height', 400)
+    .attr('x', (width / 2))
+    .attr('y', 150);
+
+  var constituency = infoBox.append('text')
+    .attr('x', 0)
+    .attr('y', 30)
     .text('');
 
-  var state = mapContainer.append('text')
-    .attr('text-anchor', 'start')
-    .attr('y', 180)
-    .attr('x', (width * 0.5))
+  var state = infoBox.append('text')
+    .attr('x', 0)
+    .attr('y', 60)
+    .text('')
     .text('');
 
-  var winner = mapContainer.append('text')
-    .attr('text-anchor', 'start')
-    .attr('y', 210)
-    .attr('x', (width * 0.5))
+  var coallitionColor = infoBox.append('rect')
+    .attr('width', 35)
+    .attr('height', 35)
+    .attr('x', 0)
+    .attr('y', 70)
+    .style('opacity', '0');
+
+  var winner = infoBox.append('text')
+    .attr('x', 40)
+    .attr('y', 93)
     .text('');
 
-  var majority = mapContainer.append('text')
-    .attr('text-anchor', 'start')
-    .attr('y', 240)
-    .attr('x', (width * 0.5))
+  var majority = infoBox.append('text')
+    .attr('x', 0)
+    .attr('y', 130)
     .text('');
 
   // credit
@@ -63,46 +73,47 @@ $(document).ready(function() {
     .text("Credit: YS Fang (Tindak M'sia, 2018), M'sia Election Commission (2018), Malaysiakini (2008)");
 
   // legend
-  var size = 200;
-
-  var legend_malay = ['20', '40', '60', '80+', ''];
-
-  var legendTitle = mapContainer.append('text')
-    .attr('x', (width * 0.5))
-    .attr('y', 40)
-    .attr('width', 300)
-    .attr('height', 20)
-    .text('Malay voters percentage (%)');
-
-  var legend = mapContainer.append('svg')
-    .attr('width', 300)
-    .attr('height', 100)
-    .attr('x', (width * 0.5))
-    .attr('y', 50)
-    .selectAll('g')
-    .data(legend_malay)
-    .enter()
-    .append('g')
-    .attr('transform', function(d, i) {
-      return 'translate(' + i * 40 + ", 0)";
-    });
-
-  legend.append('rect')
-    .attr('width', 40)
-    .attr('height', 10)
-    .attr('class', function(d, i) {
-      return "q" + i + "-5";
-    });
-
-  legend.append('text')
-    .attr('x', 35)
-    .attr('y', 20)
-    .attr('dy', '0.5em')
-    .attr('text-anchor', 'start')
-    .attr('class', 'legend')
-    .text(function(d) {
-      return d;
-    });
+  // var size = 200;
+  // var legend_coallition = ['Pakatan Harapan (97 seats)', 'Barisan Nasional (49 seats)', 'PAS (18 seats)', 'Independent (1 seat)'];
+  // var legend = mapContainer.append('svg')
+  //   .attr('width', 300)
+  //   .attr('height', (size * 2))
+  //   .attr('x', (width - 250))
+  //   .attr('y', (height - 200))
+  //   .selectAll('g')
+  //   .data(legend_coallition)
+  //   .enter()
+  //   .append('g')
+  //   .attr('transform', function(d, i) {
+  //     return "translate(0," + i * 40 + ")";
+  //   });
+  //
+  // legend.append('rect')
+  //   .attr('width', 36)
+  //   .attr('height', 36)
+  //   .attr('class', function(d) {
+  //     if (d === 'Pakatan Harapan (97 seats)') {
+  //       return 'ph';
+  //     } else if (d === 'PAS (18 seats)') {
+  //       return 'pas';
+  //     } else if (d === 'Barisan Nasional (49 seats)') {
+  //       return 'bn';
+  //     } else {
+  //       return 'ind';
+  //     }
+  //   })
+  //   .attr('stroke', '#D3D3D3')
+  //   .attr('stroke-width', '1');
+  //
+  // legend.append('text')
+  //   .attr('x', 40)
+  //   .attr('y', 15)
+  //   .attr('dy', '0.5em')
+  //   .attr('text-anchor', 'start')
+  //   .attr('class', 'legend')
+  //   .text(function(d) {
+  //     return d;
+  //   });
 
   d3.json("data/west.hexjson", function(error, hexjson) {
     // Render the hexes
@@ -128,22 +139,35 @@ $(document).ready(function() {
       .attr('stroke-width', '1')
       .attr('class', malay_color)
       .on('mouseover', function(d) {
-        d3.select(this).classed('const_color', false);
+        d3.select(this).classed('malay_color', false);
         d3.select(this).classed('active', true);
         showInfo.call(this, d);
       })
       .on('mouseout', function(d) {
-        d3.select(this).classed('const_color', true);
+        d3.select(this).classed('malay_color', true);
         d3.select(this).classed('active', false);
         removeInfo.call(this, d);
       });
+
+    function const_color(d) {
+      if (d.ge14_win_coallition === 'PH')
+        return 'ph';
+      else if (d.ge14_win_coallition === 'PAS')
+        return 'pas';
+      else if (d.ge14_win_coallition === 'BN')
+        return 'bn';
+      else if (d.ge14_win_coallition === 'SOLIDARITI')
+        return 'solidariti';
+      else {
+        return 'ind';
+      }
+    }
 
     function malay_color(d) {
       return quantize(d.ge14_malay);
     }
 
     function showInfo(d) {
-
       instruction.text('');
 
       constituency.text(d.constituency + ' (' + d.ge14_malay + '% Malay voters)')
@@ -151,6 +175,9 @@ $(document).ready(function() {
 
       state.text('State: ' + d.state)
         .attr('class', 'state');
+
+      coallitionColor.style('opacity', 1)
+        .attr('class', const_color(d));
 
       winner.text('Winning Party: ' + d.ge14_win_coallition + ' - ' + d.ge14_win_party)
         .attr('class', 'winner');
@@ -160,10 +187,10 @@ $(document).ready(function() {
     }
 
     function removeInfo() {
-
-      instruction.text('Mouse over/tab to see details.');
+      instruction.text('Mouse over/tab to see details');
       constituency.text('');
       state.text('');
+      coallitionColor.style('opacity', 0);
       winner.text('');
       majority.text('');
     }
