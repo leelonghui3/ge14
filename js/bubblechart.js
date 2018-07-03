@@ -11,6 +11,7 @@ $(document).ready(function() {
     var padding = 20;
     var paddingBottom = 70;
     var paddingLeft = 50;
+    var constName = '';
 
     var circleChart = d3.select('#circle-chart').append('svg')
       .attr('width', width)
@@ -86,7 +87,7 @@ $(document).ready(function() {
       .domain([0, d3.max(data, function(d) {
         return d.ge14_total_electorate;
       })])
-      .range([0, 20]);
+      .range([0, 25]);
 
     var xAxis = d3.axisBottom(xScale)
       .ticks(5);
@@ -103,23 +104,22 @@ $(document).ready(function() {
       .call(yAxis)
       .attr('class', 'circle-y-axis');
 
-
-      // Grid
+    // Grid
     yGridlines = d3.axisLeft(yScale)
-    .ticks(5)
-    .tickSize(-width + 100)
-    .tickFormat('');
+      .ticks(5)
+      .tickSize(-width + 100)
+      .tickFormat('');
 
     circleChart.append('g')
-    .call(yGridlines)
-    .attr('class', 'grid')
-    .attr('transform', 'translate(' + paddingLeft + ',' + 0 + ')');
+      .call(yGridlines)
+      .attr('class', 'grid')
+      .attr('transform', 'translate(' + paddingLeft + ',' + 0 + ')');
 
     // x axis label
     circleChart.append('text')
-    .attr('x', (width / 2))
-    .attr('y', (height - 30))
-    .text('Malay voters (%)');
+      .attr('x', (width / 2))
+      .attr('y', (height - 30))
+      .text('Malay voters (%)');
 
     // y axis label
     circleChart.append('text')
@@ -129,6 +129,62 @@ $(document).ready(function() {
       .attr("x", -(height / 2))
       .attr("transform", "rotate(-90)")
       .text("BN Popular Vote (%)");
+
+    // infoBox
+
+    var infoBox = circleChart.append('svg')
+      .attr('width', 600)
+      .attr('height', 400)
+      .attr('x', paddingLeft)
+      .attr('y', 0);
+
+    var showConstituency = infoBox.append('text')
+      .attr('x', 5)
+      .attr('y', 15)
+      .text('');
+
+    var showInstruction = infoBox.append('text')
+      .attr('x', 5)
+      .attr('y', 60)
+      .text('Mouse over/tab to see details');
+
+    var showGE13 = infoBox.append('text')
+      .attr('x', 5)
+      .attr('y', 45)
+      .text('');
+
+    var showAdjusted = infoBox.append('text')
+        .attr('x', 5)
+        .attr('y', 75)
+        .text('');
+
+    var showGE14 = infoBox.append('text')
+      .attr('x', 5)
+      .attr('y', 105)
+      .text('');
+
+    var showDiff = infoBox.append('text')
+      .attr('x', 5)
+      .attr('y', 135)
+      .text('');
+
+    // footnote
+    circleChart.append('text')
+      .attr('y', (height - 20))
+      .attr('x', padding)
+      .text('*Adjusted GE13 result');
+
+    circleChart.append('text')
+        .attr('y', (height - 3))
+        .attr('x', padding)
+        .text('**Difference between GE14 and adjusted GE13 result');
+
+    // Credit
+    circleChart.append('text')
+      .attr('y', height - 5)
+      .attr('x', width)
+      .attr('text-anchor', 'end')
+      .text('Source: Malaysian Election Commission (2018), Penang Institute (2018)');
 
     // initial stage
     circles = circleChart.selectAll('.circles')
@@ -153,7 +209,45 @@ $(document).ready(function() {
       .attr('r', function(d) {
         return rScale(d.ge13_total_electorate);
       })
-      .style('opacity', 0);
+      .style('display', 'none');
+
+    // showInfo
+    circles.on('mouseover', function(d) {
+        showInfo.call(this, d);
+        d3.select(this).classed('active', true);
+      })
+      .on('mouseout', function(d) {
+        removeInfo();
+        d3.select(this).classed('active', false);
+      });
+
+    function showInfo(d) {
+
+      showInstruction.text('');
+
+      showConstituency.text(d.ge14_constituency + ' (' + d.state + ')');
+
+      showGE13.text('GE13 - ' + 'Malay voters: ' + d.ge13_malay + '%, ' +
+        "BN's vote: " + d.bn_ge13_vote_pct + '%');
+
+      showAdjusted.text('GE13* - ' + 'Malay voters: ' + d.ge14_malay + '%, ' +
+        "BN's vote: " + d.bn_rede_vote_pct + '%' );
+
+      showGE14.text('GE14 - ' + 'Malay voters: ' + d.ge14_malay + '%, ' +
+        "BN's vote: " + d.bn_ge14_vote_pct + '%');
+
+      showDiff.text("BN's vote gain/lost** : " + d.pct_diff + '%');
+    }
+
+    function removeInfo() {
+      showInstruction.text('Mouse over/tab to see details');
+      showConstituency.text('');
+      showGE13.text('');
+      showAdjusted.text('');
+      showGE14.text('');
+      showDiff.text('');
+
+    }
 
     // transition
     $('#circlechart-1').waypoint(function(direction) {
@@ -161,19 +255,20 @@ $(document).ready(function() {
         console.log('show circlechart-1');
         circles.transition()
           .delay(function(d, i) {
-            return i * 5;
+            return i * 1;
           })
           .attr('cy', function(d) {
             return yScale(d.bn_ge13_vote_pct);
           })
-          .style('opacity', 0.5);
+          .style('opacity', 0.5)
+          .style('display', 'inline-block');
       } else {
         console.log('hide circlechart-1');
         circles.transition()
           .attr('cy', function(d) {
             return yScale(d.bn_ge13_vote_pct) + 10;
           })
-          .style('opacity', 0);
+          .style('display', 'none');
       }
     }, {
       offset: '40%'
@@ -181,7 +276,7 @@ $(document).ready(function() {
 
     $('#circlechart-2').waypoint(function(direction) {
       if (direction === 'down') {
-        console.log('show circlechart-2');
+
         circles.transition()
           .attr('cx', function(d) {
             if (d.ge14_malay >= 50) {
@@ -264,14 +359,14 @@ $(document).ready(function() {
       if (direction === 'down') {
         circles.transition()
           .attr('class', function(d) {
-            if (d.swing_pct > 0) {
+            if (d.pct_diff > 0) {
               return 'bn-win-circle';
             } else {
               return 'bn-circle';
             }
           })
           .style('opacity', function(d) {
-            if (d.swing_pct > 0) {
+            if (d.pct_diff > 0) {
               return 0.8;
             } else {
               return 0.1;

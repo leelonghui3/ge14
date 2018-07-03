@@ -57,7 +57,6 @@ $(document).ready(function() {
     var state = infoBox.append('text')
       .attr('x', 0)
       .attr('y', 60)
-      .text('')
       .text('');
 
     var coallitionColor = infoBox.append('rect')

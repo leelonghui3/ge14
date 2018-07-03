@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>The Fall of the Titan: How the Malay Tsunami drowned Malaysia’s never-defeated ruling party</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
   <script src="js/jquery-ui.min.js" charset="utf-8"></script>
   <script src="js/d3.min.js" charset="utf-8"></script>
@@ -19,57 +20,276 @@
 </head>
 
 <body>
-  <h2 class="uk-text-center">Title</h2>
 
-  <!-- <section class="constChart-text-wrapper uk-section uk-margin-top uk-container uk-container-center uk-position-relative" style="background-color: #cccccc">
-    <div class="east-map-wrapper uk-container uk-container-center uk-align-center" data-uk-sticky="offset: 100; bottom: true">
-      <div id="east" class=""></div>
+  <div class="uk-inline">
+    <img src="img/msiaflag.jpg" alt="Jalur Gemilang, Malaysian national flag">
+    <div class="uk-overlay uk-overlay-default uk-position-center">
+      <h1>The Fall of the Titan:</h1>
+      <h2>How the Malay Tsunami drowned Malaysia’s never-defeated ruling party</h2>
     </div>
-    <div id="2013map-text" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">2013</div>
-    <div id="2018map-text" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">2018</div>
-  </section> -->
+  </div>
 
-  <section class="uk-section uk-container uk-container-center">
-    <h1 class="">Map title</h1>
+  <div class="uk-align-right uk-margin-bottom uk-hidden-medium uk-hidden-small">
+    <h6>Jalur Gemilang, Malaysian national flag. Photo by: <a href="https://commons.wikimedia.org/wiki/User:Cccefalon" target="_blank">CEphoto, Uwe Aranas</a> / <a href="https://commons.wikimedia.org/" target="_blank">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY 4.0</a>, <a href="https://upload.wikimedia.org/wikipedia/commons/2/28/Kota_Kinabalu_Malaysia_National-flag-01.jpg">Link</a></h6>
+  </div>
+
+    <div class="uk-margin-large-top uk-container uk-container-small">
+      <article class="uk-article">
+
+        <p>Like many from small towns in Malaysia, Rizuwan Khalin drove 250 kilometres to vote in the recent general election. He did the same in 2013, when he voted for the National Front (BN) the political coalition that ruled Malaysia since its independence
+          in 1957.</p>
+
+        <p>“That time (in GE13) I did not care about whatever party (I voted for) and national politics,” said the 32-year-old engineer who relocated from a small town to Petaling Jaya, a satellite city near capital Kuala Lumpur, for better opportunities.</p>
+
+        <p>But when traveled home to cast their votes in the 14th general election last May, his loyalties had changed. He voted for the Alliance of Hope (PH) an opposition alliance formed slightly over two and a half years ago by four political parties.</p>
+
+        <p>Over the past five years, Rizuwan said he experienced a rise in cost of living and is disheartened by allegations of corruption dogging the then prime minister Najib Abdul Razak.</p>
+
+        <p>“We should give other parties a chance to take over since BN has managed the country for a long time. In any case, our PM is useless. As long as BN is not defeated, he will remain PM and our country will be doomed,” said Rizuwan,who is ethnic
+          Malay. Malaysian voters traditionally vote along ethnic lines and Malays are perceived to be loyal supporters of the BN.</p>
+
+        <p>Bucking expectations, Rizuwan and millions others created history in the recently-concluded national polls. PH successfully defeated BN and captured Putrajaya, the federal administrative capital of Malaysia. The world witnessed a regime change
+          for the first time for the 61-year-old nation.</p>
+
+        <p>PH was led by Dr Mahathir Mohamad. He served as the fourth prime minister for 22 years, but quit the United Malays National Organisation (Umno), the anchor party of the BN, in 2016 to join the opposition.</p>
+
+        <p>Working with former enemies, Mahathir toppled BN and his protege Najib who was embroiled in the 1Malaysia Development Berhad (1MDB) financial scandal.</p>
+
+      </article>
+    </div>
+
+
+    <div class="uk-container uk-container-small">
+      <article class="uk-article">
+
+        <h2>An unexpected victory</h2>
+
+        <p>It was supposed to be an uphill battle for Mahathir and PH. The Malaysian Election Commission changed the electoral boundaries ahead of the election and set the polling day on a weekday, making it difficult for those like Rizuwan to return home
+          to vote. Even Mahathir’s newly-formed political party the Malaysian United Indigenous Party (Bersatu) was deregistered on the eve of the election. PH deemed this as advantageous to the BN.</p>
+
+        <p>Another opposition party, Pan-Malaysian Islamic Party (PAS) decision to not align itself with PH also resulted in multi-corner fights, which usually benefited BN, across many constituencies.</p>
+
+        <p>But against all odds, PH successfully won 121 out of 222 parliamentary seats, a simple majority to take over the federal administrative power. On the other hand, BN suffered a significant loss, slashing their takings from 133 to only 57 parliamentary
+          seats.
+        </p>
+
+        <p>Before the election, PH has played up the notion of a so-called “Malay tsunami”. PH claimed that the nation would see a massive swing of ethnic Malay voters. Meanwhile, Najib had been vehemently dismissed the matter.</p>
+
+        <p>Comparing the election result of the 2013 general election, however, shows that PH was correct. The results, taking into account new boundaries, showed that many Malay voters, like Rizuwan, swung from BN to PH and PAS. It was one of the major
+          contributing factor to BN’s loss.</p>
+
+      </article>
+    </div>
+
+  <div class="constChart-text-wrapper uk-container">
+
+    <div class="constChart-wrapper" data-uk-sticky="offset:200; bottom: true">
+      <div id="circle-chart" class=""></div>
+    </div>
+
+    <div id="circlechart-1" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">There are 165 parliamentary constituencies in West Malaysia. In GE13, 114 (69.1%) constituencies had a majority Malay voters. Each circle represents a constituency. The size of the circle represents the total number of voters.</div>
+
+    <div id="circlechart-2" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">Contrary to many beliefs, BN did not gain the upper hand in many of the Malay-majority seats which emerged from the boundary change exercise. When the new boundaries are imposed on the GE13 results, BN saw an increase in votes in only 22 (19.2%) Malay-majority
+      seats. A total 87 seats (76.3%) remained unchanged, while BN votes in eight Malay-majority seats (7%) decreased.</div>
+
+    <div id="circlechart-3" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">In GE14, the number of Malay-majority seats slightly increased to 117. However, there was a significant decrease in votes for BN in almost all the Malay-majority seats in GE14. BN only won 47, a dive from 78 in GE13.</div>
+
+    <div id="circlechart-4" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">In GE14, BN only had positive votes gain in two seats. This is far lower than the 29 seats, if support for BN remained, at GE13 level.</div>
+
+    <div id="circlechart-5" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">The most significant swing took place in the Langkawi constituency in the northern state of Kedah, where Mahathir contested. According to the adjusted GE13 result, BN won the seat with 69% of votes, but it lost the seat in GE14, only securing 29%
+      of the total votes.</div>
+
+    <div id="circlechart-6" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">And the PH momentum driven by Mahathir swept across Kedah. Out of the top ten most prominent swing seats, seven of them were in Kedah, and PH won all of them.</div>
+
+  </div>
+
+    <div class="uk-margin-large-top uk-container uk-container-small">
+      <article class="uk-article">
+
+        <h2>The people rage against GST and 1MDB</h2>
+
+        <p>Both Mahathir and Najib said they did not see it coming. Only a few foresaw the Malay tsunami that would drown BN. Liew Chin Tong, the political education director of the Democratic Action Party (DAP) - a PH coalition member - was among the few.</p>
+
+        <p>In June 2015, Liew was the among the first who claimed there would be a “Malay tsunami” in GE14 despite the disintegration of PH’s predecessor, the opposition coalition The People’s Coalition (PR). PR was made up of People’s Justice Party (PKR),
+          PAS and DAP.</p>
+
+        <p>He argued two things would give rise to the Malay tsunami, the implementation of the Goods and Services Tax (GST) in April 2015, and the 1MDB scandal that tarnished the image of Najib and his wife, Rosmah Mansor.</p>
+
+        <p>“I saw everyone was unhappy with the problem of the cost of living (caused by the GST) and their disgruntlement against Najib and Rosmah was growing. Since then, I knew that Najib had a bad reputation,” said Liew.</p>
+
+        <p>He said when PKR leader Anwar Ibrahim was jailed and PAS spiritual leader Nik Aziz Nik Mat had passed away, there was a “vacuum” in the Malay leadership leaving no other leader but Najib.</p>
+
+        <p>When Mahathir quit Umno to form Bersatu and joined forces with PH, it provided Malay voters with a credible alternative besides Umno in GE14.</p>
+
+        <p>However, polling centre Merdeka Centre research manager Tan Seng Keat has a different take. Tan said that it was a “tax revolt” - a vote against the GST and the resulting inflation - instead of a Malay tsunami.</p>
+
+        <p>“If you look at the electoral politics across the globe, except for Singapore, whether you say it’s a democratic country or not, all the democratic nations that introduced the value-added tax (VAT) or GST or increase the rate of VAT or GST, (the
+          ruling party) will lose in the next general election.</p>
+
+        <p>“Why there was a tsunami? Why were the people not happy with the ruling party? The reason was the high cost of living. The reasons for the high cost of living are many, including currency depreciation, the confidence of investors in Malaysia due
+          to the 1MDB issue, and also GST,” said Tan.</p>
+
+        <p>Razlan Rafii, an Umno leader, however, believes BN lost not because of the GST but false propaganda about the tax spread by the PH among the Malay community.</p>
+
+        <p>“Indeed, we have seen a change of government in many countries after the implementation of GST, but the BN government was kind. It did not think that the people would believe those negative sentiments (played up by PH) as we had educated the people
+          regarding the taxation system.</p>
+
+        <p>“But because the PH has many influencers who could deliver seditious speeches, many people buy that (GST is terrible for them),” he said.</p>
+
+        <p>Razlan also distances Umno from the 1MDB issue, saying that the state investment fund was a government matter and had nothing to with the Malay-based party. This despite the fact that international investigations implicating then Umno president,
+          Najib’s family in the corruption scandal.</p>
+
+        <p>He admitted that the then BN government failed to explain the issue to the public and counter the arguments brought up by its political rival, causing BN to lose the election.</p>
+
+        <p>“All the (BN) government leaders should be aware that 1MDB was not a party decision (by Umno). 1MDB is a decision made by the (then) government. The then finance minister was Najib, who made decisions with his cabinet members. Those people made
+          the decision.</p>
+
+        <p>“The decision on 1MDB or the work to explain GST to the grassroots was government’s job, but not the party, why does the party have to be dragged into those issues?” he asked.</p>
+
+        <p>Although PH did well in the west coast of Peninsular Malaysia, it did not perform well in the three states – Kelantan, Terengganu and Kelantan - in the east coast, where some of the constituencies have close to 100% of Malay voters.</p>
+
+        <p>PH only captured two parliamentary seats in Pahang, leaving the rest to BN and PAS.</p>
+
+      </article>
+    </div>
+
+  <div class="uk-section uk-section-default uk-container">
+    <h2 class="uk-text-center">Peninsular Malaysia Election Map</h2>
     <div id="west_map_wrapper" class="uk-display-inline-block">
       <div id="west-party-hexmap" class=""></div>
       <div id="west-malay-hexmap" class="hide-map"></div>
       <p uk-margin class="uk-text-center">
-        <button id="toggle" class="uk-button uk-button-default" name="button">Toggle</button>
+        <button id="toggle" class="uk-button uk-button-default" name="button">Change view</button>
       </p>
     </div>
-  </section>
-  
-  <section class="constChart-text-wrapper uk-section uk-margin_top uk-container uk-container-center uk-position-relative">
-    <div class="constChart-wrapper" data-uk-sticky="offset:200; bottom: true">
-      <div id="circle-chart" class=""></div>
+  </div>
+
+    <div class="uk-container uk-container-small">
+      <article class="uk-article">
+
+        <p>Liew said this is because the National Trust Party (Amanah), one of the component parties of PH, did not have a strong enough to make a difference.</p>
+
+        <p>“We were influential in the west coast, so the Malay voters knew that Umno could be defeated by voting for us.</p>
+
+        <p>“But Amanah was not strong enough in the east coast, so the Malay voters over there did not believe that they could have defeated BN if they voted for Amanah, so they went for PAS. It was not because PAS was strong.</p>
+
+        <p>“We must understand that it was an anti-Najib election. It was not because we were strong, but it was because of Najib’s reputation was too poor,” he said.</p>
+
+      </article>
     </div>
-    <div id="circlechart-1" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">Shows GE13</div>
-    <div id="circlechart-2" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">Shows GE13 adjusted</div>
-    <div id="circlechart-3" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">Shows GE14</div>
-    <div id="circlechart-4" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">Shows BN positive</div>
-    <div id="circlechart-5" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">Shows Langkawi</div>
-    <div id="circlechart-6" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">Shows Kedah</div>
-  </section>
 
+    <div class="uk-container uk-container-small">
+      <article class="uk-article">
 
-  <!-- <section id="" class="constChart-text-wrapper uk-section uk-margin-top uk-container uk-container-center uk-position-relative" style="background-color: #cccccc">
+        <h2>Winds of change blew strongly in East Malaysia</h2>
+
+        <p>But PH would not be able to win the federal election without the contribution from Sabah and Sarawak. The two East Malaysian states are separated from West Malaysia by the South China Sea. The two states also have different demographic from the states in West Malaysia with Malays making up a small minority.</p>
+
+        <p>In Sabah, PH had allied with Sabah Heritage Party (Warisan) led by Shafie Apdal, a former Umno leader who was expelled from Umno for voicing up against Najib over the 1MDB issue.</p>
+
+        <p>Sabah and Sarawak were seen as “fixed-deposits” for BN in the previous elections, but this, too changed in GE14.</p>
+
+      </article>
+    </div>
+
+ <div class="constChart-text-wrapper uk-container uk-container uk-position-relative">
+   <div class="east-map-wrapper uk-align-center" data-uk-sticky="offset: 100; bottom: true">
+     <div id="east" class=""></div>
+   </div>
+    <div id="2013map-text" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">In GE13, the opposition were only able to win nine seats out of the 56 seats in Sabah and Sarawak.</div>
+    <div id="2018map-text" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">In GE14, the winds of change blew strongly; BN lost 27 seats to PH, Warisan and two independent candidates, who joined PH after the election.</div>
+  </div>
+
+  <div class="uk-container uk-container-small">
+    <article class="uk-article">
+
+      <p>Merdeka Centre’s Tan said that the outcome in Sabah and Sarawak was not due to the issue of 1MDB, but it was more about personalities and candidacies.</p>
+
+      <p>Sabahan voters saw Shafie as “a hero and a victim of Kuala Lumpur politics”, he said.</p>
+
+      <p>“We formed a focus group and interviewed the locals, asked them why they supported Shafie. Nobody was able to answer it besides saying that they have to support him.”</p>
+
+      <p>“No one knew about 1MDB. They only knew that their lives are hard because of GST and they saw Shafie as a victim, a hero. That’s it,” he said.</p>
+
+      <p>Warisan and PH jointly won 14 seats in Sabah.</p>
+
+      <p>As for Sarawak, Tan said that the candidate dispute among Sarawak BN component parties led to internal sabotage, causing them to lose 12 seats.</p>
+
+    </article>
+  </div>
+
+  <div class="uk-container uk-container-small">
+    <article class="uk-article">
+
+      <h2>Malapportionment in the first-past-the-post system</h2>
+
+      <p>The BN’s disastrous defeat in GE14 led to the disintegration of the once-exalted coalition which had 13 component parties. Now the BN only has three component parties, namely Umno, the Malaysian Chinese Association (MCA) and the Malaysian Indian Congress (MIC). As of July 1, 2018, it lost a further three MPs who quit the party to become crossbenchers, leaving BN with only 54.</p>
+
+      <p>Newly-minted Umno president cum BN chairperson Ahmad Zahid Hamidi has since mooted a new coalition, without going into details. There is speculation that Umno is going to ally with PAS. This could see further entrenchment of race and religion in Malaysian politics, as both parties try to regain the support of their traditional base - the Malay voters.</p>
+
+      <p>To prevent Umno and PAS from joining forces, the Malaysian electoral system must be reformed, said political analyst Wong Chin Huat who spent much of his career researching the matter.</p>
+
+      <p>The Malaysian election is based on the first-past-the-post (FPTP) system. However, the vast difference between the electorate size across constituencies violates the “one person one vote” principle. </p>
+
+    </article>
+  </div>
+
+  <div id="" class="constChart-text-wrapper uk-section uk-margin-top uk-container uk-container-center uk-position-relative">
     <div id="constChart" class="constChart-wrapper" data-uk-sticky="offset: 200; bottom: true">
       <div id="const_chart" class=""></div>
     </div>
-    <div id="barchart-1" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Shows BN seats</div>
-    <div id="barchart-2" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Shows National and BN average line</div>
-    <div id="barchart-3" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Show PH seats and PH average</div>
-    <div id="barchart-4" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Show PAS and independents seats and PAS average</div>
-    <div id="barchart-5" class="testing" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Show all</div>
-  </section> -->
+    <div id="barchart-1" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">BN won 79 seats in GE14. The length of each horizontal line shows the number of voters for that constituency.</div>
+    <div id="barchart-2" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">As we can see, the total number of the voters in most of the seats won by BN are below the national average.</div>
+    <div id="barchart-3" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Meanwhile, PH won 121 seats in GE14, and the average number of voters in those constituencies is above the national average.</div>
+    <div id="barchart-4" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">The same is true for PAS where the average number of voters of its seats is even higher.</div>
+    <div id="barchart-5" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">The difference in the number of voters in the smallest seat (Igan, 19,592) and the largest seat (Bangi, 178,790) is 159,198. In other words, one vote in Igan has the same weight as nine votes in Bangi.</div>
+  </div>
 
+  <div class="uk-margin-large-top uk-container uk-container-small">
+      <article class="uk-article">
 
+        <p>Under such circumstances, the Malaysian Coalition for Clean and Fair Elections (Bersih 2.0)  estimated that a political party could win simple parliamentary majority (112 seats) by getting merely 16.5% of the popular vote.</p>
+
+        <p>Like GE13, where BN won 60% of parliamentary seats with 47% of popular vote, the issue of seat and vote disproportionality persisted in GE14.</p>
+
+        <p>Although BN won 35% of parliamentary seats with 34% of popular vote, PH won 54% of seats with just 45% of popular vote, whereas PAS only won 8% of seats despite winning 17% of popular vote.</p>
+
+      </article>
+  </div>
+
+  <div class="uk-margin-top uk-container uk-container-small">
+    <article class="uk-article">
+
+      <h2>Proportional representation system is the way out</h2>
+
+      <p>Wong said that the FTPT system provides a strong incentive for strategic voting at constituency level, encouraging voters to concentrate their votes on the top two contenders.</p>
+
+      <p>As such, the system would drive the weak Umno and PAS to merge and re-emerge as one of the top two contenders against PH in the next general election, he said.</p>
+
+      <p>He warned that such convergence may not be able to win federal power, but will be able to  would produce a political coalition that has an ideology similar to existing fringe far-right Malay Muslim groups.</p>
+
+      <p>Thus, Wong suggested a reform of the electoral system by replacing FPTP with a proportional representation system to remove the incentive for Umno and PAS to join forces.</p>
+
+      <p>Under the proportional representation electoral system, seats are allocated to political parties based on the popular votes they win respectively in an election.</p>
+
+      <p>“To avoid a PAS-UMNO convergence or merger in the long run, the electoral system must be changed.</p>
+
+      <p>“At the beginning, PAS may gain more seats under a proportional representation system, but it would never get to dominate politics by winning substantially more seats than its votes warrant,” Wong said.</p>
+
+      <p>The political scientist added that the proportional representation system could overcome the issue of seat-vote disproportionality, too.</p>
+
+      <p>The PH government has formed a committee to focus on institutional reform, with electoral reform being a key focus. The committee has submitted several recommendations to the government for implementation.</p>
+
+      <p>The next general election is expected to be held in 2023. Although much work has to be done to the flawed democratic system, Malaysians have sent a clear message to politicians through the unprecedented election, reminding them who are the real bosses of the country.</p>
+
+      <p>For Rizuwan and Malay voters like him, xxxxxxxxxxxxxxxxxxxxxxx</p>
+
+      <p>“If they (PH) are performing worse than BN, I will vote for another party (in the coming general election),” said Rizuwan.</p>
+
+    </article>
+  </div>
 
   <script src="js/bubblechart.js" charset="utf-8"></script>
-  <script src="js/map_2018.js" charset="utf-8"></script>
-  <script src="js/east_map_2013.js" charset="utf-8"></script>
-  <script src="js/map_waypoints.js" charset="utf-8"></script>
   <script src="js/barchart.js" charset="utf-8"></script>
   <script src="js/west_malay_hexmap.js" charset="utf-8"></script>
   <script src="js/west_party_hexmap.js" charset="utf-8"></script>

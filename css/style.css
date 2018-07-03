@@ -58,6 +58,11 @@
   stroke: #D3D3D3;
 }
 
+.bigpic-credit {
+  background: #54278f;
+  color: #FFFFFF;
+}
+
 .y-axis line {
   display: none;
 }
@@ -230,7 +235,7 @@ svg {
   }
 }
 
-.hide-map {
+.hide-map, .hide-circle {
   display: none !important;
 }
 
