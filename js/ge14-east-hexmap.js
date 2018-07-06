@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-  // Set the size and margins of the svg
-  // width = ((window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) * 0.8)- margin.left - margin.right;
-  // var height = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) * 0.8;
-
   var margin = {
       top: 10,
       right: 10,
@@ -11,15 +7,15 @@ $(document).ready(function() {
       left: 10
     },
     width = ((window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) * 0.8) - margin.left - margin.right,
-    height = ((window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) * 0.8) - margin.top - margin.bottom;
+    height = ((window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) * 0.55) - margin.top - margin.bottom;
 
   // Create the svg element
   var mapContainer = d3
-    .select('#west-party-hexmap')
+    .select('#ge14-east-map')
     .append('svg')
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
+    .attr("width", width)
+    .attr("height", height)
+    .append('g')
     // .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
     .call(responsivefy);
 
@@ -46,88 +42,46 @@ $(document).ready(function() {
     }
   }
 
-  // Define the div for the tooltip
-  var div = d3.select('body').append('div')
-    .attr('class', 'map-tooltip')
-    .style('opacity', 0);
+    // Define the div for the tooltip
+    var div = d3.select('body').append('div')
+      .attr('class', 'map-tooltip')
+      .style('opacity', 0);
 
-  d3.json("data/west.hexjson", function(error, hexjson) {
+  d3.json('data/east.hexjson', function(error, hexjson) {
     // Render the hexes
     var hexes = d3.renderHexJSON(hexjson, width, height);
 
     // Bind the hexes to g elements of the svg and position them
     var hexmap = mapContainer
-      .selectAll("g")
+      .selectAll('g')
       .data(hexes)
       .enter()
-      .append("g")
-      .attr("transform", function(d) {
-        return "translate(" + d.x + "," + d.y + ")";
+      .append('g')
+      .attr('transform', function(hex) {
+        return 'translate(' + hex.x + ',' + hex.y + ')';
       });
 
     // Draw the polygons around each hex's centre
     hexmap
       .append('polygon')
-      .attr('points', function(d) {
-        return d.points;
+      .attr('points', function(hex) {
+        return hex.points;
       })
       .attr('stroke', '#D3D3D3')
       .attr('stroke-width', '1')
-      .attr('class', const_color)
+      .attr('class', ge14_const_color)
       .on('mouseover', function(d) {
-        d3.select(this).classed('const_color', false);
-        d3.select(this).classed('active', true);
         showInfo.call(this, d);
+        d3.select(this).classed('ge14_const_color', false);
+        d3.select(this).classed('active', true);
       })
       .on('mouseout', function(d) {
-        d3.select(this).classed('const_color', true);
-        d3.select(this).classed('active', false);
         removeInfo.call(this, d);
+        d3.select(this).classed('ge14_const_color', true);
+        d3.select(this).classed('active', false);
       });
 
-    // legend
-    var legend_coallition = ['PH', 'BN', 'PAS', 'IND'];
-    var legend = mapContainer.append('svg')
-      .attr('width', 200)
-      .attr('height', 300)
-      .attr('x', 0)
-      .attr('y', (height - 120))
-      .selectAll('g')
-      .data(legend_coallition)
-      .enter()
-      .append('g')
-      .attr('transform', function(d, i) {
-        return "translate(0," + i * 30 + ")";
-      });
-
-    legend.append('rect')
-      .attr('width', 30)
-      .attr('height', 30)
-      .attr('class', function(d) {
-        if (d === 'PH') {
-          return 'ph';
-        } else if (d === 'PAS') {
-          return 'pas';
-        } else if (d === 'BN') {
-          return 'bn';
-        } else {
-          return 'ind';
-        }
-      })
-      .attr('stroke', '#D3D3D3')
-      .attr('stroke-width', '1');
-
-    legend.append('text')
-      .attr('x', 32)
-      .attr('y', 15)
-      .attr('dy', '0.5em')
-      .attr('text-anchor', 'start')
-      .attr('class', 'legend')
-      .text(function(d) {
-        return d;
-      });
-
-    function const_color(d) {
+    function ge14_const_color(d) {
       if (d.ge14_win_coallition === 'PH')
         return 'ph';
       else if (d.ge14_win_coallition === 'PAS')
@@ -144,16 +98,18 @@ $(document).ready(function() {
     function showInfo(d) {
       div.style('opacity', 0.9);
       div.html(d.constituency + '<br>' +
-          d.ge14_malay + '% Malay voters' + '<br>' +
           'State: ' + d.state + '<br>' +
           '<span class="winning-party">Winning Party: </span>' + d.ge14_win_coallition + '<br>' +
-          'Majority: ' + d3.format(',')(d.ge14_majority_pct) + ' %')
+          'Majority: ' + d3.format(',')(d.ge14_majority_pct) + '%')
         .style("left", (d3.event.pageX - 75) + "px")
         .style("top", (d3.event.pageY - 140) + "px");
     }
 
-    function removeInfo() {
+    function removeInfo(d) {
       div.style('opacity', 0);
     }
+
+
+
   });
 });

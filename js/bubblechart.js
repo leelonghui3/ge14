@@ -87,7 +87,7 @@ $(document).ready(function() {
       .domain([0, d3.max(data, function(d) {
         return d.ge14_total_electorate;
       })])
-      .range([0, 25]);
+      .range([0, 10]);
 
     var xAxis = d3.axisBottom(xScale)
       .ticks(5);
@@ -119,7 +119,8 @@ $(document).ready(function() {
     circleChart.append('text')
       .attr('x', (width / 2))
       .attr('y', (height - 30))
-      .text('Malay voters (%)');
+      .text('Malay voters (%)')
+      .attr('class', 'xAxis_label');
 
     // y axis label
     circleChart.append('text')
@@ -128,63 +129,65 @@ $(document).ready(function() {
       .attr("dy", "12px")
       .attr("x", -(height / 2))
       .attr("transform", "rotate(-90)")
-      .text("BN Popular Vote (%)");
+      .text("BN Popular Vote (%)")
+      .attr('class', 'yAxis_label');
 
     // infoBox
 
-    var infoBox = circleChart.append('svg')
-      .attr('width', 600)
-      .attr('height', 400)
-      .attr('x', paddingLeft)
-      .attr('y', 0);
+    // var infoBox = circleChart.append('svg')
+    //   .attr('width', 600)
+    //   .attr('height', 400)
+    //   .attr('x', paddingLeft)
+    //   .attr('y', 0);
+    //
+    // var showConstituency = infoBox.append('text')
+    //   .attr('x', 5)
+    //   .attr('y', 15)
+    //   .text('');
+    //
+    // var showInstruction = infoBox.append('text')
+    //   .attr('x', 5)
+    //   .attr('y', 60)
+    //   .text('Mouse over/tab to see details');
+    //
+    // var showGE13 = infoBox.append('text')
+    //   .attr('x', 5)
+    //   .attr('y', 45)
+    //   .text('');
+    //
+    // var showAdjusted = infoBox.append('text')
+    //     .attr('x', 5)
+    //     .attr('y', 75)
+    //     .text('');
+    //
+    // var showGE14 = infoBox.append('text')
+    //   .attr('x', 5)
+    //   .attr('y', 105)
+    //   .text('');
+    //
+    // var showDiff = infoBox.append('text')
+    //   .attr('x', 5)
+    //   .attr('y', 135)
+    //   .text('');
+    //
+    // // footnote
+    // circleChart.append('text')
+    //   .attr('y', (height - 20))
+    //   .attr('x', padding)
+    //   .text('*Adjusted GE13 result');
+    //
+    // circleChart.append('text')
+    //     .attr('y', (height - 3))
+    //     .attr('x', padding)
+    //     .text('**Difference between GE14 and adjusted GE13 result');
 
-    var showConstituency = infoBox.append('text')
-      .attr('x', 5)
-      .attr('y', 15)
-      .text('');
-
-    var showInstruction = infoBox.append('text')
-      .attr('x', 5)
-      .attr('y', 60)
-      .text('Mouse over/tab to see details');
-
-    var showGE13 = infoBox.append('text')
-      .attr('x', 5)
-      .attr('y', 45)
-      .text('');
-
-    var showAdjusted = infoBox.append('text')
-        .attr('x', 5)
-        .attr('y', 75)
-        .text('');
-
-    var showGE14 = infoBox.append('text')
-      .attr('x', 5)
-      .attr('y', 105)
-      .text('');
-
-    var showDiff = infoBox.append('text')
-      .attr('x', 5)
-      .attr('y', 135)
-      .text('');
-
-    // footnote
-    circleChart.append('text')
-      .attr('y', (height - 20))
-      .attr('x', padding)
-      .text('*Adjusted GE13 result');
-
-    circleChart.append('text')
-        .attr('y', (height - 3))
-        .attr('x', padding)
-        .text('**Difference between GE14 and adjusted GE13 result');
-
-    // Credit
-    circleChart.append('text')
-      .attr('y', height - 5)
-      .attr('x', width)
-      .attr('text-anchor', 'end')
-      .text('Source: Malaysian Election Commission (2018), Penang Institute (2018)');
+    // // Credit
+    // circleChart.append('text')
+    //   .attr('y', height - 5)
+    //   .attr('x', width)
+    //   .attr('text-anchor', 'end')
+    //   .text('Source: Malaysian Election Commission (2018), Penang Institute (2018)')
+    //   .style('font-size', 'small');
 
     // initial stage
     circles = circleChart.selectAll('.circles')
@@ -211,43 +214,42 @@ $(document).ready(function() {
       })
       .style('display', 'none');
 
-    // showInfo
-    circles.on('mouseover', function(d) {
-        showInfo.call(this, d);
-        d3.select(this).classed('active', true);
-      })
-      .on('mouseout', function(d) {
-        removeInfo();
-        d3.select(this).classed('active', false);
-      });
-
-    function showInfo(d) {
-
-      showInstruction.text('');
-
-      showConstituency.text(d.ge14_constituency + ' (' + d.state + ')');
-
-      showGE13.text('GE13 - ' + 'Malay voters: ' + d.ge13_malay + '%, ' +
-        "BN's vote: " + d.bn_ge13_vote_pct + '%');
-
-      showAdjusted.text('GE13* - ' + 'Malay voters: ' + d.ge14_malay + '%, ' +
-        "BN's vote: " + d.bn_rede_vote_pct + '%' );
-
-      showGE14.text('GE14 - ' + 'Malay voters: ' + d.ge14_malay + '%, ' +
-        "BN's vote: " + d.bn_ge14_vote_pct + '%');
-
-      showDiff.text("BN's vote gain/lost** : " + d.pct_diff + '%');
-    }
-
-    function removeInfo() {
-      showInstruction.text('Mouse over/tab to see details');
-      showConstituency.text('');
-      showGE13.text('');
-      showAdjusted.text('');
-      showGE14.text('');
-      showDiff.text('');
-
-    }
+    // // showInfo
+    // circles.on('mouseover', function(d) {
+    //     showInfo.call(this, d);
+    //     d3.select(this).classed('active', true);
+    //   })
+    //   .on('mouseout', function(d) {
+    //     removeInfo();
+    //     d3.select(this).classed('active', false);
+    //   });
+    //
+    // function showInfo(d) {
+    //
+    //   showInstruction.text('');
+    //
+    //   showConstituency.text(d.ge14_constituency + ' (' + d.state + ')');
+    //
+    //   showGE13.text('GE13 - ' + 'Malay voters: ' + d.ge13_malay + '%, ' +
+    //     "BN's vote: " + d.bn_ge13_vote_pct + '%');
+    //
+    //   showAdjusted.text('GE13* - ' + 'Malay voters: ' + d.ge14_malay + '%, ' +
+    //     "BN's vote: " + d.bn_rede_vote_pct + '%' );
+    //
+    //   showGE14.text('GE14 - ' + 'Malay voters: ' + d.ge14_malay + '%, ' +
+    //     "BN's vote: " + d.bn_ge14_vote_pct + '%');
+    //
+    //   showDiff.text("BN's vote gain/lost** : " + d.pct_diff + '%');
+    // }
+    //
+    // function removeInfo() {
+    //   showInstruction.text('Mouse over/tab to see details');
+    //   showConstituency.text('');
+    //   showGE13.text('');
+    //   showAdjusted.text('');
+    //   showGE14.text('');
+    //   showDiff.text('');
+    // }
 
     // transition
     $('#circlechart-1').waypoint(function(direction) {
@@ -456,5 +458,44 @@ $(document).ready(function() {
     }, {
       offset: '40%'
     });
+
+    $('#circlechart-7').waypoint(function(direction) {
+      if(direction === 'down') {
+        circles.transition()
+        .attr('class', const_color)
+        .style('opacity', 0.5);
+      } else {
+        circles.transition()
+        .attr('class', function(d) {
+          if (d.state === 'Kedah' && d.swing_pct <= -71.11) {
+            return 'ph-win-circle';
+          } else {
+            return 'bn-circle';
+          }
+        })
+        .style('opacity', function(d) {
+          if (d.state === 'Kedah' && d.swing_pct <= -71.11) {
+            return 0.8;
+          } else {
+            return 0.1;
+          }
+        });
+      }
+    }, {
+      offset: '40%'
+    });
+
+    // render color for each bar
+    function const_color(d) {
+      if (d.ge14_win_coallition === 'PH') {
+        return 'ph-win-circle';
+      } else if (d.ge14_win_coallition === 'PAS') {
+        return 'pas-win-circle';
+      } else {
+        return 'bn-win-circle';
+      }
+    }
+
+
   });
 });

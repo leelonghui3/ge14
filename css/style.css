@@ -134,19 +134,25 @@ svg {
 .bn-circle {
   fill: #9e9ac8;
   stroke: #000000;
-  stroke-width: 2;
+  stroke-width: 1;
 }
 
 .bn-win-circle {
   fill: #092781;
   stroke: #000000;
-  stroke-width: 2;
+  stroke-width: 1;
 }
 
 .ph-win-circle {
   fill: #ED1C24;
   stroke: #000000;
-  stroke-width: 2;
+  stroke-width: 1;
+}
+
+.pas-win-circle {
+  fill: #009000;
+  stroke: #000000;
+  stroke-width: 1 ;
 }
 
 .grid line {
@@ -200,12 +206,12 @@ svg {
   .testing {
     background: #FFFF00;
     margin: 0 auto;
-    margin-bottom: 1500px;
+    margin-bottom: 800px;
     z-index: 1;
   }
   .constChart-text-wrapper {
     margin: 0 auto;
-    padding-bottom: 1700px !important;
+    padding-bottom: 800px !important;
     /* z-index: -1; */
   }
   .map-wrapper {
@@ -213,8 +219,14 @@ svg {
     padding-bottom: 1000px !important;
     /* z-index: -1; */
   }
-  .constChart-wrapper, .east-map-wrapper {
-    z-index: 0;
+  .xAxis_label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7em;
+  }
+
+  .yAxis_label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7em;
   }
 }
 
@@ -222,16 +234,22 @@ svg {
   .testing {
     background: #FFFF00;
     margin: 0 auto;
-    margin-bottom: 1000px;
+    margin-bottom: 800px;
     z-index: 1;
   }
+
   .constChart-text-wrapper, .map-wrapper {
     margin: 0 auto;
-    padding-bottom: 1500px !important;
+    padding-bottom: 600px !important;
     /* z-index: -1; */
   }
-  .constChart-wrapper, .east-map-wrapper {
-    z-index: 0;
+  .xAxis_label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+  }
+  .yAxis_label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
   }
 }
 
@@ -239,24 +257,36 @@ svg {
   display: none !important;
 }
 
-div.chart-tooltip {
+div.tooltip {
+  margin: auto;
   position: absolute;
-  text-align: center;
-  width: 150px;
-  height: 90px;
-  padding: 2px;
+  text-align: left;
+  width: 175px;
+  height: 110px;
+  padding: 10px;
   font: 1em 'Open Sans', sans-serif;
   background: #f2f0f7;
   border: 1px solid #000000;
-  /* border-radius: 8px; */
   pointer-events: none;
   z-index: 2;
 }
 
-.yAxis_label {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+div.map-tooltip {
+  margin: auto;
+  position: absolute;
+  text-align: left;
+  width: 200px;
+  height: 120px;
+  padding: 10px;
+  font: 1em 'Open Sans', sans-serif;
+  background: #f2f0f7;
+  border: 1px solid #000000;
+  pointer-events: none;
+  z-index: 2;
 }
+
+
+
 
 .legend {
   font-family: 'Open Sans', sans-serif;
@@ -272,4 +302,14 @@ div.chart-tooltip {
 #toggle {
   background: #9e9ac8;
   color: #FFFFFF;
+}
+
+#ge13-map {
+  background: #9e9ac8;
+  color: #f2f0f7;
+}
+
+#ge14-map {
+  background: #f2f0f7;
+  color: #54278f;
 }
