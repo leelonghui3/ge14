@@ -42,25 +42,23 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-#east_map_2018 path {
-  stroke: #D3D3D3;
+.mobile-navbar {
+  background-color: #212121!important;
+  height: 50px;
 }
 
-#east_map_2013 path {
-  stroke: #D3D3D3;
-}
-
-#west_map_malay path {
-  stroke: #D3D3D3;
-}
-
-#west_map_party path {
-  stroke: #D3D3D3;
+.mobile-nav-brand {
+  color: #ffffff;
 }
 
 .bigpic-credit {
   background: #54278f;
   color: #FFFFFF;
+}
+
+.mobile-section {
+  color: #212121;
+  font-weight: bold;
 }
 
 .y-axis line {
@@ -130,14 +128,8 @@ svg {
 .q4-5 {
   fill: #54278f;
 }
-
-.bn-circle {
-  fill: #9e9ac8;
-  stroke: #000000;
-  stroke-width: 1;
-}
-
-.bn-win-circle {
+s
+.bn-win-circle, .bn-circle {
   fill: #092781;
   stroke: #000000;
   stroke-width: 1;
@@ -186,7 +178,7 @@ svg {
 }
 
 .credit, .losers {
-  font-family: 'Open Sans', sans-sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .active {
@@ -204,16 +196,21 @@ svg {
 
 @media screen and (max-width: 500px) {
   .testing {
-    background: #FFFF00;
+    background: #FFFFFF;
     margin: 0 auto;
     margin-bottom: 800px;
     z-index: 1;
+    border: 1px solid #212121;
   }
   .constChart-text-wrapper {
     margin: 0 auto;
-    padding-bottom: 800px !important;
-    /* z-index: -1; */
+    padding-bottom: 1300px !important;
+    /* z-index: 0; */
   }
+  .circleChart {
+    z-index: -1;
+  }
+
   .map-wrapper {
     margin: 0 auto;
     padding-bottom: 1000px !important;
@@ -232,10 +229,11 @@ svg {
 
 @media screen and (min-width: 501px) {
   .testing {
-    background: #FFFF00;
+    background: #FFFFFF;
     margin: 0 auto;
     margin-bottom: 800px;
     z-index: 1;
+    border: 1px solid #212121;
   }
 
   .constChart-text-wrapper, .map-wrapper {
@@ -243,6 +241,7 @@ svg {
     padding-bottom: 600px !important;
     /* z-index: -1; */
   }
+
   .xAxis_label {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.8em;
@@ -268,8 +267,10 @@ div.tooltip {
   background: #f2f0f7;
   border: 1px solid #000000;
   pointer-events: none;
-  z-index: 2;
+  z-index: 0;
 }
+
+
 
 div.map-tooltip {
   margin: auto;

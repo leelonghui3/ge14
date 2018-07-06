@@ -242,7 +242,7 @@ $(document).ready(function() {
 
         nationalText.transition()
           .delay(1000)
-          .text('Ntl avg: ' + d3.format(',')(nationalmean))
+          .text('Avg: ' + d3.format(',')(nationalmean))
           .style('fill', '#333333');
 
         BNmeanLine.transition()
