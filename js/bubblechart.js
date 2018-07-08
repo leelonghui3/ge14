@@ -194,7 +194,7 @@ $(document).ready(function() {
       .data(data)
       .enter()
       .append('circle')
-      .attr('class', 'bn-circle')
+      .attr('class', 'bn-win-circle')
       .attr('cx', function(d) {
         if (d.ge13_malay >= 50) {
           return xScale(d.ge13_malay);
@@ -273,7 +273,7 @@ $(document).ready(function() {
           .style('display', 'none');
       }
     }, {
-      offset: '40%'
+      offset: '50%'
     });
 
     $('#circlechart-2').waypoint(function(direction) {
@@ -315,7 +315,7 @@ $(document).ready(function() {
           });
       }
     }, {
-      offset: '40%'
+      offset: '50%'
     });
 
     $('#circlechart-3').waypoint(function(direction) {
@@ -354,7 +354,7 @@ $(document).ready(function() {
           });
       }
     }, {
-      offset: '40%'
+      offset: '50%'
     });
 
     $('#circlechart-4').waypoint(function(direction) {
@@ -364,7 +364,7 @@ $(document).ready(function() {
             if (d.pct_diff > 0) {
               return 'bn-win-circle';
             } else {
-              return 'bn-circle';
+              return 'bn-win-circle';
             }
           })
           .style('opacity', function(d) {
@@ -376,11 +376,11 @@ $(document).ready(function() {
           });
       } else {
         circles.transition()
-          .attr('class', 'bn-circle')
+          .attr('class', 'bn-win-circle')
           .style('opacity', 0.5);
       }
     }, {
-      offset: '40%'
+      offset: '50%'
     });
 
     $('#circlechart-5').waypoint(function(direction) {
@@ -390,7 +390,7 @@ $(document).ready(function() {
             if (d.par_code === 'P004') {
               return 'ph-win-circle';
             } else {
-              return 'bn-circle';
+              return 'bn-win-circle';
             }
           })
           .style('opacity', function(d) {
@@ -406,7 +406,7 @@ $(document).ready(function() {
             if (d.swing_pct > 0) {
               return 'bn-win-circle';
             } else {
-              return 'bn-circle';
+              return 'bn-win-circle';
             }
           })
           .style('opacity', function(d) {
@@ -418,7 +418,7 @@ $(document).ready(function() {
           });
       }
     }, {
-      offset: '40%'
+      offset: '50%'
     });
 
     $('#circlechart-6').waypoint(function(direction) {
@@ -428,7 +428,7 @@ $(document).ready(function() {
             if (d.state === 'Kedah' && d.swing_pct <= -71.11) {
               return 'ph-win-circle';
             } else {
-              return 'bn-circle';
+              return 'bn-win-circle';
             }
           })
           .style('opacity', function(d) {
@@ -444,7 +444,7 @@ $(document).ready(function() {
             if (d.par_code === 'P004') {
               return 'ph-win-circle';
             } else {
-              return 'bn-circle';
+              return 'bn-win-circle';
             }
           })
           .style('opacity', function(d) {
@@ -456,7 +456,7 @@ $(document).ready(function() {
           });
       }
     }, {
-      offset: '40%'
+      offset: '50%'
     });
 
     $('#circlechart-7').waypoint(function(direction) {
@@ -470,7 +470,7 @@ $(document).ready(function() {
           if (d.state === 'Kedah' && d.swing_pct <= -71.11) {
             return 'ph-win-circle';
           } else {
-            return 'bn-circle';
+            return 'bn-win-circle';
           }
         })
         .style('opacity', function(d) {
@@ -482,7 +482,7 @@ $(document).ready(function() {
         });
       }
     }, {
-      offset: '40%'
+      offset: '50%'
     });
 
     // render color for each bar

@@ -143,11 +143,11 @@ $(document).ready(function() {
 
     function showInfo(d) {
       div.style('opacity', 0.9);
-      div.html(d.constituency + '<br>' +
-          d.ge14_malay + '% Malay voters' + '<br>' +
-          'State: ' + d.state + '<br>' +
-          '<span class="winning-party">Winning Party: </span>' + d.ge14_win_coallition + '<br>' +
-          'Majority: ' + d3.format(',')(d.ge14_majority_pct) + ' %')
+      div.html('<span class="uk-text-bold uk-text-uppercase">' + d.constituency + '</span><br>' +
+          '<span class="uk-text-bold uk-text-warning">' + d.ge14_malay + '%</span> Malay voters' + '<br>' +
+          '<span class="uk-text-bold">State:</span> ' + d.state + '<br>' +
+          '<span class="uk-text-bold">Winning Party: </span>' + d.ge14_win_coallition + '<br>' +
+          '<span class="uk-text-bold">Majority: </span>' + d3.format(',')(d.ge14_majority_pct) + ' %')
         .style("left", (d3.event.pageX - 75) + "px")
         .style("top", (d3.event.pageY - 140) + "px");
     }

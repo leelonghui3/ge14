@@ -18,56 +18,112 @@
 
 <body>
 
-  <div class="uk-container uk-margin-auto uk-hidden@s uk-margin-top">
+  <!-- facebook share button -->
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.0&appId=583331478703360&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- mobile title -->
+  <div class="uk-container uk-margin-auto uk-hidden@l uk-margin-top">
     <h1 class="uk-heading-primary uk-text-center">The Fall of the Titan:</h1>
     <h2 class="uk-text-center">How the Malay Tsunami drowned Malaysia’s unbeaten ruling party</h2>
   </div>
-  <div class="uk-margin-top uk-hidden@s">
+  <div class="uk-margin-top uk-hidden@l">
     <img data-src="img/msiaflag.jpg" width="100%" alt="Jalur Gemilang, Malaysian national flag" uk-img>
   </div>
 
+  <!-- mobile navbar -->
   <div class="uk-position-z-index" uk-sticky="bottom: #offset">
-    <nav class="uk-navbar-container uk-hidden@s mobile-navbar" uk-navbar>
-      <div class="uk-navbar-left">
-        <a href="#modal-menu" class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #modal-menu" style="color: #FFFFFF"></a>
-        <div id="modal-menu" uk-modal>
-          <div class="uk-modal-dialog uk-text-left">
-            <div class="uk-panel">
-              <button class="uk-modal-close-default" type="button" uk-close></button>
-              <ul class="uk-nav" data-uk-nav>
-                <li><a href="#intro" class="uk-modal-close uk-text-center mobile-section " uk-scroll="offset: 50">Introduction</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#chapter-1" class="uk-modal-close uk-text-center mobile-section" uk-scroll="offset: 50">Unexpected Victory</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#chapter-2" class="uk-modal-close uk-text-center mobile-section" uk-scroll="offset: 50">GST & 1MDB</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#chapter-3" class="uk-modal-close uk-text-center mobile-section" uk-scroll="offset: 50">East Coast</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#chapter-4" class="uk-modal-close uk-text-center mobile-section" uk-scroll="offset: 50">Sabah & Sarawak</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#chapter-5" class="uk-modal-close uk-text-center mobile-section" uk-scroll="offset: 50">Malapportionment</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#chapter-6" class="uk-modal-close uk-text-center mobile-section" uk-scroll="offset: 50">Electoral reform</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#" class="uk-modal-close uk-text-center mobile-section" uk-scroll="offset: 50">Back to top</a></li>
-              </ul>
-            </div>
+    <nav class="uk-navbar-container uk-hidden@l mobile-navbar" uk-navbar>
+      <a href="#modal-menu" class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #modal-menu" style="color: #FFFFFF"></a>
+      <div id="modal-menu" uk-modal>
+        <div class="uk-modal-dialog uk-text-left">
+          <div class="uk-panel">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <ul class="uk-nav" data-uk-nav>
+              <li><a href="#intro" class="uk-modal-close uk-text-center mobile-section " uk-scroll="offset: 80">Introduction</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#chapter-1" class="uk-modal-close uk-text-center mobile-section" uk-scroll="offset: 80">Unexpected Victory</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#chapter-2" class="uk-modal-close uk-text-center mobile-section" uk-scroll="offset: 80">GST & 1MDB</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#chapter-3" class="uk-modal-close uk-text-center mobile-section" uk-scroll="offset: 80">East Coast</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#chapter-4" class="uk-modal-close uk-text-center mobile-section" uk-scroll="offset: 80">Sabah & Sarawak</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#chapter-5" class="uk-modal-close uk-text-center mobile-section" uk-scroll="offset: 80">Malapportionment</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#chapter-6" class="uk-modal-close uk-text-center mobile-section" uk-scroll="offset: 80">Electoral reform</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#" class="uk-modal-close uk-text-center mobile-section" uk-scroll="offset: 80">Back to top</a></li>
+            </ul>
           </div>
         </div>
-        <a href="#" class="uk-navbar-item uk-logo uk-text-uppercase mobile-nav-brand">The Malay Tsunami</a>
       </div>
+      <a href="#" class="uk-navbar-item uk-logo uk-text-uppercase mobile-nav-brand">The Malay Tsunami</a>
     </nav>
   </div>
 
-  <div class="uk-margin-bottom uk-visible@s">
-    <h6 class="uk-text-small uk-text-muted">Jalur Gemilang, Malaysian national flag. Photo by: <a href="https://commons.wikimedia.org/wiki/User:Cccefalon" target="_blank">CEphoto, Uwe Aranas</a> / <a href="https://commons.wikimedia.org/" target="_blank">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY 4.0</a>, <a href="https://upload.wikimedia.org/wikipedia/commons/2/28/Kota_Kinabalu_Malaysia_National-flag-01.jpg">Link</a></h6>
+  <!-- desktop title -->
+  <div id="head" class="uk-inline uk-visible@l">
+    <img data-src="img/msiaflag.jpg" width="100%" alt="Jalur Gemilang, Malaysian national flag" uk-img>
+    <div class="uk-overlay uk-overlay-primary uk-position-center">
+      <h1 class="uk-heading-primary uk-text-center">The Fall of the Titan:</h1>
+      <h2 class="uk-text-center">How the Malay Tsunami drowned Malaysia’s unbeaten ruling party</h2>
+    </div>
+    <div class="uk-position-bottom-right uk-margin-right">
+      <h6 class="uk-text-small uk-overlay-primary">Jalur Gemilang, Malaysian national flag. Photo by: <a href="https://commons.wikimedia.org/wiki/User:Cccefalon" target="_blank">CEphoto, Uwe Aranas</a> / <a href="https://commons.wikimedia.org/" target="_blank">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY 4.0</a>, <a href="https://upload.wikimedia.org/wikipedia/commons/2/28/Kota_Kinabalu_Malaysia_National-flag-01.jpg">Link</a></h6>
+    </div>
+
+  </div>
+
+  <!-- desktop navbar -->
+  <div class="uk-position-z-index" uk-sticky="bottom: #offset">
+    <nav class="uk-navbar-container uk-visible@l desktop-navbar" uk-navbar>
+      <div class="uk-navbar-left">
+        <a href="#" class="uk-navbar-item uk-logo uk-contrast" style="color:#FFFFFF;" uk-scroll>The Malay Tsunami</a>
+        <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 80">
+          <li><a href="#intro" class="uk-navbar-item">Introduction</a></li>
+          <li><a href="#chapter-1" class="uk-navbar-item">Unexpected Victory</a></li>
+          <li><a href="#chapter-2" class="uk-navbar-item">GST & 1MDB</a></li>
+          <li><a href="#chapter-3" class="uk-navbar-item">East Coast</a></li>
+          <li><a href="#chapter-4" class="uk-navbar-item">Sabah & Sarawak</a></li>
+          <li><a href="#chapter-5" class="uk-navbar-item">Malapportionment</a></li>
+          <li><a href="#chapter-6" class="uk-navbar-item">Electoral reform</a></li>
+        </ul>
+      </div>
+
+      <div class="uk-navbar-right uk-margin-right uk-visible@l">
+        <ul class="uk-iconnav">
+          <li>
+            <div class="fb-share-button" data-href="http://igor.gold.ac.uk/~llee003/ge14/" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+              <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Figor.gold.ac.uk%2F%7Ellee003%2Fge14%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" uk-icon="icon: facebook; ratio: 2"></a></div>
+          </li>
+          <li>
+            <a href="https://twitter.com/share?url=http://igor.gold.ac.uk/~llee003/ge14&amp;text=The Fall of the Titan: How the Malay Tsunami drowned Malaysia’s unbeaten ruling party" onclick="window.open(this.href);return false;" target="_blank" uk-icon="icon: twitter; ratio: 2"></a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
   </div>
 
 
-  <div id="intro" class="uk-margin-top uk-container uk-container-small">
+  <div class="main">
+
+
+  <div id="intro" class="uk-margin-top uk-container uk-container-small central-800">
     <article class="uk-article">
 
-      <p class="uk-article-meta">By Lee Long Hui</p>
+      <p class="uk-article-meta byline uk-margin-top uk-margin-bottom">By Lee Long Hui</p>
 
       <p>Like many from small towns in Malaysia, Rizuwan Khalin drove 250 kilometres to vote in the recent general election. He did the same in 2013, when he voted for the National Front (BN) the political coalition that ruled Malaysia since its independence
         in 1957.</p>
@@ -91,8 +147,12 @@
     </article>
   </div>
 
+  <div class="uk-margin-top" uk-scrollspy="cls:uk-animation-fade; repeat: true">
+    <img class="uk-align-center" data-src="img/mahathir-najib-3.jpeg" alt="Mahathir and Najib" uk-img>
+    <h5 class="uk-text-center uk-text-muted">Mahathir (left) led the opposition to topple Najib (right) in the election.</h5>
+  </div>
 
-  <div id="chapter-1" class="uk-margin-top uk-container uk-container-small">
+  <div id="chapter-1" class="uk-margin-top uk-container uk-container-small central-800">
     <article class="uk-article">
 
       <h2>An unexpected victory</h2>
@@ -119,25 +179,25 @@
       <div id="circle-chart" class=""></div>
     </div>
 
-    <div id="circlechart-1" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.6">There are 165 parliamentary constituencies in West Malaysia. In GE13, 114 (69.1%) constituencies had a majority Malay voters. Each circle represents a constituency. The size of the circle represents the total number of voters.</div>
+    <div id="circlechart-1" class="scroll-text uk-container uk-container-small central-800" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.6">There are 165 parliamentary constituencies in West Malaysia. In GE13, 114 (69.1%) constituencies had a majority Malay voters. Each circle represents a constituency. The size of the circle represents the total number of voters.</div>
 
-    <div id="circlechart-2" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.6">Contrary to many beliefs, BN did not gain the upper hand in many of the Malay-majority seats which emerged from the boundary change exercise. When the new boundaries are imposed on the GE13 results, BN saw an increase in votes in only 22 (19.2%) Malay-majority
-      seats. A total 87 seats (76.3%) remained unchanged, while BN votes in eight Malay-majority seats (7%) decreased.</div>
+    <div id="circlechart-2" class="scroll-text uk-container uk-container-small central-800" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.6">Contrary to many beliefs, <span class="bn-text">BN</span> did not gain the upper hand in many of the Malay-majority seats which emerged from the boundary change exercise. When the new boundaries are imposed on the GE13 results, <span class="bn-text">BN</span> saw an increase in votes in only 22 (19.2%) Malay-majority
+      seats. A total 87 seats (76.3%) remained unchanged, while <span class="bn-text">BN</span> votes in eight Malay-majority seats (7%) decreased.</div>
 
-    <div id="circlechart-3" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.6">In GE14, the number of Malay-majority seats slightly increased to 117. However, there was a significant decrease in votes for BN in almost all the Malay-majority seats in GE14. BN only won 47, a dive from 78 in GE13.</div>
+    <div id="circlechart-3" class="scroll-text uk-container uk-container-small central-800" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.6">In GE14, the number of Malay-majority seats slightly increased to 117. However, there was a significant decrease in votes for <span class="bn-text">BN</span> in almost all the Malay-majority seats in GE14. <span class="bn-text">BN</span> only won 47, a dive from 78 in GE13.</div>
 
-    <div id="circlechart-4" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.6">In GE14, BN only had positive votes gain in two seats. This is far lower than the 29 seats, if support for BN remained, at GE13 level.</div>
+    <div id="circlechart-4" class="scroll-text uk-container uk-container-small central-800" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.6">In GE14, <span class="bn-text">BN</span> only had positive votes gain in two seats. This is far lower than the 29 seats, if support for BN remained, at GE13 level.</div>
 
-    <div id="circlechart-5" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.6">The most significant swing took place in the Langkawi constituency in the northern state of Kedah, where Mahathir contested. According to the adjusted GE13 result, BN won the seat with 69% of votes, but it lost the seat in GE14, only securing 29%
+    <div id="circlechart-5" class="scroll-text uk-container uk-container-small central-800" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.6">The most significant swing took place in the Langkawi constituency in the northern state of Kedah, where <span class="ph-text">Mahathir</span> contested. According to the adjusted GE13 result, <span class="bn-text">BN</span> won the seat with 69% of votes, but it lost the seat in GE14, only securing 29%
       of the total votes.</div>
 
-    <div id="circlechart-6" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.6">And the PH momentum driven by Mahathir swept across Kedah. Out of the top ten most prominent swing seats, seven of them were in Kedah, and PH won all of them.</div>
+    <div id="circlechart-6" class="scroll-text uk-container uk-container-small central-800" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.6">And the <span class="ph-text">PH</span> momentum driven by Mahathir swept across Kedah. Out of the top ten most prominent swing seats, seven of them were in Kedah, and <span class="ph-text">PH</span> won all of them.</div>
 
-    <div id="circlechart-7" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,0.8; y:100,0; viewport: 0.6">Overall, BN won 47 of the 117 Malay-majority seats, the rest were won by PH and PAS.
+    <div id="circlechart-7" class="scroll-text uk-container uk-container-small central-800" data-uk-parallax="opacity: 0,0.8; y:100,0; viewport: 0.6">Overall, <span class="bn-text">BN</span> won 47 of the 117 Malay-majority seats, the rest were won by <span class="ph-text">PH</span> and <span class="pas-text">PAS</span>.
     </div>
   </div>
 
-  <div id="chapter-2" class="uk-margin-top uk-container uk-container-small">
+  <div id="chapter-2" class="uk-margin-top uk-margin-large-bottom uk-container uk-container-small central-800">
     <article class="uk-article">
 
       <h2>The people rage against GST and 1MDB</h2>
@@ -154,6 +214,17 @@
       <p>He said when PKR leader Anwar Ibrahim was jailed and PAS spiritual leader Nik Aziz Nik Mat had passed away, there was a “vacuum” in the Malay leadership leaving no other leader but Najib.</p>
 
       <p>When Mahathir quit Umno to form Bersatu and joined forces with PH, it provided Malay voters with a credible alternative besides Umno in GE14.</p>
+
+    </article>
+  </div>
+
+      <div class="uk-margin-top uk-margin-large-bottom" uk-scrollspy="cls:uk-animation-fade; repeat: true">
+        <img class="uk-align-center" data-src="img/ceramah.jpeg" alt="PH's public talk" uk-img>
+        <h5 class="uk-text-center uk-text-muted">Thoudsands of people gathering at PH's talk on the eve of polling day. Photo by: DAP Media Group</h5>
+      </div>
+
+<div class="uk-margin-top uk-container uk-container-small central-800">
+  <article class="uk-article">
 
       <p>However, polling centre Merdeka Centre research manager Tan Seng Keat has a different take. Tan said that it was a “tax revolt” - a vote against the GST and the resulting inflation - instead of a Malay tsunami.</p>
 
@@ -183,7 +254,12 @@
     </article>
   </div>
 
-  <div id="chapter-3" class="uk-margin-top uk-container uk-container-small">
+  <div class="uk-margin-top" uk-scrollspy="cls:uk-animation-fade; repeat: true">
+    <img class="uk-align-center" data-src="img/1mdb.jpg" alt="1MDB" uk-img>
+    <h5 class="uk-text-center uk-text-muted">The funds of 1MDB, which is Najib's brainchild, had allegedly been used for personal gain. Photo by: <a href="https://www.malaysiakini.com" target="_blank">Malaysiakini</a></h5>
+  </div>
+
+  <div id="chapter-3" class="uk-margin-top uk-container uk-container-small central-800">
     <article class="uk-article">
 
       <h2>PH failed miserably in the east coast</h2>
@@ -195,19 +271,19 @@
     </article>
   </div>
 
-  <div class="uk-section uk-section-default uk-text-center uk-margin-top uk-container uk-container-small">
+  <div class="uk-section uk-section-default uk-text-center uk-container uk-container-small uk-margin-top">
     <h3 class="uk-text-center">Peninsular Malaysia Election Map</h3>
-    <div id="west_map_wrapper" class="uk-display-inline-block ">
+    <div id="west_map_wrapper">
       <div id="west-party-hexmap" class=""></div>
       <div id="west-malay-hexmap" class="hide-map"></div>
-      <p class="uk-text-center uk-margin-top">
+      <div class="uk-text-center uk-margin-top">
         <button id="toggle" class="uk-button uk-button-default" name="button">Change view</button>
-      </p>
-      <p class="instruction">Click the button to see the results according to political party or percentage of Malay voters.</p>
+        <p class="uk-text-bold">Click the button to see the results according to political party or percentage of Malay voters.</p>
+      </div>
     </div>
   </div>
 
-  <div class="uk-container uk-container-small">
+  <div class="uk-container uk-container-small central-800">
     <article class="uk-article">
 
       <p>Liew said this is because the National Trust Party (Amanah), one of the component parties of PH, did not have a strong enough to make a difference.</p>
@@ -221,7 +297,7 @@
     </article>
   </div>
 
-  <div id="chapter-4" class="uk-margin-top uk-container uk-container-small">
+  <div id="chapter-4" class="uk-margin-top uk-container uk-container-small central-800">
     <article class="uk-article">
 
       <h2>Winds of change blew strongly in East Malaysia</h2>
@@ -249,10 +325,10 @@
       <button type="button" id="ge13-map" class="uk-button uk-button-default" name="button">GE13</button>
       <button type="button" id="ge14-map" class="uk-button uk-button-default" name="button">GE14</button>
     </p>
-    <p class="instruction">Click to see Sabah and Sarawak's results in GE13 or GE14.</p>
+    <p class="uk-text-bold">Click to see Sabah and Sarawak's results in GE13 or GE14.</p>
   </div>
 
-  <div class="uk-margin-top uk-container uk-container-small">
+  <div class="uk-margin-top uk-container uk-container-small central-800">
     <article class="uk-article">
 
       <p>Merdeka Centre’s Tan said that the outcome in Sabah and Sarawak was not due to the issue of 1MDB, but it was more about personalities and candidacies.</p>
@@ -270,7 +346,7 @@
     </article>
   </div>
 
-  <div id="chapter-5" class="uk-margin-top uk-container uk-container-small">
+  <div id="chapter-5" class="uk-margin-top uk-container uk-container-small central-800">
     <article class="uk-article">
 
       <h2>Malapportionment in the first-past-the-post system</h2>
@@ -289,17 +365,17 @@
   </div>
 
   <div id="" class="constChart-text-wrapper uk-container">
-    <div id="constChart" class="" uk-sticky="offset: 150; bottom: true">
+    <div id="constChart" class="" uk-sticky="offset: 175; bottom: true" style="z-index: 0;">
       <div id="const_chart" class=""></div>
     </div>
-    <div id="barchart-1" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.7">BN won 79 seats in GE14. The length of each horizontal line shows the number of voters for that constituency.</div>
-    <div id="barchart-2" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.7">As we can see, the total number of the voters in most of the seats won by BN are below the national average.</div>
-    <div id="barchart-3" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.7">Meanwhile, PH won 121 seats in GE14, and the average number of voters in those constituencies is above the national average.</div>
-    <div id="barchart-4" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.7">The same is true for PAS where the average number of voters of its seats is even higher.</div>
-    <div id="barchart-5" class="testing uk-container uk-container-small" data-uk-parallax="opacity: 0,0.8; y: 100,0; viewport: 0.7">The difference in the number of voters in the smallest seat (Igan, 19,592) and the largest seat (Bangi, 178,790) is 159,198. In other words, one vote in Igan has the same weight as nine votes in Bangi. <span class="instruction">Mouseover or tab on each bar for details</span></div>
+    <div id="barchart-1" class="scroll-text uk-container uk-container-small central-800" data-uk-parallax="opacity: 0,0.9; y: 100,0; viewport: 0.5"><span class="bn-text">BN</span> won 79 seats in GE14. The length of each horizontal line shows the number of voters for that constituency.</div>
+    <div id="barchart-2" class="scroll-text uk-container uk-container-small central-800" data-uk-parallax="opacity: 0,0.9; y: 100,0; viewport: 0.5">As we can see, the total number of the voters in most of the seats won by <span class="bn-text">BN</span> are below the national average.</div>
+    <div id="barchart-3" class="scroll-text uk-container uk-container-small central-800" data-uk-parallax="opacity: 0,0.9; y: 100,0; viewport: 0.5">Meanwhile, <span class="ph-text">PH</span> won 121 seats in GE14, and the average number of voters in those constituencies is above the national average.</div>
+    <div id="barchart-4" class="scroll-text uk-container uk-container-small central-800" data-uk-parallax="opacity: 0,0.9; y: 100,0; viewport: 0.5">The same is true for <span class="pas-text">PAS</span> where the average number of voters of its seats is even higher.</div>
+    <div id="barchart-5" class="scroll-text uk-container uk-container-small central-800" data-uk-parallax="opacity: 0,0.9; y: 100,0; viewport: 0.5">The difference in the number of voters in the smallest seat (<span class="bn-text">Igan</span>, 19,592) and the largest seat (<span class="ph-text">Bangi</span>, 178,790) is 159,198. In other words, one vote in Igan has the same weight as nine votes in Bangi. <span class="uk-text-bold">Mouseover or tab on each bar for details.</span></div>
   </div>
 
-  <div class="uk-margin-top uk-container uk-container-small">
+  <div class="uk-margin-top uk-container uk-container-small central-800">
     <article class="uk-article">
 
       <p>Under such circumstances, the Malaysian Coalition for Clean and Fair Elections (Bersih 2.0) estimated that a political party could win simple parliamentary majority (112 seats) by getting merely 16.5% of the popular vote.</p>
@@ -311,7 +387,7 @@
     </article>
   </div>
 
-  <div id="chapter-6" class="uk-margin-top uk-container uk-container-small">
+  <div id="chapter-6" class="uk-margin-top uk-container uk-container-small central-800">
     <article class="uk-article">
 
       <h2>Proportional representation system is the way out</h2>
@@ -321,6 +397,17 @@
       <p>As such, the system would drive the weak Umno and PAS to merge and re-emerge as one of the top two contenders against PH in the next general election, he said.</p>
 
       <p>He warned that such convergence may not be able to win federal power, but will be able to would produce a political coalition that has an ideology similar to existing fringe far-right Malay Muslim groups.</p>
+
+    </article>
+  </div>
+
+  <div class="uk-margin-top" uk-scrollspy="cls:uk-animation-fade; repeat: true">
+    <img class="uk-align-center" data-src="img/umno-pas.jpeg" alt="Umno and PAS' flag" uk-img>
+    <h5 class="uk-text-center uk-text-muted">The party flag of PAS (front) and Umno (back).</h5>
+  </div>
+
+  <div id="" class="uk-margin-top uk-container uk-container-small uk-margin-large-bottom central-800">
+    <article class="uk-article">
 
       <p>Thus, Wong suggested a reform of the electoral system by replacing FPTP with a proportional representation system to remove the incentive for Umno and PAS to join forces.</p>
 
@@ -342,6 +429,28 @@
       <p>“If they (PH) are performing worse than BN, I will vote for another party (in the coming general election),” said Rizuwan.</p>
 
     </article>
+  </div>
+
+  <div class="uk-container uk-container-small uk-margin-auto-top uk-display-inline-block uk-hidden@l">
+    <div class="fb-share-button" style="float: left; margin-right: 1em;"   data-href="http://igor.gold.ac.uk/~llee003/ge14/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Figor.gold.ac.uk%2F%7Ellee003%2Fge14%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="The Fall of the Titan: How the Malay Tsunami drowned Malaysia’s unbeaten ruling party" data-url="http://igor.gold.ac.uk/~llee003/ge14/" data-via="leelonghui" data-hashtags="malaytsunami #ge14 #pru14" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  <!-- Footer -->
+  <footer class="uk-margin-large-top uk-padding">
+    <div class="uk-child-width-1-3@s uk-grid-small uk-grid-match" uk-grid>
+      <div class="">
+        <p>Lee Long Hui is former <a href="https://www.malaysiakini.com" target="_blank">Malaysiakini</a> journalist and <a href="https://www.gold.ac.uk/pg/ma-digital-journalism/" target="_blank">MA Digital Journalism</a> student at <a href="https://www.gold.ac.uk/" target="_blank">Goldsmiths, University of London</a>. He witnessed the first-ever regime change for his country from overseas as he was unable to vote.</p>
+      </div>
+      <div></div>
+      <div class="uk-text-center">
+          <h3 class="uk-visible@s">Contact</h3>
+          <p>
+            <a href="mailto:leelonghui3@gmail.com" target="_blank" class="uk-icon-button" uk-icon="mail"></a>
+            <a href="https://www.linkedin.com/in/leelonghui/" target="_blank" class="uk-icon-button" uk-icon="linkedin"></a>
+            <a href="https://twitter.com/leelonghui" target="_blank" class="uk-icon-button" uk-icon="twitter"></a>
+          </p>
+    </div>
+  </footer>
   </div>
 
   <script src="js/bubblechart.js" charset="utf-8"></script>

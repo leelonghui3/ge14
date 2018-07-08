@@ -1,5 +1,66 @@
-.central-960 {
-  min-width: 960px;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  margin:0;
+  padding:0;
+  /* background-color: #f9f9f9; */
+}
+
+html {
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+
+.container {
+  min-height: 100%;
+}
+
+footer {
+  position: relative;
+  /* width: 100%; */
+  background-color: #212121;
+  height: 150px;
+  color: #FFFFFF;
+  clear: both;
+  /* margin-top: -150px; */
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
+  left: 0px;
+  bottom: 0px;
+}
+
+footer h3{
+  color: #FFFFFF;
+}
+
+.central-800 {
+  max-width: 800px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+h2 {
+  font-family: 'Varela Round', sans-serif;
+}
+
+h5 {
+  font-style: italic;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.byline {
+  font-family: 'Varela Round', sans-serif;
+  font-style: italic;
+  font-size: 20px;
 }
 
 /* Open Sans */
@@ -42,23 +103,34 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+.desktop-navbar {
+  background-color: #212121!important;
+  color: #212121;
+  z-index: 1000;
+}
+
+.uk-navbar{color:#fff;background:#212121; border-bottom:1px solid #212121; border-top: 1px solid #212121;}
+.uk-navbar .uk-navbar-nav a{color:#999; border-bottom:1px solid #212121;}
+.uk-navbar .uk-navbar-nav li {color: #212121; border-bottom:1px solid #212121;}
+.uk-navbar .uk-navbar-nav li.uk-active a{background:#fff; font-weight: 700;}
+.uk-navbar .uk-navbar-nav li:hover a{color:#fff;background:#424242;}
+
 .mobile-navbar {
   background-color: #212121!important;
-  height: 50px;
 }
 
 .mobile-nav-brand {
-  color: #ffffff;
-}
-
-.bigpic-credit {
-  background: #54278f;
   color: #FFFFFF;
 }
 
 .mobile-section {
   color: #212121;
   font-weight: bold;
+}
+
+.xAxis_label, .yAxis_label {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bolder;
 }
 
 .y-axis line {
@@ -82,16 +154,34 @@ svg {
   fill: #092781;
 }
 
+.bn-text {
+  font-weight: bolder;
+  background-color: #092781;
+  color: #FFFFFF;
+}
+
 /* PH's seats colour */
 
 .ph {
   fill: #ED1C24;
 }
 
+.ph-text {
+  font-weight: bolder;
+  background-color: #ED1C24;
+  color: #FFFFFF;
+}
+
 /* PAS' seats colour */
 
 .pas {
   fill: #009000;
+}
+
+.pas-text {
+  font-weight: bolder;
+  background-color: #009000;
+  color: #FFFFFF;
 }
 
 /* Independent candidates' seats colour */
@@ -128,8 +218,8 @@ svg {
 .q4-5 {
   fill: #54278f;
 }
-s
-.bn-win-circle, .bn-circle {
+
+.bn-win-circle {
   fill: #092781;
   stroke: #000000;
   stroke-width: 1;
@@ -195,32 +285,24 @@ s
 }
 
 @media screen and (max-width: 500px) {
-  .testing {
+  .scroll-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.8em;
     background: #FFFFFF;
     margin: 0 auto;
     margin-bottom: 800px;
-    z-index: 1;
+    z-index: 3;
     border: 1px solid #212121;
   }
   .constChart-text-wrapper {
     margin: 0 auto;
     padding-bottom: 1300px !important;
-    /* z-index: 0; */
-  }
-  .circleChart {
-    z-index: -1;
-  }
-
-  .map-wrapper {
-    margin: 0 auto;
-    padding-bottom: 1000px !important;
-    /* z-index: -1; */
   }
   .xAxis_label {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.7em;
   }
-
   .yAxis_label {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.7em;
@@ -228,18 +310,19 @@ s
 }
 
 @media screen and (min-width: 501px) {
-  .testing {
+  .scroll-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.8em;
     background: #FFFFFF;
     margin: 0 auto;
     margin-bottom: 800px;
-    z-index: 1;
+    z-index: 3;
     border: 1px solid #212121;
   }
-
-  .constChart-text-wrapper, .map-wrapper {
+  .constChart-text-wrapper {
     margin: 0 auto;
     padding-bottom: 600px !important;
-    /* z-index: -1; */
   }
 
   .xAxis_label {
@@ -256,7 +339,7 @@ s
   display: none !important;
 }
 
-div.tooltip {
+div.map-tooltip {
   margin: auto;
   position: absolute;
   text-align: left;
@@ -264,30 +347,27 @@ div.tooltip {
   height: 110px;
   padding: 10px;
   font: 1em 'Open Sans', sans-serif;
-  background: #f2f0f7;
+  background: #3D3D3D;
+  color: #FFFFFF;
   border: 1px solid #000000;
   pointer-events: none;
   z-index: 0;
 }
 
-
-
-div.map-tooltip {
+div.chart-tooltip {
   margin: auto;
   position: absolute;
   text-align: left;
-  width: 200px;
-  height: 120px;
-  padding: 10px;
+  width: 170px;
+  height: 85px;
+  padding: 5px;
   font: 1em 'Open Sans', sans-serif;
-  background: #f2f0f7;
+  background: #3D3D3D;
+  color: #FFFFFF;
   border: 1px solid #000000;
   pointer-events: none;
-  z-index: 2;
+  z-index: 0;
 }
-
-
-
 
 .legend {
   font-family: 'Open Sans', sans-serif;
@@ -300,17 +380,8 @@ div.map-tooltip {
   stroke-width: 2;
 }
 
-#toggle {
-  background: #9e9ac8;
+
+#ge13-map, #ge14-map, #toggle {
+  background: #212121;
   color: #FFFFFF;
-}
-
-#ge13-map {
-  background: #9e9ac8;
-  color: #f2f0f7;
-}
-
-#ge14-map {
-  background: #f2f0f7;
-  color: #54278f;
 }
