@@ -287,8 +287,7 @@ svg {
 @media screen and (max-width: 500px) {
   .scroll-text {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    line-height: 1.8em;
+    font-size: 14px;
     background: #FFFFFF;
     margin: 0 auto;
     margin-bottom: 800px;
