@@ -3,6 +3,25 @@
 
 <head>
   <meta charset="utf-8">
+
+  <!-- facebook meta tag -->
+  <meta property="og:title" content="The Fall of the Titan: How the Malay Tsunami drowned Malaysia’s unbeaten ruling party">
+	<meta property="og:description" content="Comparing GE14 and GE13 results showed that many Malay voters swung from BN to PH and PAS.">
+	<meta property="og:image" content="http://igor.gold.ac.uk/~llee003/ge14/img/msiaflag.jpg">
+	<meta property="og:url" content="http://igor.gold.ac.uk/~llee003/ge14">
+	<meta name="twitter:card" content="summary_large_image">
+
+  <meta property="og:site_name" content="Lee Long Hui" />
+  <meta name="twitter:image:alt" content="$tolen 1MDB funds - The DOJ lawsuit revisited" />
+
+  <meta property="fb:app_id" content="583331478703360" />
+  <meta name="twitter:site" content="@leelonghui">
+
+  <!-- Google SEO meta tags -->
+  <meta name="description" content="Comparing GE14 and GE13 results showed that many Malay voters swung from BN to PH and PAS." />
+  <meta name="keywords" content="Malay Tsunami, GE13, GE14, PRU14, Malaysia, Najib, Mahathir, BN, PH, PAS" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
   <title>The Fall of the Titan: How the Malay Tsunami drowned Malaysia’s never-defeated ruling party</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
@@ -41,11 +60,11 @@
   </div>
 
   <!-- mobile navbar -->
-  <div class="uk-position-z-index" uk-sticky="bottom: #offset">
+  <div class="" uk-sticky="bottom: #offset">
     <nav class="uk-navbar-container uk-hidden@l mobile-navbar" uk-navbar>
       <a href="#modal-menu" class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #modal-menu" style="color: #FFFFFF"></a>
       <div id="modal-menu" uk-modal>
-        <div class="uk-modal-dialog uk-text-left">
+        <div class="uk-modal-dialog">
           <div class="uk-panel">
             <button class="uk-modal-close-default" type="button" uk-close></button>
             <ul class="uk-nav" data-uk-nav>
@@ -278,7 +297,7 @@
       <div id="west-malay-hexmap" class="hide-map"></div>
       <div class="uk-text-center uk-margin-top">
         <button id="toggle" class="uk-button uk-button-default" name="button">Change view</button>
-        <p class="uk-text-bold">Click the button to see the results according to political party or percentage of Malay voters.</p>
+        <p class="uk-text-bold">Click the button to see the results according to political party or percentage of Malay voters. Mouseover or tab on each constituency for details.</p>
       </div>
     </div>
   </div>
@@ -325,7 +344,7 @@
       <button type="button" id="ge13-map" class="uk-button uk-button-default" name="button">GE13</button>
       <button type="button" id="ge14-map" class="uk-button uk-button-default" name="button">GE14</button>
     </p>
-    <p class="uk-text-bold">Click to see Sabah and Sarawak's results in GE13 or GE14.</p>
+    <p class="uk-text-bold">Click to see Sabah and Sarawak's results in GE13 or GE14. Mouseover or tab on each constituency for details.</p>
   </div>
 
   <div class="uk-margin-top uk-container uk-container-small central-800">
@@ -439,7 +458,7 @@
   <footer class="uk-margin-large-top uk-padding">
     <div class="uk-child-width-1-3@s uk-grid-small uk-grid-match" uk-grid>
       <div class="">
-        <p>Lee Long Hui is former <a href="https://www.malaysiakini.com" target="_blank">Malaysiakini</a> journalist and <a href="https://www.gold.ac.uk/pg/ma-digital-journalism/" target="_blank">MA Digital Journalism</a> student at <a href="https://www.gold.ac.uk/" target="_blank">Goldsmiths, University of London</a>. He witnessed the first-ever regime change for his country from overseas as he was unable to vote.</p>
+        <p>Lee Long Hui is former <a href="https://www.malaysiakini.com" target="_blank">Malaysiakini</a> journalist and <a href="https://www.gold.ac.uk/pg/ma-digital-journalism/" target="_blank">MA Digital Journalism</a> student at <a href="https://www.gold.ac.uk/" target="_blank">Goldsmiths, University of London</a>.</p>
       </div>
       <div></div>
       <div class="uk-text-center">
@@ -475,6 +494,32 @@
       $('#ge14-east').addClass('hide-map');
     });
   </script>
+
+  <!-- Microdata for SEO -->
+  <script type="application/ld+json">
+{
+  "@context": "http:\/\/schema.org",
+  "@type": "Article",
+  "url": "http:\/\/igor.gold.ac.uk\/~llee003\/ge14\/index.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lee Long Hui",
+  },
+  "datePublished": "2018-07-16T14:00:00+01:00",
+  "dateModified": "2018-07-16T14:00:00+01:00",
+  "headline": "The Fall of the Titan: How the Malay Tsunami drowned Malaysia’s unbeaten ruling party",
+  "image": {
+    "@list": [{
+      "@type": "ImageObject",
+      "url": "http:\/\/igor.gold.ac.uk\/~llee003\/ge14\/img\/msiaflag.jpg",
+      "width": 1898,
+      "height": 650
+    }]
+  },
+  "author": "Lee Long Hui",
+  "mainEntityOfPage": "http:\/\/igor.gold.ac.uk\/~llee003\/ge14\/index.html"
+}
+</script>
 
 </body>
 
