@@ -42,7 +42,8 @@ $(document).ready(function() {
     // Define the div for the tooltip
     var div = d3.select('body').append('div')
       .attr('class', 'chart-tooltip')
-      .style('opacity', 0);
+      .style('display', 'none');
+    // .style('opacity', 0);
 
     // clean data
     data.forEach(function(d) {
@@ -113,8 +114,9 @@ $(document).ready(function() {
     // Show seat information
     function showInfo(d) {
 
+      div.style('display', 'block');
       div.style('opacity', 0.9);
-      div.html('<span class="uk-text-uppercase uk-text-bold">'+ d.const_name + '</span><br>' +
+      div.html('<span class="uk-text-uppercase uk-text-bold">' + d.const_name + '</span><br>' +
           '<span class="uk-text-bold">State: </span>' + d.State + '<br>' +
           '<span class="uk-text-bold">Winning Party: </span>' + d.won_coallition + '<br>' +
           '<span class="uk-text-bold uk-text-warning">' + d3.format(',')(d.total_voters) + '</span> voters')
@@ -123,7 +125,7 @@ $(document).ready(function() {
     }
 
     function removeInfo(d) {
-      div.style('opacity', 0);
+      div.style('display', 'none');
     }
 
     // render color for each bar
@@ -170,11 +172,11 @@ $(document).ready(function() {
     PASmean = d3.format('.0f')(PASmean);
 
     // BN seats and transition
-    $('#barchart-1').waypoint(function(direction) {
+    $('#chapter-5').waypoint(function(direction) {
       if (direction === 'down') {
 
         bars.transition()
-          .duration(2000)
+          .duration(1000)
           .attr('width', function(d) {
             if (d.won_coallition === 'BN') {
               return xScale(d.total_voters);
@@ -192,7 +194,9 @@ $(document).ready(function() {
           .ease(d3.easeCircle);
       }
     }, {
-      offset: '50%'
+      offset: function() {
+        return -this.element.clientHeight;
+      }
     });
 
     // National and BN mean dashed line and transition
@@ -269,7 +273,7 @@ $(document).ready(function() {
     $('#barchart-3').waypoint(function(direction) {
       if (direction === 'down') {
         bars.transition()
-          .duration(2000)
+          .duration(1000)
           .attr('width', function(d) {
             if (d.won_coallition === 'PH') {
               return xScale(d.total_voters);
@@ -327,7 +331,7 @@ $(document).ready(function() {
 
       if (direction === 'down') {
         bars.transition()
-          .duration(2000)
+          .duration(1000)
           .attr('width', function(d) {
             if (d.won_coallition === 'PAS' || d.won_coallition === 'IND' || d.won_coallition === 'SOLIDARITI') {
               return xScale(d.total_voters);
@@ -370,7 +374,7 @@ $(document).ready(function() {
       if (direction === 'down') {
 
         bars.transition()
-          .duration(2000)
+          .duration(1000)
           .attr('width', function(d) {
             if (d.won_coallition === 'BN' || d.won_coallition === 'PH') {
               return xScale(d.total_voters);
@@ -380,16 +384,16 @@ $(document).ready(function() {
           })
           .ease(d3.easeCircle);
 
-          bars.on('mouseover', function(d) {
-              showInfo.call(this, d);
-              d3.select(this).classed('active', true);
-              d3.select(this).classed('const_color', true);
-            })
-            .on('mouseout', function(d) {
-              removeInfo();
-              d3.select(this).classed('active', false);
-              d3.select(this).classed('const_color', true);
-            });
+        bars.on('mouseover', function(d) {
+            showInfo.call(this, d);
+            d3.select(this).classed('active', true);
+            d3.select(this).classed('const_color', true);
+          })
+          .on('mouseout', function(d) {
+            removeInfo();
+            d3.select(this).classed('active', false);
+            d3.select(this).classed('const_color', true);
+          });
       } else {
 
         bars.transition()
@@ -403,7 +407,7 @@ $(document).ready(function() {
           })
           .ease(d3.easeCircle);
 
-          bars.on('mouseover', null);
+        bars.on('mouseover', null);
       }
     }, {
       offset: '50%'

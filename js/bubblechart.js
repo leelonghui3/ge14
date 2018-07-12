@@ -252,13 +252,10 @@ $(document).ready(function() {
     // }
 
     // transition
-    $('#circlechart-1').waypoint(function(direction) {
+    $('#chapter-1').waypoint(function(direction) {
       if (direction === 'down') {
         console.log('show circlechart-1');
         circles.transition()
-          .delay(function(d, i) {
-            return i * 1;
-          })
           .attr('cy', function(d) {
             return yScale(d.bn_ge13_vote_pct);
           })
@@ -273,7 +270,9 @@ $(document).ready(function() {
           .style('display', 'none');
       }
     }, {
-      offset: '50%'
+      offset: function() {
+        return -this.element.clientHeight;
+      }
     });
 
     $('#circlechart-2').waypoint(function(direction) {
@@ -460,26 +459,26 @@ $(document).ready(function() {
     });
 
     $('#circlechart-7').waypoint(function(direction) {
-      if(direction === 'down') {
+      if (direction === 'down') {
         circles.transition()
-        .attr('class', const_color)
-        .style('opacity', 0.5);
+          .attr('class', const_color)
+          .style('opacity', 0.5);
       } else {
         circles.transition()
-        .attr('class', function(d) {
-          if (d.state === 'Kedah' && d.swing_pct <= -71.11) {
-            return 'ph-win-circle';
-          } else {
-            return 'bn-win-circle';
-          }
-        })
-        .style('opacity', function(d) {
-          if (d.state === 'Kedah' && d.swing_pct <= -71.11) {
-            return 0.8;
-          } else {
-            return 0.1;
-          }
-        });
+          .attr('class', function(d) {
+            if (d.state === 'Kedah' && d.swing_pct <= -71.11) {
+              return 'ph-win-circle';
+            } else {
+              return 'bn-win-circle';
+            }
+          })
+          .style('opacity', function(d) {
+            if (d.state === 'Kedah' && d.swing_pct <= -71.11) {
+              return 0.8;
+            } else {
+              return 0.1;
+            }
+          });
       }
     }, {
       offset: '50%'

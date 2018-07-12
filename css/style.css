@@ -48,12 +48,6 @@ p {
   line-height: 1.8em;
 }
 
-blockquote p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-}
-
 h2 {
   font-family: 'Varela Round', sans-serif;
 }
@@ -196,12 +190,23 @@ svg {
   fill: #FFA500;
 }
 
+.ind-text {
+  font-weight: bolder;
+  background-color: #FFA500;
+  color: #FFFFFF;
+}
+
 /* Solidariti's seat colour */
 
 .solidariti {
   fill: #78D7F5;
 }
 
+.solidariti-text {
+  font-weight: bolder;
+  background-color: #78D7F5;
+  color: #FFFFFF;
+}
 
 /* choropleth colour scheme */
 
@@ -297,7 +302,7 @@ svg {
     background: #FFFFFF;
     margin: 0 auto;
     margin-bottom: 800px;
-    z-index: 3;
+    z-index: 0;
     border: 1px solid #212121;
   }
   .constChart-text-wrapper {
@@ -322,7 +327,7 @@ svg {
     background: #FFFFFF;
     margin: 0 auto;
     margin-bottom: 800px;
-    z-index: 3;
+    z-index: 0;
     border: 1px solid #212121;
   }
   .constChart-text-wrapper {
