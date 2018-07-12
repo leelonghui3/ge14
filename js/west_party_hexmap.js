@@ -46,11 +46,6 @@ $(document).ready(function() {
     }
   }
 
-  // Define the div for the tooltip
-  var div = d3.select('body').append('div')
-    .attr('class', 'map-tooltip')
-    .style('opacity', 0);
-
   d3.json("data/west.hexjson", function(error, hexjson) {
     // Render the hexes
     var hexes = d3.renderHexJSON(hexjson, width, height);
@@ -142,6 +137,7 @@ $(document).ready(function() {
     }
 
     function showInfo(d) {
+      div.style('display', 'block');
       div.style('opacity', 0.9);
       div.html('<span class="uk-text-bold uk-text-uppercase">' + d.constituency + '</span><br>' +
           '<span class="uk-text-bold uk-text-warning">' + d.ge14_malay + '%</span> Malay voters' + '<br>' +
@@ -153,7 +149,7 @@ $(document).ready(function() {
     }
 
     function removeInfo() {
-      div.style('opacity', 0);
+      div.style('display', 'none');
     }
   });
 });
