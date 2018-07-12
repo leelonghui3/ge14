@@ -42,8 +42,7 @@ $(document).ready(function() {
     // Define the div for the tooltip
     var div = d3.select('body').append('div')
       .attr('class', 'chart-tooltip')
-      .style('display', 'none');
-      // .style('opacity', 0);
+      .style('opacity', 0);
 
     // clean data
     data.forEach(function(d) {
@@ -114,7 +113,6 @@ $(document).ready(function() {
     // Show seat information
     function showInfo(d) {
 
-      div.style('display', 'block');
       div.style('opacity', 0.9);
       div.html('<span class="uk-text-uppercase uk-text-bold">'+ d.const_name + '</span><br>' +
           '<span class="uk-text-bold">State: </span>' + d.State + '<br>' +
@@ -125,7 +123,7 @@ $(document).ready(function() {
     }
 
     function removeInfo(d) {
-      div.style('display', 'none');
+      div.style('opacity', 0);
     }
 
     // render color for each bar
