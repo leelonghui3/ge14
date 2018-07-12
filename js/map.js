@@ -68,12 +68,7 @@ $(document).ready(function() {
       .text('');
   };
 
-  var div = d3.select('body').append('div')
-            .attr('class', 'map-tooltip')
-            .style('opacity', 0);
-
   // Credit
-
   mapContainer.append('text')
     .attr('text-anchor', 'end')
     .attr('x', width)
