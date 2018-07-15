@@ -116,18 +116,15 @@ h5 {
   z-index: 1000;
 }
 
-.uk-navbar{color:#fff;background:#212121; border-bottom:1px solid #212121; border-top: 1px solid #212121;}
-.uk-navbar .uk-navbar-nav a{color:#999; border-bottom:1px solid #212121;}
+.uk-navbar {color:#fff;background:#212121; height:60px!important;line-height:60px!important; border-bottom:1px solid #212121; border-top: 1px solid #212121;}
+.uk-navbar .uk-navbar-nav a{color:#999; height:60px;line-height:60px; border-bottom:1px solid #212121; font-size: 12px;}
+.uk-navbar-container a {color:#FFFFFF; height:60px;line-height:60px; border-bottom:1px solid #212121; font-size: 16px; font-weight: 500;}
 .uk-navbar .uk-navbar-nav li {color: #212121; border-bottom:1px solid #212121;}
 .uk-navbar .uk-navbar-nav li.uk-active a{background:#fff; font-weight: 700;}
 .uk-navbar .uk-navbar-nav li:hover a{color:#fff;background:#424242;}
 
 .mobile-navbar {
   background-color: #212121!important;
-}
-
-.mobile-nav-brand {
-  color: #FFFFFF;
 }
 
 .mobile-section {
