@@ -11,7 +11,7 @@ $(document).ready(function() {
       left: 10
     },
     width = ((window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) * 0.8) - margin.left - margin.right,
-    height = ((window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) * 0.8) - margin.top - margin.bottom;
+    height = ((window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) * 0.7) - margin.top - margin.bottom;
 
   // Create the svg element
   var mapContainer = d3

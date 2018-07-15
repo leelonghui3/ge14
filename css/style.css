@@ -16,26 +16,37 @@ html {
   padding:0;
 }
 
+h1, h2 {
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+i {
+  font-size: 16px;
+}
+
 .container {
   min-height: 100%;
 }
 
-footer {
-  position: relative;
-  /* width: 100%; */
-  background-color: #212121;
-  height: 150px;
-  color: #FFFFFF;
-  clear: both;
-  /* margin-top: -150px; */
-  /* padding-top: 20px; */
-  /* padding-bottom: 20px; */
-  left: 0px;
-  bottom: 0px;
+#head h6 {
+  font-size: 10px;
 }
 
-footer h3{
+.footer {
+  background-color: #212121;
   color: #FFFFFF;
+  clear: both;
+  margin: 0px;
+  bottom: 0;
+  padding: 30px;
+}
+
+footer h5 {
+  color: #FFFFFF;
+}
+
+footer p, li {
+  font-size: 15px;
 }
 
 .central-800 {
@@ -43,13 +54,9 @@ footer h3{
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Georgia", "Times New Roman", serif;
   font-size: 18px;
   line-height: 1.8em;
-}
-
-h2 {
-  font-family: 'Varela Round', sans-serif;
 }
 
 h5 {
@@ -58,7 +65,7 @@ h5 {
 }
 
 .byline {
-  font-family: 'Varela Round', sans-serif;
+  font-family: font-family: "Georgia", "Times New Roman", serif;
   font-style: italic;
   font-size: 20px;
 }
@@ -258,30 +265,6 @@ svg {
   stroke-width: 0;
 }
 
-.state {
-  font-family: 'Varela Round', sans-serif;
-}
-
-.constituency {
-  font-family: 'Varela Round', sans-serif;
-  font-size: 1.2em;
-  font-weight: 900;
-}
-
-.winner {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 900;
-}
-
-.majority {
-  font-family: 'Open Sans', sans-serif;
-  font-style: italic;
-}
-
-.credit, .losers {
-  font-family: 'Open Sans', sans-serif;
-}
-
 .active {
   fill: #FFFF00;
 }
@@ -298,8 +281,12 @@ svg {
 @media screen and (max-width: 500px) {
   .scroll-text {
     font-family: 'Open Sans', sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 14px;
     background: #FFFFFF;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
     margin: 0 auto;
     margin-bottom: 800px;
     z-index: 0;
@@ -307,7 +294,7 @@ svg {
   }
   .constChart-text-wrapper {
     margin: 0 auto;
-    padding-bottom: 1300px !important;
+    padding-bottom: 800px !important;
   }
   .xAxis_label {
     font-family: 'Open Sans', sans-serif;
@@ -325,6 +312,8 @@ svg {
     font-size: 18px;
     line-height: 1.8em;
     background: #FFFFFF;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
     margin: 0 auto;
     margin-bottom: 800px;
     z-index: 0;
@@ -368,7 +357,7 @@ div.chart-tooltip {
   margin: auto;
   position: absolute;
   text-align: left;
-  width: 170px;
+  width: 200px;
   height: 85px;
   padding: 5px;
   font: 1em 'Open Sans', sans-serif;
@@ -394,8 +383,4 @@ div.chart-tooltip {
 #ge13-map, #ge14-map, #toggle {
   background: #212121;
   color: #FFFFFF;
-}
-
-.uk-grid-small p.social {
-  margin: 0;
 }

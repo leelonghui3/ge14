@@ -139,7 +139,7 @@ $(document).ready(function() {
       } else if (d.won_coallition === 'IND') {
         return 'ind';
       } else {
-        return 'SOLIDARITI';
+        return 'solidariti';
       }
     }
 
@@ -232,7 +232,7 @@ $(document).ready(function() {
 
         nationalText.transition()
           .delay(1000)
-          .text('Avg: ' + d3.format(',')(nationalmean))
+          .text('Nat avg: ' + d3.format(',')(nationalmean))
           .style('fill', '#333333');
 
         BNmeanLine.transition()
