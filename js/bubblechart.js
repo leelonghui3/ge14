@@ -132,63 +132,6 @@ $(document).ready(function() {
       .text("BN Popular Vote (%)")
       .attr('class', 'yAxis_label');
 
-    // infoBox
-
-    // var infoBox = circleChart.append('svg')
-    //   .attr('width', 600)
-    //   .attr('height', 400)
-    //   .attr('x', paddingLeft)
-    //   .attr('y', 0);
-    //
-    // var showConstituency = infoBox.append('text')
-    //   .attr('x', 5)
-    //   .attr('y', 15)
-    //   .text('');
-    //
-    // var showInstruction = infoBox.append('text')
-    //   .attr('x', 5)
-    //   .attr('y', 60)
-    //   .text('Mouse over/tab to see details');
-    //
-    // var showGE13 = infoBox.append('text')
-    //   .attr('x', 5)
-    //   .attr('y', 45)
-    //   .text('');
-    //
-    // var showAdjusted = infoBox.append('text')
-    //     .attr('x', 5)
-    //     .attr('y', 75)
-    //     .text('');
-    //
-    // var showGE14 = infoBox.append('text')
-    //   .attr('x', 5)
-    //   .attr('y', 105)
-    //   .text('');
-    //
-    // var showDiff = infoBox.append('text')
-    //   .attr('x', 5)
-    //   .attr('y', 135)
-    //   .text('');
-    //
-    // // footnote
-    // circleChart.append('text')
-    //   .attr('y', (height - 20))
-    //   .attr('x', padding)
-    //   .text('*Adjusted GE13 result');
-    //
-    // circleChart.append('text')
-    //     .attr('y', (height - 3))
-    //     .attr('x', padding)
-    //     .text('**Difference between GE14 and adjusted GE13 result');
-
-    // // Credit
-    // circleChart.append('text')
-    //   .attr('y', height - 5)
-    //   .attr('x', width)
-    //   .attr('text-anchor', 'end')
-    //   .text('Source: Malaysian Election Commission (2018), Penang Institute (2018)')
-    //   .style('font-size', 'small');
-
     // initial stage
     circles = circleChart.selectAll('.circles')
       .data(data)
@@ -319,7 +262,6 @@ $(document).ready(function() {
 
     $('#circlechart-3').waypoint(function(direction) {
       if (direction === 'down') {
-        console.log('circlechart-3 down');
         circles.transition()
           .attr('cx', function(d) {
             if (d.ge14_malay >= 50) {
@@ -339,7 +281,6 @@ $(document).ready(function() {
             return rScale(d.ge14_total_electorate);
           });
       } else {
-        console.log('circlechart-3 up');
         circles.transition()
           .attr('cy', function(d) {
             if (d.ge14_malay >= 50) {
@@ -402,14 +343,14 @@ $(document).ready(function() {
       } else {
         circles.transition()
           .attr('class', function(d) {
-            if (d.swing_pct > 0) {
+            if (d.pct_diff > 0) {
               return 'bn-win-circle';
             } else {
               return 'bn-win-circle';
             }
           })
           .style('opacity', function(d) {
-            if (d.swing_pct > 0) {
+            if (d.pct_diff > 0) {
               return 0.8;
             } else {
               return 0.1;
